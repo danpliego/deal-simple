@@ -1,0 +1,24 @@
+/* line 1, ../sass/menu.scss */
+.navbar {
+  height: 88px;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 5, ../sass/menu.scss */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+/* line 10, ../sass/menu.scss */
+.navbar .nav-item {
+  font-size: 0.85rem;
+  padding: 0.75rem;
+}
+/* line 14, ../sass/menu.scss */
+.navbar .nav-item .nav-link {
+  color: var(--body-l-color);
+}
+/* line 19, ../sass/menu.scss */
+.navbar .nav-item.active .nav-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}

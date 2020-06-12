@@ -1,0 +1,26 @@
+.navbar {
+  height: 88px;
+  border-bottom: 1px solid var(--gray-l-color);
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+
+    .nav-link {
+      color: var(--body-l-color);
+    }
+
+    &.active {
+      .nav-link {
+        color: var(--primary-color);
+        font-weight: bold;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+/* line 1, ../sass/home.scss */
+.home-container {
+  display: flex;
+  height: calc(100% - 88px);
+}
+/* line 5, ../sass/home.scss */
+.home-container > div {
+  flex: 1;
+  max-width: 50%;
+}
+/* line 10, ../sass/home.scss */
+.home-container .home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 5% 10%;
+}
+/* line 16, ../sass/home.scss */
+.home-container .home-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+/* line 23, ../sass/home.scss */
+.home-container .home-content .form-container {
+  border: 1px solid var(--gray-color);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+/* line 31, ../sass/home.scss */
+.home-container .home-content .form-group {
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 37, ../sass/home.scss */
+.home-container .home-content .form-group:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 41, ../sass/home.scss */
+.home-container .home-content .form-group label {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+/* line 51, ../sass/home.scss */
+.home-container .home-content .form-group .form-control {
+  border: 0;
+  padding: 1.75rem 2rem 0.75rem;
+  height: auto;
+}
+/* line 56, ../sass/home.scss */
+.home-container .home-content .form-group .form-control:focus {
+  box-shadow: none;
+  background: var(--gray-xl-color);
+}
+/* line 64, ../sass/home.scss */
+.home-container .home-image {
+  height: 100%;
+  background: url("../images/home-pic.jpg");
+  background-size: cover;
+}
