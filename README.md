@@ -1,6 +1,13 @@
-# temporary_new_navigation
-html and scss for new easybroker navigation using compass
+# Deal Engine prototype
 
+Html and SCSS project using compass, 
 
-gem install compass
-run compass watch to watch for styles
+sass/ folder includes editable scss files, stylesheets css to include
+
+```gem install compass```
+
+, run 
+
+```compass watch```
+
+to watch for style changes

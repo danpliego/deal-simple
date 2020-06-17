@@ -1,0 +1,29 @@
+.results-container {
+  .results-header {
+    width: 70%;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 105px;
+
+    .form-control {
+      max-width: 170px;
+    }
+  }
+
+  .results-main {
+    width: 70%; 
+    height: 4000px;
+    background: blue;
+  }
+
+  .results-map {
+    width: 30%;
+    position: sticky;
+    top: 88px;
+
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}

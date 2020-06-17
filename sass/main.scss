@@ -62,6 +62,12 @@ body {
   height: 100%;
 }
 
+.page .navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
 .btn:focus {
   box-shadow: none!important;
 }
@@ -76,6 +82,10 @@ a {
 
 .text-uppercase {
   letter-spacing: 2px;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
 }
 
 .btn {
@@ -99,4 +109,47 @@ a {
   font-weight: bold;
   padding: 1.2rem;
   box-shadow: 0 10px 30px rba(0, 0,0 , 0.15);
+}
+
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.form-container {
+  border-radius: 54px;
+  overflow: hidden;
+  border: 1px solid var(--gray-color);
+}
+
+.form-group {
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+  
+  &:not(:last-child) {
+    border-right: 1px solid var(--gray-l-color);
+  }
+
+  label {
+    padding: 0.5rem 2rem;
+    margin-bottom: 0;
+    font-size: 0.7rem;
+    color: var(--body-l-color);
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+  }
+
+  .form-control {
+    background: #fff;
+    border: 0;
+    padding: 1.1rem 2rem 0.65rem;
+    height: auto;
+
+    &:focus {
+      box-shadow: none;
+      background: var(--gray-xl-color);
+    }
+  }
 }
