@@ -1,35 +1,34 @@
 /* line 1, ../sass/resultados.scss */
-.results-container {
+.results-header {
   padding: 1rem;
-  position: relative;
-}
-/* line 5, ../sass/resultados.scss */
-.results-container .results-header {
-  width: 70%;
   margin-bottom: 1rem;
+  position: sticky;
+  top: 88px;
+  background: blue;
 }
-/* line 9, ../sass/resultados.scss */
-.results-container .results-header .form-control {
+/* line 8, ../sass/resultados.scss */
+.results-header .form-control {
   max-width: 170px;
 }
-/* line 14, ../sass/resultados.scss */
-.results-container .results-main {
-  width: 70%;
+
+/* line 13, ../sass/resultados.scss */
+.results-main {
+  width: calc(70% - 2rem);
   height: 4000px;
 }
 
-/* line 21, ../sass/resultados.scss */
+/* line 18, ../sass/resultados.scss */
 .results-map {
   width: 30%;
   position: fixed;
   right: 1rem;
-  top: calc(1rem + 88px);
+  top: calc(1rem + 88px + 73px);
   bottom: 1rem;
   height: calc(100% - 2srem - 88px);
   border-radius: 8px;
   overflow: hidden;
 }
-/* line 31, ../sass/resultados.scss */
+/* line 28, ../sass/resultados.scss */
 .results-map iframe {
   width: 100%;
   height: 100%;

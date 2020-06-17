@@ -1,28 +1,25 @@
-.results-container {
+.results-header {
   padding: 1rem;
-  position: relative;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 88px;
+  background: blue;
 
-  .results-header {
-    width: 70%;
-    margin-bottom: 1rem;
-
-    .form-control {
-      max-width: 170px;
-    }
+  .form-control {
+    max-width: 170px;
   }
+}
 
-  .results-main {
-    width: 70%; 
-    height: 4000px;
-  }
-
+.results-main {
+  width: calc(70% - 2rem);
+  height: 4000px;
 }
 
 .results-map {
   width: 30%;
   position: fixed;
   right: 1rem;
-  top: calc(1rem + 88px);
+  top: calc(1rem + 88px + 73px);
   bottom: 1rem;
   height: calc(100% - 2srem - 88px);
   border-radius: 8px;
