@@ -1,5 +1,5 @@
 .navbar {
-  height: 88px;
+  min-height: 88px;
   border-bottom: 1px solid var(--gray-l-color);
 
   .navbar-brand {
@@ -7,9 +7,16 @@
     align-items: center;
   }
 
+  .navbar-toggler {
+    border: 0;
+  }
+
   .nav-item {
-    font-size: 0.85rem;
-    padding: 0.75rem;
+    font-size: 0.9rem;
+
+    @media (min-width: 992px) {
+      padding: 0.75rem;
+    }
 
     .nav-link {
       color: var(--body-l-color);
