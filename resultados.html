@@ -9,10 +9,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
-
     <script src="scripts/scripts.js"></script>
-
-
     <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="stylesheet" href="stylesheets/resultados.css" />
     <link rel="stylesheet" href="stylesheets/menu.css" />
@@ -80,23 +77,70 @@
       </div>
 
       <div class="results-main">
+
         <div class="result-card">
-          <div class="image-container">
-            <div class="row">
-              <div class="image-container">
-                <img src="/images/hotel-picture.jpg" class="img-fluid">
+          <div class="result-main-info row">
+            <div class="result-image col">
+              <img src="http://onepoint.danielpliego.com/images/hotel-picture.jpg" class="img-fluid">
+            </div>
+            <div class="result-main-content col col-8">
+              <div class="row">
+                <div class="col">
+                  <h5 class="result-name">Hotel Diego de Alamagro Santiago Centro</h5>
+                  <p class="text-secondary result-description">Modern rooms & suites in an upmarket beach resort with a restaurant, a beach cafe & an outdoor pool.</p>
+                </div>
+                <div class="col col-auto result-price">
+                  <div class="d-flex">
+                    $15.120
+                    <span class="text-secondary">CLP</span>
+                  </div>
+                  <span class="text-secondary">por noche</span>
+                </div>
               </div>
-              <div class="content-container">
-                <h4 class="result-name">Hotel Diego de Alamagro Santiago Centro</h4>
-                <p class="text-secondary result-description">Modern rooms & suites in an upmarket beach resort with a restaurant, a beach cafe & an outdoor pool.</p>
-                <ul class="list-inline">
-                  <li class="list-inline-item">Wifi Gratis</li>
-                  <li class="list-inline-item">Desayuno incluído</li>
-                </ul>
+              <ul class="list-inline">
+                <li class="list-inline-item"><i class="fas fa-wifi mr-2"></i>Wifi Gratis</li>
+                <li class="list-inline-item"><i class="fas fa-utensils mr-2"></i>Desayuno incluído</li>
+              </ul>
+              <div class="text-right">
+                <a class="btn btn-dark text-uppercase" data-toggle="collapse" href="#results_detail_id">
+                  Ver más...
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="results-details row collapse" id="results_detail_id">
+            <div class="col">
+              <p class="font-sm">
+                El Hotel Diego de Almagro Santiago Centro está ubicado en pleno corazón de Santiago, prevalece su arquitectura, cuya fachada que corresponde al Palacio Rivas que data del año 1887 con la relevancia de ser considerado Patrimonio Nacional, sigue una línea de arquitectura y decoración colonial y moderna a la vez, característico de Chile.
+    
+                El Hotel ofrece equipadas instalaciones garantizándoles el máximo confort y servicios.
+              </p>
+            </div>
+            <div class="col">
+              <div class="room-card row">
+                <div class="col">
+                  <p>Estandar</p>
+                  <span class="text-secondary font-xxs">
+                    1 cama matrimonial
+                  </span>
+                </div>
+                <div class="col-auto d-flex">
+                  <div class="result-price">
+                    <div class="d-flex">
+                      $15.120
+                      <span class="text-secondary">CLP</span>
+                    </div>
+                    <span class="text-secondary">por noche</span>
+                  </div>
+                  <div class="btn-container">
+                    <a href="#" class="btn btn-dark text-uppercase">Reservar</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="results-map">
