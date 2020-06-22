@@ -159,6 +159,32 @@ a {
   }
 }
 
+.dropdown-check {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--gray-l-color);
+  }
+
+  &:hover {
+    background: var(--gray-xl-color);
+  }
+  
+  label {
+    padding-left: 0.33rem;
+  }
+
+  .form-check-label {
+    font-weight: 400;
+    font-size: .8rem;
+  }
+}
+
 /* Helpers Classes */
 
 .font-sm {

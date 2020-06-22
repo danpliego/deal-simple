@@ -8,5 +8,9 @@ $( document ).ready(function() {
       $(this).toggleClass('btn-default');
       $(this).children('.view-more-text').toggleClass('d-none');
     })
+
+    $('.dropdown-menu').on("click.bs.dropdown", function (e) {
+      e.stopPropagation();
+    });
 });
 

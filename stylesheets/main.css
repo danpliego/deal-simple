@@ -180,33 +180,60 @@ a {
   background: var(--gray-xl-color);
 }
 
+/* line 162, ../sass/main.scss */
+.dropdown-check {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* line 170, ../sass/main.scss */
+.dropdown-check:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 174, ../sass/main.scss */
+.dropdown-check:hover {
+  background: var(--gray-xl-color);
+}
+/* line 178, ../sass/main.scss */
+.dropdown-check label {
+  padding-left: 0.33rem;
+}
+/* line 182, ../sass/main.scss */
+.dropdown-check .form-check-label {
+  font-weight: 400;
+  font-size: .8rem;
+}
+
 /* Helpers Classes */
-/* line 164, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 168, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 172, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 176, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .font-medium {
   font-weight: 500;
 }
 
-/* line 180, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .page {
   height: 100%;
 }
 
-/* line 184, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .page .navbar {
   position: sticky;
   top: 0;
