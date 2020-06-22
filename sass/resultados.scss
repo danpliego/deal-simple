@@ -15,12 +15,16 @@
 
   .form-control {
     max-width: 170px;
+    font-size: 0.8rem;
   }
 }
-
 .results-main {
-  width: calc(70% - 3rem);
-  padding-left: 2rem;
+  padding: 0 1rem;
+
+  @media (min-width: 768px) {
+    width: calc(70% - 3rem);
+    padding-left: 2rem;
+  }
 }
 
 .results-map {
@@ -54,7 +58,10 @@
     display: block;
     border-radius: 8px;
     overflow: hidden;
-    margin-right: 1rem;
+
+    @media (min-width: 768px) {
+      margin-right: 1rem;
+    }
   }
   
   .result-amenities li {
