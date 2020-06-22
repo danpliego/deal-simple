@@ -1,9 +1,17 @@
+@import 'variables';
+
+// Page Layout
+
 .results-header {
   padding: 1rem;
   margin-bottom: 1rem;
-  position: sticky;
-  top: 88px;
-  background: #fff;
+
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 88px;
+    background: #fff;
+    z-index: 1000;
+  }
 
   .form-control {
     max-width: 170px;
@@ -11,8 +19,7 @@
 }
 
 .results-main {
-  width: calc(70% - 2rem);
-  height: 4000px;
+  width: calc(70% - 3rem);
   padding-left: 2rem;
 }
 
@@ -29,5 +36,49 @@
   iframe {
     width: 100%;
     height: 100%;
+  }
+}
+
+// Result Card
+
+.result-card {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-l-color);
+
+  .result-name {
+    font-size: 1.1rem;
+  }
+  
+  .result-image-link {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 1rem;
+  }
+  
+  .result-amenities li {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  
+  .results-price-currency {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  
+  .results-details {
+    border-top: 1px solid var(--gray-l-color);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .room-card {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--gray-l-color);
+    }
   }
 }

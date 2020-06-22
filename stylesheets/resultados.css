@@ -1,24 +1,41 @@
-/* line 1, ../sass/resultados.scss */
+/* line 1, ../sass/variables.scss */
+:root {
+  --primary-color: #003293;
+  --secondary-color: #4CD9CF;
+  --body-color: #202541;
+  --body-l-color: #627178;
+  --body-xl-color: #7F8D93;
+  --gray-color: #D6DCDF;
+  --gray-l-color: #E7EBEF;
+  --gray-xl-color: #F4F7FB;
+}
+
+/* line 5, ../sass/resultados.scss */
 .results-header {
   padding: 1rem;
   margin-bottom: 1rem;
-  position: sticky;
-  top: 88px;
-  background: #fff;
 }
-/* line 8, ../sass/resultados.scss */
+@media (min-width: 768px) {
+  /* line 5, ../sass/resultados.scss */
+  .results-header {
+    position: sticky;
+    top: 88px;
+    background: #fff;
+    z-index: 1000;
+  }
+}
+/* line 16, ../sass/resultados.scss */
 .results-header .form-control {
   max-width: 170px;
 }
 
-/* line 13, ../sass/resultados.scss */
+/* line 21, ../sass/resultados.scss */
 .results-main {
-  width: calc(70% - 2rem);
-  height: 4000px;
+  width: calc(70% - 3rem);
   padding-left: 2rem;
 }
 
-/* line 19, ../sass/resultados.scss */
+/* line 26, ../sass/resultados.scss */
 .results-map {
   width: 30%;
   position: fixed;
@@ -29,8 +46,51 @@
   border-radius: 8px;
   overflow: hidden;
 }
-/* line 29, ../sass/resultados.scss */
+/* line 36, ../sass/resultados.scss */
 .results-map iframe {
   width: 100%;
   height: 100%;
+}
+
+/* line 44, ../sass/resultados.scss */
+.result-card {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 49, ../sass/resultados.scss */
+.result-card .result-name {
+  font-size: 1.1rem;
+}
+/* line 53, ../sass/resultados.scss */
+.result-card .result-image-link {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+/* line 60, ../sass/resultados.scss */
+.result-card .result-amenities li {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+/* line 65, ../sass/resultados.scss */
+.result-card .results-price-currency {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+/* line 70, ../sass/resultados.scss */
+.result-card .results-details {
+  border-top: 1px solid var(--gray-l-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+/* line 76, ../sass/resultados.scss */
+.result-card .room-card {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 80, ../sass/resultados.scss */
+.result-card .room-card:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
 }
