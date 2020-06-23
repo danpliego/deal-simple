@@ -4,17 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>One Point</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="stylesheets/main.css" />
-    <link rel="stylesheet" href="stylesheets/menu.css" />
-    <link rel="stylesheet" href="stylesheets/resultados.css" />
-    <link rel="stylesheet" href="stylesheets/filters.css" />
-    
   </head>
   <body>
 
@@ -78,27 +74,68 @@
       </div>
 
       <div class="results-main">
-
         <div class="results-filters row no-gutters">
           <div class="dropdown col-auto">
             <a href="#" class="filter filter-active" data-toggle="dropdown">
               1100 - 5.000 CLP
             </a>
             <div class="dropdown-menu">
-              content here
+              <p class="dropdown-title">Categoría</p>
+              <div class="dropdown-options">
+                hola
+              </div>
+              <div class="dropdown-footer">
+                <a href="#" class="btn btn-link">Borrar</a>
+                <a href="#" class="btn btn-primary">Aplicar</a>
+              </div>
             </div>
           </div>
           <div class="dropdown col-auto">
             <a href="#" class="filter filter-active" data-toggle="dropdown">
               USD
             </a>
+            <div class="dropdown-menu">
+              <p class="dropdown-title">Moneda</p>
+              <div class="dropdown-options">
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Second default radio
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="dropdown col-auto">
             <a href="#" class="filter filter-active" data-toggle="dropdown">
               3 estrellas
             </a>
             <div class="dropdown-menu">
-              content here
+              <p class="dropdown-title">Categoría</p>
+              <div class="dropdown-options">
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Second default radio
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <a href="#" class="btn btn-link">Borrar</a>
+                <a href="#" class="btn btn-primary">Aplicar</a>
+              </div>
             </div>
           </div>
           <div class="dropdown col-auto">
@@ -106,7 +143,7 @@
               Marca
             </a>
             <div class="dropdown-menu">
-              <p class="mb-2 font-xxs text-secondary pl-2">Marca</p>
+              <p class="dropdown-title">Marca</p>
               
               <div class="dropdown-check">
                 <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -190,7 +227,7 @@
                     <p class="text-secondary font-medium font-xs mb-0">por noche</p>
                   </div>
                   <div class="ml-3 d-flex align-items-center">
-                    <a href="#" class="btn btn-primary btn-sm btn-uppercase">Reservar</a>
+                    <a href="#" class="btn btn-primary btn-sm btn-uppercase toggle-reserve">Reservar</a>
                   </div>
                 </div>
               </div>
@@ -212,7 +249,7 @@
                     <p class="text-secondary font-medium font-xs mb-0">por noche</p>
                   </div>
                   <div class="ml-3 d-flex align-items-center">
-                    <a href="#" class="btn btn-primary btn-sm btn-uppercase">Reservar</a>
+                    <a href="#" class="btn btn-primary btn-sm btn-uppercase toggle-reserve">Reservar</a>
                   </div>
                 </div>
               </div>
@@ -229,6 +266,50 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1712366581746!2d-70.65932248406588!3d-33.44484500461208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c679fd6c2ad5%3A0xf31cfca54eb2cbdc!2sHotel%20Diego%20de%20Almagro%20Santiago!5e0!3m2!1sen!2smx!4v1591935642637!5m2!1sen!2smx" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
 
+    </div>
+
+    <div class="reserve-modal" style="display: none">
+      <div class="reserve-modal-backdrop toggle-reserve"></div>
+      <div class="reserve-modal-content">
+        <div class="reserve-modal-image">
+          <img src="http://onepoint.danielpliego.com/images/hotel-picture.jpg" class="img-fluid" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-primary font-weight-bold">Confirma tu reserva</h3>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Hotel
+            </p>
+            <p>Hotel Diego de Alamagro Santiago</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Huesped
+            </p>
+            <p>Victor Borja</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Check in - Check out
+            </p>
+            <p>Jun 05 - Jun 25</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Tipo de habitación
+            </p>
+            <p>Habitación doble</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Total
+            </p>
+            <p><strong>$20.480</strong> <span class="text-secondary">(4 noches)</span></p>
+          </div>
+
+          <a href="#" class="btn btn-info btn-lg btn-uppercase mt-4 btn-block">Reservar ahora <i class="ml-2 fas fa-arrow-right"></i></a>
+        </div>
+      </div>
     </div>
   </body>
 </html>

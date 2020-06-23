@@ -1,5 +1,3 @@
-@import 'variables';
-
 // Page Layout
 
 .results-header {
@@ -14,7 +12,7 @@
   }
 
   .form-control {
-    max-width: 170px;
+    max-width: 250px;
     font-size: 0.8rem;
   }
 }
@@ -86,6 +84,57 @@
     
     &:not(:last-child) {
       border-bottom: 1px solid var(--gray-l-color);
+    }
+  }
+}
+
+.reserve-modal {
+  position: fixed;
+  z-index: 1010;
+  top: 88px; // This is the header height
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .reserve-modal-backdrop {
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .reserve-modal-content {
+    background: #fff;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    width: 420px; // saquenlo!
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.10);
+  }
+
+  .reserve-modal-image {
+    height: 16.666%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: -32%;
+    }
+  }
+
+  .reserve-card {
+    border-bottom: 1px solid var(--gray-l-color);
+    padding: 0.75rem 0;
+
+    .reserve-card-title {
+      font-size: 0.6rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 0;
     }
   }
 }

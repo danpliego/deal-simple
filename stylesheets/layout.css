@@ -1,0 +1,12 @@
+/* line 1, ../sass/layout.scss */
+.page {
+  height: 100%;
+}
+
+/* line 5, ../sass/layout.scss */
+.page .navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+}
