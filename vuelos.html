@@ -24,10 +24,10 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Hoteles</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="vuelos.html">Vuelos</a>
             </li>
           </ul>
@@ -50,32 +50,49 @@
       </nav>
 
 
-      <div class="home-container row no-gutters">
-        <div class="home-content col col-sm-8 col-lg-6">
+      <div class="home-container home-vuelos-container row no-gutters">
+        <div class="home-content col col-sm-8 col-lg-7">
           <h1>
             Encuentra el vuelo perfecto para tu próximo viaje
           </h1>
 
-          <form action="#" class="form-container">
-            <div class="dropdown">
-              <div class="dropdown-menu">
-                <li>
-                  <a href="#">test</a>
-                </li>
+          <form action="#">
+            <div class="form-container">
+              <div class="dropdown">
+                tipo de viaje
+                <a href="#">Ida y vuelta</a>
+                <div class="dropdown-menu">
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Viajero</label>
+                <input type="text" class="form-control" value="Victor Borja">
               </div>
             </div>
-            <div class="form-group">
-              <label>Ciudad</label>
-              <input type="text" class="form-control" value="Barcelona">
+
+            <div class="form-container">
+              <div class="form-group">
+                <label>Origen</label>
+                <input type="text" class="form-control" value="Lima">
+              </div>
+              <a href="#" class="return-action"><i class="fas"></i></a>
+              <div class="form-group">
+                <label>Destino</label>
+                <input type="text" class="form-control" value="Nueva York">
+              </div>
+              <div class="form-group">
+                <label>Salida</label>
+                <input type="text" class="form-control" value="Sáb 25 Julio">
+              </div>
+              <div class="form-group">
+                <label>Regreso</label>
+                <input type="text" class="form-control" value="Jue 30 Julio">
+              </div>
             </div>
-            <div class="form-group">
-              <label>Fecha</label>
-              <input type="text" class="form-control" value="Jun 05 - Jun 25">
-            </div>
-            <div class="form-group">
-              <label>Viajero</label>
-              <input type="text" class="form-control" value="Victor Borja">
-            </div>
+
           </form>
 
           <a href="resultados.html" class="btn btn-primary btn-hero text-uppercase">
@@ -83,7 +100,7 @@
           </a>
         </div>
 
-        <div class="home-image d-none d-sm-block col-sm-4 col-lg-6"></div>
+        <div class="home-image d-none d-sm-block col-sm-4 col-lg-5"></div>
       </div>
     </div>
   </body>

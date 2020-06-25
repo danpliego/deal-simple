@@ -268,11 +268,12 @@ a {
 /* line 10, ../sass/home.scss */
 .home-container .home-content h1 {
   font-size: 2.5rem;
+  letter-spacing: -1px;
   font-weight: 600;
   color: var(--primary-color);
   margin-bottom: 3rem;
 }
-/* line 17, ../sass/home.scss */
+/* line 18, ../sass/home.scss */
 .home-container .home-content .form-container {
   border: 1px solid var(--gray-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
@@ -280,23 +281,48 @@ a {
   overflow: hidden;
   margin-bottom: 2rem;
 }
-/* line 26, ../sass/home.scss */
+/* line 27, ../sass/home.scss */
 .home-container .home-content .form-group label {
   padding: 0.5rem 2rem;
 }
-/* line 30, ../sass/home.scss */
+/* line 31, ../sass/home.scss */
 .home-container .home-content .form-group .form-control {
   padding: 1.75rem 2rem 0.75rem;
 }
-/* line 34, ../sass/home.scss */
+/* line 35, ../sass/home.scss */
 .home-container .home-content .form-group:not(:last-child) .form-control {
   border-right: 0;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 41, ../sass/home.scss */
+/* line 42, ../sass/home.scss */
 .home-container .home-image {
   height: 100%;
   background: url("../images/home-pic.jpg");
+  background-size: cover;
+}
+
+/* line 51, ../sass/home.scss */
+.home-vuelos-container .form-container {
+  display: flex;
+}
+/* line 56, ../sass/home.scss */
+.home-vuelos-container .form-group label {
+  padding: 0.5rem 2rem;
+  background: red;
+}
+/* line 61, ../sass/home.scss */
+.home-vuelos-container .form-group .form-control {
+  padding: 1.75rem 1rem 0.75rem;
+  border-radius: 1rem;
+}
+/* line 66, ../sass/home.scss */
+.home-vuelos-container .form-group:not(:last-child) .form-control {
+  border-right: 0;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 72, ../sass/home.scss */
+.home-vuelos-container .home-image {
+  background: url("../images/home-vuelos-pic.jpg");
   background-size: cover;
 }
 
