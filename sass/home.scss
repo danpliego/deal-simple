@@ -1,5 +1,4 @@
 .home-container {
-  height: calc(100% - 88px);
 
   .home-content {
     display: flex;
@@ -40,9 +39,11 @@
   }
 
   .home-image {
-    height: 100%;
     background: url('../images/home-pic.jpg');
     background-size: cover;
+    position: fixed;
+    right: 0;
+    height: calc(100% - 88px);
   }
 
 }

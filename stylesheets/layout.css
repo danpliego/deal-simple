@@ -1,12 +1,13 @@
 /* line 1, ../sass/layout.scss */
-.page {
-  height: 100%;
-}
-
-/* line 5, ../sass/layout.scss */
 .page .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   background: #fff;
   z-index: 1005;
+  width: 100%;
+}
+
+/* line 9, ../sass/layout.scss */
+body {
+  padding-top: 88px;
 }

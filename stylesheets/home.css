@@ -1,15 +1,11 @@
-/* line 1, ../sass/home.scss */
-.home-container {
-  height: calc(100% - 88px);
-}
-/* line 4, ../sass/home.scss */
+/* line 3, ../sass/home.scss */
 .home-container .home-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2rem 5% 10%;
 }
-/* line 10, ../sass/home.scss */
+/* line 9, ../sass/home.scss */
 .home-container .home-content h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
@@ -17,7 +13,7 @@
   color: var(--primary-color);
   margin-bottom: 3rem;
 }
-/* line 18, ../sass/home.scss */
+/* line 17, ../sass/home.scss */
 .home-container .home-content .form-container {
   border: 1px solid var(--gray-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
@@ -25,46 +21,48 @@
   overflow: hidden;
   margin-bottom: 2rem;
 }
-/* line 27, ../sass/home.scss */
+/* line 26, ../sass/home.scss */
 .home-container .home-content .form-group label {
   padding: 0.5rem 2rem;
 }
-/* line 31, ../sass/home.scss */
+/* line 30, ../sass/home.scss */
 .home-container .home-content .form-group .form-control {
   padding: 1.75rem 2rem 0.75rem;
 }
-/* line 35, ../sass/home.scss */
+/* line 34, ../sass/home.scss */
 .home-container .home-content .form-group:not(:last-child) .form-control {
   border-right: 0;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 42, ../sass/home.scss */
+/* line 41, ../sass/home.scss */
 .home-container .home-image {
-  height: 100%;
   background: url("../images/home-pic.jpg");
   background-size: cover;
+  position: fixed;
+  right: 0;
+  height: calc(100% - 88px);
 }
 
-/* line 51, ../sass/home.scss */
+/* line 52, ../sass/home.scss */
 .home-vuelos-container .form-container {
   display: flex;
 }
-/* line 56, ../sass/home.scss */
+/* line 57, ../sass/home.scss */
 .home-vuelos-container .form-group label {
   padding: 0.5rem 2rem;
   background: red;
 }
-/* line 61, ../sass/home.scss */
+/* line 62, ../sass/home.scss */
 .home-vuelos-container .form-group .form-control {
   padding: 1.75rem 1rem 0.75rem;
   border-radius: 1rem;
 }
-/* line 66, ../sass/home.scss */
+/* line 67, ../sass/home.scss */
 .home-vuelos-container .form-group:not(:last-child) .form-control {
   border-right: 0;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 72, ../sass/home.scss */
+/* line 73, ../sass/home.scss */
 .home-vuelos-container .home-image {
   background: url("../images/home-vuelos-pic.jpg");
   background-size: cover;
