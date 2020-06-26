@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>One Point</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+
+    <div class="page page-home">  
+      <nav class="navbar navbar-light navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hoteles</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="vuelos.html">Vuelos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Mis Reservas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Victor Borja
+                <i class="fas fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="usuarios.html">Administración de usuarios</a>
+                <a class="dropdown-item" href="reportes.html">Reporte de gastos</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="results-header row no-gutters">
+        <div class="col col-auto pr-5">
+          <p class="text-secondary mb-0 font-xs font-medium">Se encontraron 25 ofertas</p>
+          <h4 class="text-primary font-weight-bold">
+            Hoteles en Barcelona
+          </h4>
+        </div>
+        <div class="col col-auto">
+          <form class="form-container d-flex">
+            <div class="form-group">
+              <label>Ciudad</label>
+              <input type="text" class="form-control" value="Barcelona">
+            </div>
+            <div class="form-group">
+              <label>Fecha</label>
+              <input type="text" class="form-control" value="Jun 05 - Jun 25">
+            </div>
+            <div class="form-group">
+              <label>Viajero</label>
+              <input type="text" class="form-control" value="Victor Borja">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="results-main">
+        <div class="results-filters row no-gutters">
+          <div class="dropdown col-auto">
+            <a href="#" class="filter filter-active" data-toggle="dropdown">
+              1100 - 5.000 CLP
+            </a>
+            <div class="dropdown-menu">
+              <p class="dropdown-title">Categoría</p>
+              <div class="dropdown-options">
+                hola
+              </div>
+              <div class="dropdown-footer">
+                <a href="#" class="btn btn-link">Borrar</a>
+                <a href="#" class="btn btn-primary">Aplicar</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown col-auto">
+            <a href="#" class="filter filter-active" data-toggle="dropdown">
+              USD
+            </a>
+            <div class="dropdown-menu">
+              <p class="dropdown-title">Moneda</p>
+              <div class="dropdown-options">
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Second default radio
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown col-auto">
+            <a href="#" class="filter filter-active" data-toggle="dropdown">
+              3 estrellas
+            </a>
+            <div class="dropdown-menu">
+              <p class="dropdown-title">Categoría</p>
+              <div class="dropdown-options">
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Default radio
+                  </label>
+                </div>
+                <div class="dropdown-check">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Second default radio
+                  </label>
+                </div>
+              </div>
+              <div class="dropdown-footer">
+                <a href="#" class="btn btn-link">Borrar</a>
+                <a href="#" class="btn btn-primary">Aplicar</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown col-auto">
+            <a href="#" class="filter" data-toggle="dropdown">
+              Marca
+            </a>
+            <div class="dropdown-menu">
+              <p class="dropdown-title">Marca</p>
+              
+              <div class="dropdown-check">
+                <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Default radio
+                </label>
+              </div>
+              <div class="dropdown-check">
+                <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Second default radio
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Result card 1 -->
+
+        <div class="result-card">
+          <div class="result-main-info row no-gutters">
+            <div class="result-image col-sm mb-3">
+              <a href="#" class="result-image-link">
+                <img src="http://onepoint.danielpliego.com/images/hotel-picture.jpg" class="img-fluid">
+              </a>
+            </div>
+            <div class="result-main-content col-sm col-sm-8">
+              <div class="row">
+                <div class="col">
+                  <h6 class="result-name">Hotel Diego de Alamagro Santiago Centro</h6>
+                  <p class="text-secondary font-xs mb-1">Modern rooms & suites in an upmarket beach resort with a restaurant, a beach cafe & an outdoor pool.</p>
+                </div>
+                <div class="col col-auto text-right">
+                  <div class="d-flex align-items-center">
+                    <strong class="mr-1 text-primary">$15.120</strong>
+                    <span class="result-price-currency text-secondary font-xs">CLP</span>
+                  </div>
+                  <p class="text-secondary font-xs font-weight-bold">por noche</p>
+                </div>
+              </div>
+              <ul class="list-inline result-amenities">
+                <li class="list-inline-item"><i class="fas fa-wifi mr-2 text-secondary"></i>Wifi Gratis</li>
+                <li class="list-inline-item"><i class="fas fa-utensils mr-2 text-secondary"></i>Desayuno incluído</li>
+              </ul>
+              <div class="text-right">
+                <a class="btn btn-primary btn-uppercase view-more-button" data-toggle="collapse" href="#results_detail_unique_id">
+                  <span class="view-more-text">
+                    Ver más<i class="ml-1 fas fa-angle-down"></i>
+                  </span>
+                  <span class="view-more-text d-none">
+                    Ver menos<i class="ml-1 fas fa-angle-up"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="results-details row collapse no-gutters" id="results_detail_unique_id">
+            <div class="col">
+              <p class="font-xs pr-4">
+                El Hotel Diego de Almagro Santiago Centro está ubicado en pleno corazón de Santiago, prevalece su arquitectura, cuya fachada que corresponde al Palacio Rivas que data del año 1887 con la relevancia de ser considerado Patrimonio Nacional, sigue una línea de arquitectura y decoración colonial y moderna a la vez, característico de Chile.
+    
+                El Hotel ofrece equipadas instalaciones garantizándoles el máximo confort y servicios.
+              </p>
+            </div>
+            <div class="col">
+
+              <div class="room-card row no-gutters">
+                <div class="col">
+                  <p class="mb-0">Estandar</p>
+                  <p class="text-secondary font-xxs mb-0">
+                    1 cama matrimonial
+                  </p>
+                </div>
+                <div class="col-auto d-flex">
+                  <div class="text-right">
+                    <div class="d-flex align-items-center">
+                      <strong class="text-primary mr-1">$15.120</strong>
+                      <span class="text-secondary font-xs">CLP</span>
+                    </div>
+                    <p class="text-secondary font-medium font-xs mb-0">por noche</p>
+                  </div>
+                  <div class="ml-3 d-flex align-items-center">
+                    <a href="#" class="btn btn-primary btn-sm btn-uppercase toggle-reserve">Reservar</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="room-card row no-gutters">
+                <div class="col">
+                  <p class="mb-0">Estandar</p>
+                  <p class="text-secondary font-xxs mb-0">
+                    1 cama matrimonial
+                  </p>
+                </div>
+                <div class="col-auto d-flex">
+                  <div class="text-right">
+                    <div class="d-flex align-items-center">
+                      <strong class="text-primary mr-1">$15.120</strong>
+                      <span class="text-secondary font-xs">CLP</span>
+                    </div>
+                    <p class="text-secondary font-medium font-xs mb-0">por noche</p>
+                  </div>
+                  <div class="ml-3 d-flex align-items-center">
+                    <a href="#" class="btn btn-primary btn-sm btn-uppercase toggle-reserve">Reservar</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- End result 1 -->
+
+      </div>
+
+      <div class="results-map d-none d-md-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1712366581746!2d-70.65932248406588!3d-33.44484500461208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c679fd6c2ad5%3A0xf31cfca54eb2cbdc!2sHotel%20Diego%20de%20Almagro%20Santiago!5e0!3m2!1sen!2smx!4v1591935642637!5m2!1sen!2smx" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+    </div>
+
+    <div class="reserve-modal" style="display: none">
+      <div class="reserve-modal-backdrop toggle-reserve"></div>
+      <div class="reserve-modal-content">
+        <div class="reserve-modal-image">
+          <img src="http://onepoint.danielpliego.com/images/hotel-picture.jpg" class="img-fluid" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-primary font-weight-bold">Confirma tu reserva</h3>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Hotel
+            </p>
+            <p>Hotel Diego de Alamagro Santiago</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Huesped
+            </p>
+            <p>Victor Borja</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Check in - Check out
+            </p>
+            <p>Jun 05 - Jun 25</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Tipo de habitación
+            </p>
+            <p>Habitación doble</p>
+          </div>
+          <div class="reserve-card">
+            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+              Total
+            </p>
+            <p><strong>$20.480</strong> <span class="text-secondary">(4 noches)</span></p>
+          </div>
+
+          <a href="#" class="btn btn-info btn-lg btn-uppercase mt-4 btn-block">Reservar ahora <i class="ml-2 fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

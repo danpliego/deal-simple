@@ -13,24 +13,24 @@
   color: var(--primary-color);
   margin-bottom: 3rem;
 }
-/* line 17, ../sass/home.scss */
-.home-container .home-content .form-container {
+/* line 18, ../sass/home.scss */
+.home-container .form-container {
   border: 1px solid var(--gray-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 2rem;
 }
 /* line 26, ../sass/home.scss */
-.home-container .home-content .form-group label {
+.home-container .form-group label, .home-container .form-group .form-group-label {
   padding: 0.5rem 2rem;
 }
 /* line 30, ../sass/home.scss */
-.home-container .home-content .form-group .form-control {
+.home-container .form-group .form-control {
   padding: 1.75rem 2rem 0.75rem;
+  font-size: 0.9rem;
 }
-/* line 34, ../sass/home.scss */
-.home-container .home-content .form-group:not(:last-child) .form-control {
+/* line 35, ../sass/home.scss */
+.home-container .form-group:not(:last-child) .form-control {
   border-right: 0;
   border-bottom: 1px solid var(--gray-l-color);
 }
@@ -45,22 +45,22 @@
 
 /* line 52, ../sass/home.scss */
 .home-vuelos-container .form-container {
-  display: flex;
+  display: inline-flex;
 }
 /* line 57, ../sass/home.scss */
 .home-vuelos-container .form-group label {
-  padding: 0.5rem 2rem;
-  background: red;
+  padding: 0.5rem 1rem;
 }
-/* line 62, ../sass/home.scss */
+/* line 61, ../sass/home.scss */
 .home-vuelos-container .form-group .form-control {
   padding: 1.75rem 1rem 0.75rem;
-  border-radius: 1rem;
+  border-radius: 0;
+  border-bottom: 0;
+  max-width: 160px;
 }
-/* line 67, ../sass/home.scss */
+/* line 68, ../sass/home.scss */
 .home-vuelos-container .form-group:not(:last-child) .form-control {
-  border-right: 0;
-  border-bottom: 1px solid var(--gray-l-color);
+  border-bottom: 0;
 }
 /* line 73, ../sass/home.scss */
 .home-vuelos-container .home-image {
