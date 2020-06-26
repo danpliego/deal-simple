@@ -1,0 +1,33 @@
+/* line 1, ../sass/menu.scss */
+.navbar {
+  min-height: 88px;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 5, ../sass/menu.scss */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+/* line 10, ../sass/menu.scss */
+.navbar .navbar-toggler {
+  border: 0;
+}
+/* line 14, ../sass/menu.scss */
+.navbar .nav-item {
+  font-size: 0.9rem;
+}
+@media (min-width: 992px) {
+  /* line 14, ../sass/menu.scss */
+  .navbar .nav-item {
+    padding: 0.75rem;
+  }
+}
+/* line 21, ../sass/menu.scss */
+.navbar .nav-item .nav-link {
+  color: var(--body-l-color);
+}
+/* line 26, ../sass/menu.scss */
+.navbar .nav-item.active .nav-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
