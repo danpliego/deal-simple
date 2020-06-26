@@ -208,11 +208,6 @@ a {
 }
 
 /* line 1, ../sass/layout.scss */
-.page {
-  height: 100%;
-}
-
-/* line 5, ../sass/layout.scss */
 .page .navbar {
   position: fixed;
   top: 0;
@@ -221,7 +216,7 @@ a {
   width: 100%;
 }
 
-/* line 13, ../sass/layout.scss */
+/* line 9, ../sass/layout.scss */
 body {
   padding-top: 88px;
 }
