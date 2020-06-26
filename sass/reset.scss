@@ -72,21 +72,33 @@ a {
   border-radius: 50px;
   font-weight: 500;
   transition: all ease-out 0.15s;
-  font-weight: bold;
   padding: 10px 20px;
   border-color: var(--gray-l-color);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
-
+  box-shadow: 0 1px 0 var(--gray-l-color) !important;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  
   &:hover {
     transform: translate(0, -2px);
   }
 }
 
+.btn-default {
+  background: #fff;
+}
+
+.btn-lg,
+.btn-hero {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
+}
+
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
+  color: #fff;
   
   &:hover, &:focus {
+    color: #fff;
     background: var(--primary-color) !important;
     border-color: var(--primary-color) !important;
   }
