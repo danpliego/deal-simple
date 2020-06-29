@@ -23,10 +23,10 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Hoteles</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="vuelos.html">Vuelos</a>
             </li>
           </ul>
@@ -101,6 +101,13 @@
 
             <div class="row no-gutters">
               <div class="col">
+                <a class="selected-flight text-primary" href="#">
+                  <p class="mb-0 font-xxs">Vuelo de ida:</p>
+                  <p class="mb-0 font-xxs font-medium">LIM - JFK</p>
+                  <div class="edit-flight btn btn-rounded btn-default">
+                    <i class="fas fa-pencil-alt text-info"></i>
+                  </div>
+                </a>
                 <h3 class="text-primary">
                   Selecciona un vuelo de vuelta
                 </h3>
@@ -289,7 +296,7 @@
                       </p>
                     </div>
                     <div class="col col-auto">
-                      <a href="resultados-vuelos-vuelta.html" class="btn btn-primary btn-sm">Seleccionar vuelo</a>
+                      <a href="detalles-viaje.html" class="btn btn-primary btn-sm">Seleccionar vuelo</a>
                     </div>
                     <div class="col col-auto">
                       <a class="btn btn-default btn-rounded view-more-flight-button">
@@ -308,7 +315,7 @@
                               <div class="flight-segment-item-detail">
                                 <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
                                 <div class="badge badge-primary">Duración: 5h 50m</div>
-                                <div class="badge badge-danger"><i class="fas fa-exclamation-triangle"></i>Duración: 5h 50m</div>
+                                <div class="badge badge-danger"><i class="fas fa-exclamation-triangle mr-1"></i>Duración: 5h 50m</div>
                               </div>
                             </div>
                             <div class="flight-segment-item segment-arrival">
@@ -402,50 +409,6 @@
 
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="reserve-modal" style="display: none">
-      <div class="reserve-modal-backdrop toggle-reserve"></div>
-      <div class="reserve-modal-content">
-        <div class="reserve-modal-image">
-          <img src="http://onepoint.danielpliego.com/images/hotel-picture.jpg" class="img-fluid" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-primary font-weight-bold">Confirma tu reserva</h3>
-          <div class="reserve-card">
-            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
-              Hotel
-            </p>
-            <p>Hotel Diego de Alamagro Santiago</p>
-          </div>
-          <div class="reserve-card">
-            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
-              Huesped
-            </p>
-            <p>Victor Borja</p>
-          </div>
-          <div class="reserve-card">
-            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
-              Check in - Check out
-            </p>
-            <p>Jun 05 - Jun 25</p>
-          </div>
-          <div class="reserve-card">
-            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
-              Tipo de habitación
-            </p>
-            <p>Habitación doble</p>
-          </div>
-          <div class="reserve-card">
-            <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
-              Total
-            </p>
-            <p><strong>$20.480</strong> <span class="text-secondary">(4 noches)</span></p>
-          </div>
-
-          <a href="#" class="btn btn-info btn-lg btn-uppercase mt-4 btn-block">Reservar ahora <i class="ml-2 fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>

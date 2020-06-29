@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>One Point</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+
+    <div class="page flight-details">  
+      <nav class="navbar navbar-light navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hoteles</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="vuelos.html">Vuelos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="reservas.html">Mis Reservas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Victor Borja
+                <i class="fas fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="usuarios.html">Administración de usuarios</a>
+                <a class="dropdown-item" href="reportes.html">Reporte de gastos</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="row no-gutters">
+        <div class="col col-sm-8">
+
+          <div class="flight-details-main">
+
+            <h4 class="text-primary mb-4">Detalles del viaje</h4>
+            <h5 class="mb-3">Vuelo de ida</h5>
+            <div class="flight-result">
+              <div class="view-more-flight-button">
+                <div class="row no-gutters">
+                  <div class="col col-auto flight-result-logo">
+                    <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">23:50 — 11:55 <span class="text-top">+1</span></p>
+                    <p class="mb-0 text-secondary font-xxs">Latam</p>
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">11 hr 05min</p>
+                    <p class="mb-0 text-secondary font-xxs">LIM - JFK</p>
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">1 escala</p>
+                    <p class="mb-0 text-secondary font-xxs">2h 55min</p>
+                  </div>
+                  <div class="col col-auto">
+                    <p class="mb-0 text-secondary font-xxs">Total desde</p>
+                    <p class="mb-0">
+                      <strong class="text-primary">$290 USD</strong>
+                      <span class="text-secondary">USD</span>
+                    </p>
+                  </div>
+                  <div class="col col-auto">
+                    <a href="resultados-vuelos.html" class="btn btn-primary btn-sm">cambiar</a>
+                  </div>
+                </div>                
+                <div>
+                  <div class="flight-result-detail">
+                    <div class="row">
+                      <div class="col col-md-8">
+                        <div class="flight-segment">
+                          <div class="flight-segment-item segment-departure">
+                            <p>23:50 - Lima <span class="text-secondary">LIM - Sab 25 Jul</span></p>
+                            <div class="flight-segment-item-detail">
+                              <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                              <div class="badge badge-primary">Duración: 5h 50m</div>
+                              <div class="badge badge-danger"><i class="fas fa-exclamation-triangle mr-1"></i>Duración: 5h 50m</div>
+                            </div>
+                          </div>
+                          <div class="flight-segment-item segment-arrival">
+                            <p>6:30 - Miami <span class="text-secondary">MIA</span></p>
+                          </div>
+                          <div class="flight-segment-info">
+                            <span class="flight-segment-info-item">Latam Airlines</span>
+                            <span class="flight-segment-info-item">Economy</span>
+                            <span class="flight-segment-info-item">Airbus A321</span>
+                            <span class="flight-segment-info-item">LA 221</span>
+                          </div>
+                        </div>
+                        <div class="flight-scale">
+                          2 hr 10min - Escala en Miami
+                        </div>
+                        <div class="flight-segment">
+                          <div class="flight-segment-item segment-departure">
+                            <p>23:50 - Lima <span class="text-secondary">LIM - Sab 25 Jul</span></p>
+                            <div class="flight-segment-item-detail">
+                              <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                              <div class="badge badge-primary">Duración: 5h 50m</div>
+                            </div>
+                          </div>
+                          <div class="flight-segment-item segment-arrival">
+                            <p>6:30 - Miami <span class="text-secondary">MIA</span></p>
+                          </div>
+                          <div class="flight-segment-info">
+                            <span class="flight-segment-info-item">Latam Airlines</span>
+                            <span class="flight-segment-info-item">Economy</span>
+                            <span class="flight-segment-info-item">Airbus A321</span>
+                            <span class="flight-segment-info-item">LA 221</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-md-4">
+                        <ul class="list-unstyled result-amenities">
+                          <li><i class="fas fa-wifi mr-2 text-secondary"></i>Wifi Gratis</li>
+                          <li><i class="fas fa-utensils mr-2 text-secondary"></i>Desayuno incluído</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="mb-3">Vuelo de vuelta</h5>
+            <div class="flight-result">
+              <div class="view-more-flight-button">
+                <div class="row no-gutters">
+                  <div class="col col-auto flight-result-logo">
+                    <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">23:50 — 11:55 <span class="text-top">+1</span></p>
+                    <p class="mb-0 text-secondary font-xxs">Latam</p>
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">11 hr 05min</p>
+                    <p class="mb-0 text-secondary font-xxs">LIM - JFK</p>
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">1 escala</p>
+                    <p class="mb-0 text-secondary font-xxs">2h 55min</p>
+                  </div>
+                  <div class="col col-auto">
+                    <p class="mb-0 text-secondary font-xxs">Total desde</p>
+                    <p class="mb-0">
+                      <strong class="text-primary">$290 USD</strong>
+                      <span class="text-secondary">USD</span>
+                    </p>
+                  </div>
+                  <div class="col col-auto">
+                    <a href="resultados-vuelos.html" class="btn btn-primary btn-sm">cambiar</a>
+                  </div>
+                </div>                
+                <div>
+                  <div class="flight-result-detail">
+                    <div class="row">
+                      <div class="col col-md-8">
+                        <div class="flight-segment">
+                          <div class="flight-segment-item segment-departure">
+                            <p>23:50 - Lima <span class="text-secondary">LIM - Sab 25 Jul</span></p>
+                            <div class="flight-segment-item-detail">
+                              <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                              <div class="badge badge-primary">Duración: 5h 50m</div>
+                              <div class="badge badge-danger"><i class="fas fa-exclamation-triangle mr-1"></i>Duración: 5h 50m</div>
+                            </div>
+                          </div>
+                          <div class="flight-segment-item segment-arrival">
+                            <p>6:30 - Miami <span class="text-secondary">MIA</span></p>
+                          </div>
+                          <div class="flight-segment-info">
+                            <span class="flight-segment-info-item">Latam Airlines</span>
+                            <span class="flight-segment-info-item">Economy</span>
+                            <span class="flight-segment-info-item">Airbus A321</span>
+                            <span class="flight-segment-info-item">LA 221</span>
+                          </div>
+                        </div>
+                        <div class="flight-scale">
+                          2 hr 10min - Escala en Miami
+                        </div>
+                        <div class="flight-segment">
+                          <div class="flight-segment-item segment-departure">
+                            <p>23:50 - Lima <span class="text-secondary">LIM - Sab 25 Jul</span></p>
+                            <div class="flight-segment-item-detail">
+                              <img src="http://onepoint.danielpliego.com/images/airlines/latam.jpg">
+                              <div class="badge badge-primary">Duración: 5h 50m</div>
+                            </div>
+                          </div>
+                          <div class="flight-segment-item segment-arrival">
+                            <p>6:30 - Miami <span class="text-secondary">MIA</span></p>
+                          </div>
+                          <div class="flight-segment-info">
+                            <span class="flight-segment-info-item">Latam Airlines</span>
+                            <span class="flight-segment-info-item">Economy</span>
+                            <span class="flight-segment-info-item">Airbus A321</span>
+                            <span class="flight-segment-info-item">LA 221</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col col-md-4">
+                        <ul class="list-unstyled result-amenities">
+                          <li><i class="fas fa-wifi mr-2 text-secondary"></i>Wifi Gratis</li>
+                          <li><i class="fas fa-utensils mr-2 text-secondary"></i>Desayuno incluído</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+
+
+        <div class="flight-reserve col col-sm-4">
+          <div class="p-4">
+            <h4 class="text-primary">Confirma tu reserva</h4>
+            <div class="reserve-card">
+              <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+                Pasajero
+              </p>
+              <p>Victor Borja</p>
+            </div>
+            <div class="reserve-card">
+              <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+                Ruta de viajes
+              </p>
+              <p>Lima (LIM) - New York (JFK) - Lima (LIM)</p>
+            </div>
+            <div class="reserve-card">
+              <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+                Vuelo Ida
+              </p>
+              <p>Sáb 25 Julio - 23:50</p>
+            </div>
+            <div class="reserve-card">
+              <p class="reserve-card-title text-uppercase font-weight-bold text-secondary">
+                Vuelo Regreso
+              </p>
+              <p>Jue 30 Julio - 11:20</p>
+            </div>
+            <div class="reserve-card">
+              <div class="row no-gutters align-items-center mb-3">                
+                <p class="reserve-card-title text-uppercase font-weight-bold text-secondary mb-0 col">
+                  Tarifa
+                </p>
+                <p>$255 USD</p>
+              </div>
+              <div class="row no-gutters align-items-center">                
+                <p class="reserve-card-title text-uppercase font-weight-bold text-secondary mb-0 col">
+                  Tasas e impuestos
+                </p>
+                <p>$35 USD</p>
+              </div>
+            </div>
+            <div class="reserve-card">
+              <div class="row no-gutters align-items-center mb-3">                
+                <p class="reserve-card-title text-uppercase font-weight-bold text-secondary mb-0 col">
+                  Total
+                </p>
+                <p><strong>$255 USD</strong></p>
+              </div>
+            </div>
+  
+            <a href="#" class="btn btn-info btn-lg btn-uppercase mt-4 btn-block">
+              Reservar ahora
+              <i class="ml-2 fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

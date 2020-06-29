@@ -48,6 +48,10 @@ body {
 
 /* Bootstrap reset */
 
+hr {
+  border-color: var(--gray-xl-color);
+}
+
 .dropdown-toggle::after {
   display: none;
 }

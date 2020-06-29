@@ -118,30 +118,31 @@
     width: 420px; // saquenlo!
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.10);
   }
+}
 
-  .reserve-modal-image {
-    height: 16.666%;
-    overflow: hidden;
-    position: relative;
 
-    img {
-      position: absolute;
-      bottom: -32%;
-    }
+.reserve-modal-image {
+  height: 16.666%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: -32%;
+  }
+}
+
+.reserve-card {
+  border-bottom: 1px solid var(--gray-l-color);
+  padding: 0.75rem 0;
+
+  .reserve-card-title {
+    font-size: 0.6rem;
+    margin-bottom: 0.25rem;
   }
 
-  .reserve-card {
-    border-bottom: 1px solid var(--gray-l-color);
-    padding: 0.75rem 0;
-
-    .reserve-card-title {
-      font-size: 0.6rem;
-      margin-bottom: 0.25rem;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
+  p {
+    margin-bottom: 0;
   }
 }
 
@@ -158,6 +159,25 @@
     top: 14px;
   }
 
+  .selected-flight {
+    background: #CAF4F1;
+    display: inline-block;
+    padding: 12px 24px;
+    position: relative;
+    border-radius: 54px;
+    margin-bottom: 1rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .edit-flight {
+      position: absolute;
+      right: -12px;
+      top: 12px;
+    }
+  }
+
   .form-group {
     .form-control {
       padding: 1.5rem 1rem 0.5rem;
@@ -170,141 +190,140 @@
       padding: 0.5rem 1rem;
     }
   }
+}
 
-  .flight-result {
-    border: 1px solid var(--gray-l-color);
-    border-bottom: 0;
-    transition: all 0.15s ease-in;
-    
-    &:hover {
-      box-shadow: 0 5px 10px rgba(0,0,0,.05);
-      cursor: pointer;
-    }  
-    
-    &:first-child {
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
+.flight-result {
+  border: 1px solid var(--gray-l-color);
+  border-bottom: 0;
+  transition: all 0.15s ease-in;
+  
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,.05);
+    cursor: pointer;
+  }  
+  
+  &:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 
-    &:last-child {
-      border-bottom: 1px solid var(--gray-l-color);
-    }
+  &:last-child {
+    border-bottom: 1px solid var(--gray-l-color);
+  }
+
+  .arrow-open {
+    display: none;
+  }
+
+  &.flight-result-open {
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,.05);
+    border-bottom: 1px solid var(--gray-l-color);
 
     .arrow-open {
+      display: block;
+    }
+
+    .arrow-closed {
       display: none;
     }
+  }
+  
+  .view-more-flight-button > .row {
+    align-items: center;
+    padding: 0 0.5rem;
 
-    &.flight-result-open {
-      margin-bottom: 1rem;
-      box-shadow: 0 5px 10px rgba(0,0,0,.05);
-      border-bottom: 1px solid var(--gray-l-color);
+    > .col {
+      padding: 1rem 0.5rem;
+    }
+  }
 
-      .arrow-open {
-        display: block;
-      }
+  .flight-result-logo img {
+    width: 35px;
+    height: auto;
+  }
 
-      .arrow-closed {
-        display: none;
-      }
+  .btn-rounded {
+    pointer-events: none;
+  }
+
+  .flight-result-detail {
+    border-top: 1px solid var(--gray-l-color);
+    padding: 1rem 1.5rem 1rem;
+  }
+}
+
+.flight-segment {
+  &:not(:first-child) {
+    padding-top: 1rem;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+
+  .flight-segment-item {
+    position: relative;
+    padding-left: 1rem;
+
+    .flight-segment-item-detail {
+      padding: 0.75rem 0 1.25rem;
+    }
+
+    img {
+      width: 20px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:before, &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 7px;
     }
     
-    .view-more-flight-button > .row {
-      align-items: center;
-      padding: 0 0.5rem;
-
-      > .col {
-        padding: 1rem 0.5rem;
-      }
+    &:before {
+      background: var(--secondary-color);
+      border-radius: 6px;
+      width: 6px;
+      height: 6px;
+      left: 0;
     }
-
-    .flight-result-logo img {
-      width: 35px;
-      height: auto;
-    }
-
-    .btn-rounded {
-      pointer-events: none;
-    }
-
-    .flight-result-detail {
-      border-top: 1px solid var(--gray-l-color);
-      padding: 1rem 1.5rem 1rem;
+    
+    &:after {
+      background: var(--gray-color);
+      width: 1px;
+      left: 3px;
+      top: 1.5rem;
+      bottom: 0.5rem;
     }
   }
 
-  .flight-segment {
-    &:not(:first-child) {
-      padding-top: 1rem;
-    }
-
-    &:not(:last-child) {
-      padding-bottom: 1rem;
-    }
-
-    .flight-segment-item {
-      position: relative;
-      padding-left: 1rem;
-
-      .flight-segment-item-detail {
-        padding: 0.75rem 0 1.25rem;
-      }
-
-      img {
-        width: 20px;
-      }
-
-      p {
-        margin-bottom: 0;
-      }
-
-      &:before, &:after {
-        content: ' ';
-        display: block;
-        position: absolute;
-        top: 7px;
-      }
+  .flight-segment-info {
+    padding: 0.5rem 0 0;
+    
+    .flight-segment-info-item {
+      padding: 0.25rem;
+      font-size: 0.8rem;
       
-      &:before {
-        background: var(--secondary-color);
-        border-radius: 6px;
-        width: 6px;
-        height: 6px;
-        left: 0;
-      }
-      
-      &:after {
-        background: var(--gray-color);
-        width: 1px;
-        left: 3px;
-        top: 1.5rem;
-        bottom: 0.5rem;
-      }
-    }
-
-    .flight-segment-info {
-      padding: 0.5rem 0 0;
-      
-      .flight-segment-info-item {
-        padding: 0.25rem;
-        font-size: 0.8rem;
-        
-        &:not(:last-child):after {
-          margin-left: 0.5rem;
-          content: '·';
-        }
+      &:not(:last-child):after {
+        margin-left: 0.5rem;
+        content: '·';
       }
     }
   }
+}
 
-  .flight-scale {
-    border-top: 1px solid var(--gray-l-color);
-    border-bottom: 1px solid var(--gray-l-color);
-    padding: 0.5rem;
-    font-size: 0.8rem;
-  }
+.flight-scale {
+  border-top: 1px solid var(--gray-l-color);
+  border-bottom: 1px solid var(--gray-l-color);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
 
-  .result-amenities li {
-    color: var(--body-l-color);
-  }
-
+.result-amenities li {
+  color: var(--body-l-color);
 }

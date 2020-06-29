@@ -63,31 +63,36 @@ body {
 
 /* Bootstrap reset */
 /* line 51, ../sass/reset.scss */
+hr {
+  border-color: var(--gray-xl-color);
+}
+
+/* line 55, ../sass/reset.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
-/* line 55, ../sass/reset.scss */
+/* line 59, ../sass/reset.scss */
 a {
   color: var(--primary-color);
 }
 
-/* line 59, ../sass/reset.scss */
+/* line 63, ../sass/reset.scss */
 .text-uppercase {
   letter-spacing: 2px;
 }
 
-/* line 63, ../sass/reset.scss */
+/* line 67, ../sass/reset.scss */
 .text-primary {
   color: var(--primary-color) !important;
 }
 
-/* line 67, ../sass/reset.scss */
+/* line 71, ../sass/reset.scss */
 .text-info {
   color: var(--secondary-color) !important;
 }
 
-/* line 71, ../sass/reset.scss */
+/* line 75, ../sass/reset.scss */
 .btn {
   border-radius: 50px;
   font-weight: 500;
@@ -98,29 +103,29 @@ a {
   font-size: 0.9rem;
   color: var(--primary-color);
 }
-/* line 81, ../sass/reset.scss */
+/* line 85, ../sass/reset.scss */
 .btn:hover {
   transform: translate(0, -2px);
 }
 
-/* line 86, ../sass/reset.scss */
+/* line 90, ../sass/reset.scss */
 .btn-default {
   background: #fff;
 }
 
-/* line 90, ../sass/reset.scss */
+/* line 94, ../sass/reset.scss */
 .btn-lg,
 .btn-hero {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* line 95, ../sass/reset.scss */
+/* line 99, ../sass/reset.scss */
 .btn-sm {
   padding: 0.5rem 1rem;
   font-size: 0.7rem;
 }
 
-/* line 100, ../sass/reset.scss */
+/* line 104, ../sass/reset.scss */
 .btn-rounded {
   width: 2rem;
   height: 2rem;
@@ -130,48 +135,48 @@ a {
   padding: 0;
 }
 
-/* line 109, ../sass/reset.scss */
+/* line 113, ../sass/reset.scss */
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
   color: #fff;
 }
-/* line 114, ../sass/reset.scss */
+/* line 118, ../sass/reset.scss */
 .btn-primary:hover, .btn-primary:focus {
   color: #fff;
   background: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
 
-/* line 121, ../sass/reset.scss */
+/* line 125, ../sass/reset.scss */
 .btn-info {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
   color: var(--primary-color) !important;
 }
-/* line 126, ../sass/reset.scss */
+/* line 130, ../sass/reset.scss */
 .btn-info:hover, .btn-info:focus {
   background: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
 }
 
-/* line 132, ../sass/reset.scss */
+/* line 136, ../sass/reset.scss */
 .btn-uppercase {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
-/* line 137, ../sass/reset.scss */
+/* line 141, ../sass/reset.scss */
 .btn-uppercase.btn-sm {
   font-size: 0.6rem;
 }
-/* line 141, ../sass/reset.scss */
+/* line 145, ../sass/reset.scss */
 .btn-uppercase.btn-lg {
   font-size: 0.9rem;
   padding: 1rem 2rem;
 }
 
-/* line 147, ../sass/reset.scss */
+/* line 151, ../sass/reset.scss */
 .btn-hero {
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -179,29 +184,29 @@ a {
   font-size: 0.8rem;
 }
 
-/* line 154, ../sass/reset.scss */
+/* line 158, ../sass/reset.scss */
 .container-fluid {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-/* line 159, ../sass/reset.scss */
+/* line 163, ../sass/reset.scss */
 .form-container {
   border-radius: 54px;
   overflow: hidden;
   border: 1px solid var(--gray-l-color);
 }
 
-/* line 165, ../sass/reset.scss */
+/* line 169, ../sass/reset.scss */
 .form-group {
   margin-bottom: 0;
   position: relative;
 }
-/* line 169, ../sass/reset.scss */
+/* line 173, ../sass/reset.scss */
 .form-group:not(:last-child) {
   border-right: 1px solid var(--gray-l-color);
 }
-/* line 173, ../sass/reset.scss */
+/* line 177, ../sass/reset.scss */
 .form-group label {
   padding: 0.5rem 2rem;
   margin-bottom: 0;
@@ -211,66 +216,66 @@ a {
   top: 0;
   pointer-events: none;
 }
-/* line 183, ../sass/reset.scss */
+/* line 187, ../sass/reset.scss */
 .form-group .form-control {
   background: #fff;
   border: 0;
   padding: 1.2rem 2rem 0.5rem;
   height: auto;
 }
-/* line 189, ../sass/reset.scss */
+/* line 193, ../sass/reset.scss */
 .form-group .form-control:focus {
   box-shadow: none;
   background: var(--gray-xl-color);
 }
 
-/* line 196, ../sass/reset.scss */
+/* line 200, ../sass/reset.scss */
 .badge {
   padding: 4px;
   font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* line 202, ../sass/reset.scss */
+/* line 206, ../sass/reset.scss */
 .badge-primary {
   background: #E5EAF4;
   color: var(--primary-color);
 }
 
-/* line 207, ../sass/reset.scss */
+/* line 211, ../sass/reset.scss */
 .badge-danger {
   background: #FDEDF0;
   color: var(--danger-color);
 }
 
 /* Helpers Classes */
-/* line 214, ../sass/reset.scss */
+/* line 218, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 218, ../sass/reset.scss */
+/* line 222, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 222, ../sass/reset.scss */
+/* line 226, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 226, ../sass/reset.scss */
+/* line 230, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
 }
 
-/* line 230, ../sass/reset.scss */
+/* line 234, ../sass/reset.scss */
 .search-small {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 1rem 1rem;
 }
-/* line 235, ../sass/reset.scss */
+/* line 239, ../sass/reset.scss */
 .search-small:hover {
   background: var(--gray-xl-color);
   text-decoration: none;
@@ -658,186 +663,229 @@ body {
   width: 420px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 122, ../sass/results.scss */
-.reserve-modal .reserve-modal-image {
+
+/* line 124, ../sass/results.scss */
+.reserve-modal-image {
   height: 16.666%;
   overflow: hidden;
   position: relative;
 }
-/* line 127, ../sass/results.scss */
-.reserve-modal .reserve-modal-image img {
+/* line 129, ../sass/results.scss */
+.reserve-modal-image img {
   position: absolute;
   bottom: -32%;
 }
-/* line 133, ../sass/results.scss */
-.reserve-modal .reserve-card {
+
+/* line 135, ../sass/results.scss */
+.reserve-card {
   border-bottom: 1px solid var(--gray-l-color);
   padding: 0.75rem 0;
 }
-/* line 137, ../sass/results.scss */
-.reserve-modal .reserve-card .reserve-card-title {
+/* line 139, ../sass/results.scss */
+.reserve-card .reserve-card-title {
   font-size: 0.6rem;
   margin-bottom: 0.25rem;
 }
-/* line 142, ../sass/results.scss */
-.reserve-modal .reserve-card p {
+/* line 144, ../sass/results.scss */
+.reserve-card p {
   margin-bottom: 0;
 }
 
-/* line 150, ../sass/results.scss */
+/* line 151, ../sass/results.scss */
 .flights-results {
   margin-bottom: 4rem;
 }
-/* line 153, ../sass/results.scss */
+/* line 154, ../sass/results.scss */
 .flights-results .flights-search-container {
   padding: 1.5rem 0;
 }
-/* line 157, ../sass/results.scss */
+/* line 158, ../sass/results.scss */
 .flights-results .toggle-destination {
   top: 14px;
 }
 /* line 162, ../sass/results.scss */
+.flights-results .selected-flight {
+  background: #CAF4F1;
+  display: inline-block;
+  padding: 12px 24px;
+  position: relative;
+  border-radius: 54px;
+  margin-bottom: 1rem;
+}
+/* line 170, ../sass/results.scss */
+.flights-results .selected-flight:hover {
+  text-decoration: none;
+}
+/* line 174, ../sass/results.scss */
+.flights-results .selected-flight .edit-flight {
+  position: absolute;
+  right: -12px;
+  top: 12px;
+}
+/* line 182, ../sass/results.scss */
 .flights-results .form-group .form-control {
   padding: 1.5rem 1rem 0.5rem;
   min-width: 110px;
   max-width: 130px;
   font-size: 0.8rem;
 }
-/* line 169, ../sass/results.scss */
+/* line 189, ../sass/results.scss */
 .flights-results .form-group label {
   padding: 0.5rem 1rem;
 }
-/* line 174, ../sass/results.scss */
-.flights-results .flight-result {
+
+/* line 195, ../sass/results.scss */
+.flight-result {
   border: 1px solid var(--gray-l-color);
   border-bottom: 0;
   transition: all 0.15s ease-in;
 }
-/* line 179, ../sass/results.scss */
-.flights-results .flight-result:hover {
+/* line 200, ../sass/results.scss */
+.flight-result:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
-/* line 184, ../sass/results.scss */
-.flights-results .flight-result:first-child {
+/* line 205, ../sass/results.scss */
+.flight-result:first-child {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 189, ../sass/results.scss */
-.flights-results .flight-result:last-child {
+/* line 210, ../sass/results.scss */
+.flight-result:last-child {
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 193, ../sass/results.scss */
-.flights-results .flight-result .arrow-open {
+/* line 214, ../sass/results.scss */
+.flight-result .arrow-open {
   display: none;
 }
-/* line 197, ../sass/results.scss */
-.flights-results .flight-result.flight-result-open {
+/* line 218, ../sass/results.scss */
+.flight-result.flight-result-open {
   margin-bottom: 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 202, ../sass/results.scss */
-.flights-results .flight-result.flight-result-open .arrow-open {
+/* line 223, ../sass/results.scss */
+.flight-result.flight-result-open .arrow-open {
   display: block;
 }
-/* line 206, ../sass/results.scss */
-.flights-results .flight-result.flight-result-open .arrow-closed {
+/* line 227, ../sass/results.scss */
+.flight-result.flight-result-open .arrow-closed {
   display: none;
 }
-/* line 211, ../sass/results.scss */
-.flights-results .flight-result .view-more-flight-button > .row {
+/* line 232, ../sass/results.scss */
+.flight-result .view-more-flight-button > .row {
   align-items: center;
   padding: 0 0.5rem;
 }
-/* line 215, ../sass/results.scss */
-.flights-results .flight-result .view-more-flight-button > .row > .col {
+/* line 236, ../sass/results.scss */
+.flight-result .view-more-flight-button > .row > .col {
   padding: 1rem 0.5rem;
 }
-/* line 220, ../sass/results.scss */
-.flights-results .flight-result .flight-result-logo img {
+/* line 241, ../sass/results.scss */
+.flight-result .flight-result-logo img {
   width: 35px;
   height: auto;
 }
-/* line 225, ../sass/results.scss */
-.flights-results .flight-result .btn-rounded {
+/* line 246, ../sass/results.scss */
+.flight-result .btn-rounded {
   pointer-events: none;
 }
-/* line 229, ../sass/results.scss */
-.flights-results .flight-result .flight-result-detail {
+/* line 250, ../sass/results.scss */
+.flight-result .flight-result-detail {
   border-top: 1px solid var(--gray-l-color);
   padding: 1rem 1.5rem 1rem;
 }
-/* line 236, ../sass/results.scss */
-.flights-results .flight-segment:not(:first-child) {
+
+/* line 257, ../sass/results.scss */
+.flight-segment:not(:first-child) {
   padding-top: 1rem;
 }
-/* line 240, ../sass/results.scss */
-.flights-results .flight-segment:not(:last-child) {
+/* line 261, ../sass/results.scss */
+.flight-segment:not(:last-child) {
   padding-bottom: 1rem;
 }
-/* line 244, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item {
+/* line 265, ../sass/results.scss */
+.flight-segment .flight-segment-item {
   position: relative;
   padding-left: 1rem;
 }
-/* line 248, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item .flight-segment-item-detail {
+/* line 269, ../sass/results.scss */
+.flight-segment .flight-segment-item .flight-segment-item-detail {
   padding: 0.75rem 0 1.25rem;
 }
-/* line 252, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item img {
+/* line 273, ../sass/results.scss */
+.flight-segment .flight-segment-item img {
   width: 20px;
 }
-/* line 256, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item p {
+/* line 277, ../sass/results.scss */
+.flight-segment .flight-segment-item p {
   margin-bottom: 0;
 }
-/* line 260, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item:before, .flights-results .flight-segment .flight-segment-item:after {
+/* line 281, ../sass/results.scss */
+.flight-segment .flight-segment-item:before, .flight-segment .flight-segment-item:after {
   content: ' ';
   display: block;
   position: absolute;
   top: 7px;
 }
-/* line 267, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item:before {
+/* line 288, ../sass/results.scss */
+.flight-segment .flight-segment-item:before {
   background: var(--secondary-color);
   border-radius: 6px;
   width: 6px;
   height: 6px;
   left: 0;
 }
-/* line 275, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-item:after {
+/* line 296, ../sass/results.scss */
+.flight-segment .flight-segment-item:after {
   background: var(--gray-color);
   width: 1px;
   left: 3px;
   top: 1.5rem;
   bottom: 0.5rem;
 }
-/* line 284, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-info {
+/* line 305, ../sass/results.scss */
+.flight-segment .flight-segment-info {
   padding: 0.5rem 0 0;
 }
-/* line 287, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-info .flight-segment-info-item {
+/* line 308, ../sass/results.scss */
+.flight-segment .flight-segment-info .flight-segment-info-item {
   padding: 0.25rem;
   font-size: 0.8rem;
 }
-/* line 291, ../sass/results.scss */
-.flights-results .flight-segment .flight-segment-info .flight-segment-info-item:not(:last-child):after {
+/* line 312, ../sass/results.scss */
+.flight-segment .flight-segment-info .flight-segment-info-item:not(:last-child):after {
   margin-left: 0.5rem;
   content: '·';
 }
-/* line 299, ../sass/results.scss */
-.flights-results .flight-scale {
+
+/* line 320, ../sass/results.scss */
+.flight-scale {
   border-top: 1px solid var(--gray-l-color);
   border-bottom: 1px solid var(--gray-l-color);
   padding: 0.5rem;
   font-size: 0.8rem;
 }
-/* line 306, ../sass/results.scss */
-.flights-results .result-amenities li {
+
+/* line 327, ../sass/results.scss */
+.result-amenities li {
   color: var(--body-l-color);
+}
+
+/* line 3, ../sass/flight-details.scss */
+.flight-details .flight-details-main {
+  padding: 1.5rem;
+}
+/* line 6, ../sass/flight-details.scss */
+.flight-details .flight-details-main .flight-result {
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+/* line 12, ../sass/flight-details.scss */
+.flight-details .flight-reserve {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 88px;
+  bottom: 0;
+  right: 0;
 }
