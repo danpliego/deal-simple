@@ -193,23 +193,35 @@ a {
   background: var(--gray-xl-color);
 }
 
+/* line 182, ../sass/reset.scss */
+.search-small {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem 1rem 1rem;
+}
+/* line 187, ../sass/reset.scss */
+.search-small:hover {
+  background: var(--gray-xl-color);
+  text-decoration: none;
+}
+
 /* Helpers Classes */
-/* line 184, ../sass/reset.scss */
+/* line 195, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 188, ../sass/reset.scss */
+/* line 199, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 192, ../sass/reset.scss */
+/* line 203, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 196, ../sass/reset.scss */
+/* line 207, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
 }

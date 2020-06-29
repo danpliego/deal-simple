@@ -138,3 +138,21 @@
     }
   }
 }
+
+// Vuelos
+
+.flights-results {
+  background: teal;
+
+  .form-group {
+    .form-control {
+      padding: 1.5rem 1rem 0.5rem;
+      min-width: 110px;
+      max-width: 130px;
+    }
+
+    label {
+      padding: 0.5rem 1rem;
+    }
+  }
+}

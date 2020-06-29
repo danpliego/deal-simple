@@ -1,10 +1,10 @@
-/* line 3, ../sass/hotels.scss */
+/* line 3, ../sass/results.scss */
 .results-header {
   padding: 1rem;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  /* line 3, ../sass/hotels.scss */
+  /* line 3, ../sass/results.scss */
   .results-header {
     position: sticky;
     top: 88px;
@@ -12,25 +12,25 @@
     z-index: 1000;
   }
 }
-/* line 14, ../sass/hotels.scss */
+/* line 14, ../sass/results.scss */
 .results-header .form-control {
   max-width: 250px;
   font-size: 0.8rem;
 }
 
-/* line 19, ../sass/hotels.scss */
+/* line 19, ../sass/results.scss */
 .results-main {
   padding: 0 1rem;
 }
 @media (min-width: 768px) {
-  /* line 19, ../sass/hotels.scss */
+  /* line 19, ../sass/results.scss */
   .results-main {
     width: calc(70% - 3rem);
     padding-left: 2rem;
   }
 }
 
-/* line 28, ../sass/hotels.scss */
+/* line 28, ../sass/results.scss */
 .results-map {
   width: 30%;
   position: fixed;
@@ -41,61 +41,61 @@
   border-radius: 8px;
   overflow: hidden;
 }
-/* line 38, ../sass/hotels.scss */
+/* line 38, ../sass/results.scss */
 .results-map iframe {
   width: 100%;
   height: 100%;
 }
 
-/* line 46, ../sass/hotels.scss */
+/* line 46, ../sass/results.scss */
 .result-card {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 51, ../sass/hotels.scss */
+/* line 51, ../sass/results.scss */
 .result-card .result-name {
   font-size: 1.1rem;
 }
-/* line 55, ../sass/hotels.scss */
+/* line 55, ../sass/results.scss */
 .result-card .result-image-link {
   display: block;
   border-radius: 8px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 55, ../sass/hotels.scss */
+  /* line 55, ../sass/results.scss */
   .result-card .result-image-link {
     margin-right: 1rem;
   }
 }
-/* line 65, ../sass/hotels.scss */
+/* line 65, ../sass/results.scss */
 .result-card .result-amenities li {
   font-size: 0.7rem;
   font-weight: 500;
 }
-/* line 70, ../sass/hotels.scss */
+/* line 70, ../sass/results.scss */
 .result-card .results-price-currency {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-/* line 75, ../sass/hotels.scss */
+/* line 75, ../sass/results.scss */
 .result-card .results-details {
   border-top: 1px solid var(--gray-l-color);
   margin-top: 1.5rem;
   padding-top: 1.5rem;
 }
-/* line 81, ../sass/hotels.scss */
+/* line 81, ../sass/results.scss */
 .result-card .room-card {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-/* line 85, ../sass/hotels.scss */
+/* line 85, ../sass/results.scss */
 .result-card .room-card:not(:last-child) {
   border-bottom: 1px solid var(--gray-l-color);
 }
 
-/* line 91, ../sass/hotels.scss */
+/* line 91, ../sass/results.scss */
 .reserve-modal {
   position: fixed;
   z-index: 1010;
@@ -104,7 +104,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 99, ../sass/hotels.scss */
+/* line 99, ../sass/results.scss */
 .reserve-modal .reserve-modal-backdrop {
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -112,7 +112,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 107, ../sass/hotels.scss */
+/* line 107, ../sass/results.scss */
 .reserve-modal .reserve-modal-content {
   background: #fff;
   right: 0;
@@ -121,28 +121,43 @@
   width: 420px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
-/* line 116, ../sass/hotels.scss */
+/* line 116, ../sass/results.scss */
 .reserve-modal .reserve-modal-image {
   height: 16.666%;
   overflow: hidden;
   position: relative;
 }
-/* line 121, ../sass/hotels.scss */
+/* line 121, ../sass/results.scss */
 .reserve-modal .reserve-modal-image img {
   position: absolute;
   bottom: -32%;
 }
-/* line 127, ../sass/hotels.scss */
+/* line 127, ../sass/results.scss */
 .reserve-modal .reserve-card {
   border-bottom: 1px solid var(--gray-l-color);
   padding: 0.75rem 0;
 }
-/* line 131, ../sass/hotels.scss */
+/* line 131, ../sass/results.scss */
 .reserve-modal .reserve-card .reserve-card-title {
   font-size: 0.6rem;
   margin-bottom: 0.25rem;
 }
-/* line 136, ../sass/hotels.scss */
+/* line 136, ../sass/results.scss */
 .reserve-modal .reserve-card p {
   margin-bottom: 0;
+}
+
+/* line 144, ../sass/results.scss */
+.flights-results {
+  background: teal;
+}
+/* line 148, ../sass/results.scss */
+.flights-results .form-group .form-control {
+  padding: 1.5rem 1rem 0.5rem;
+  min-width: 110px;
+  max-width: 130px;
+}
+/* line 154, ../sass/results.scss */
+.flights-results .form-group label {
+  padding: 0.5rem 1rem;
 }
