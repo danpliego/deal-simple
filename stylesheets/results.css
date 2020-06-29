@@ -147,17 +147,45 @@
   margin-bottom: 0;
 }
 
-/* line 144, ../sass/results.scss */
-.flights-results {
-  background: teal;
+/* line 146, ../sass/results.scss */
+.flights-results .flights-search-container {
+  padding: 1.5rem 0;
 }
-/* line 148, ../sass/results.scss */
+/* line 150, ../sass/results.scss */
+.flights-results .toggle-destination {
+  top: 14px;
+}
+/* line 155, ../sass/results.scss */
 .flights-results .form-group .form-control {
   padding: 1.5rem 1rem 0.5rem;
   min-width: 110px;
   max-width: 130px;
+  font-size: 0.8rem;
 }
-/* line 154, ../sass/results.scss */
+/* line 162, ../sass/results.scss */
 .flights-results .form-group label {
   padding: 0.5rem 1rem;
+}
+/* line 167, ../sass/results.scss */
+.flights-results .flight-result {
+  border: 1px solid var(--gray-l-color);
+  transition: all 0.15s ease-in;
+}
+/* line 171, ../sass/results.scss */
+.flights-results .flight-result:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+/* line 176, ../sass/results.scss */
+.flights-results .flight-result:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* line 181, ../sass/results.scss */
+.flights-results .flight-result .row {
+  align-items: center;
+}
+/* line 184, ../sass/results.scss */
+.flights-results .flight-result .col {
+  padding: 1rem 0.5rem;
 }

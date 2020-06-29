@@ -92,6 +92,11 @@ a {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15) !important;
 }
 
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
@@ -145,7 +150,7 @@ a {
 .form-container {
   border-radius: 54px;
   overflow: hidden;
-  border: 1px solid var(--gray-color);
+  border: 1px solid var(--gray-l-color);
 }
 
 .form-group {

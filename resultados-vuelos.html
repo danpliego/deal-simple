@@ -50,7 +50,7 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col col-lg-10 offset-lg-1">
-            <div class="results-header flights-search-container">
+            <div class="flights-search-container">
               <form action="#">
                 <div>
                   <div class="form-container mb-3">
@@ -101,17 +101,20 @@
 
             <div class="row no-gutters">
               <div class="col">
-                <h4 class="text-primary font-weight-bold">
+                <h3 class="text-primary">
                   Selecciona un vuelo de ida
-                </h4>
+                </h3>
               </div>
               <div class="col col-auto">
-                <select class="custom-select">
-                  <option selected>Ordenar por: </option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <div class="dropdown">
+                  <a href="#" class="filter" data-toggle="dropdown">
+                    Ordenar por: Menor precio
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -125,7 +128,7 @@
                 <div class="dropdown-menu">
                   <p class="dropdown-title">Categoría</p>
                   <div class="dropdown-options">
-                    hola
+                    price
                   </div>
                   <div class="dropdown-footer">
                     <a href="#" class="btn btn-link">Borrar</a>
@@ -157,10 +160,10 @@
               </div>
               <div class="dropdown col-auto">
                 <a href="#" class="filter filter-active" data-toggle="dropdown">
-                  3 estrellas
+                  Escalas
                 </a>
                 <div class="dropdown-menu">
-                  <p class="dropdown-title">Categoría</p>
+                  <p class="dropdown-title">Horarios</p>
                   <div class="dropdown-options">
                     <div class="dropdown-check">
                       <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -181,36 +184,127 @@
                   </div>
                 </div>
               </div>
+
               <div class="dropdown col-auto">
                 <a href="#" class="filter" data-toggle="dropdown">
-                  Marca
+                  Horario salida
                 </a>
                 <div class="dropdown-menu">
-                  <p class="dropdown-title">Marca</p>
-                  
-                  <div class="dropdown-check">
-                    <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      Default radio
-                    </label>
+                  <p class="dropdown-title">Categoría</p>
+                  <div class="dropdown-options">
+                    price
                   </div>
-                  <div class="dropdown-check">
-                    <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Second default radio
-                    </label>
+                  <div class="dropdown-footer">
+                    <a href="#" class="btn btn-link">Borrar</a>
+                    <a href="#" class="btn btn-primary">Aplicar</a>
                   </div>
-      
+                </div>
+              </div>
+
+              <div class="dropdown col-auto">
+                <a href="#" class="filter" data-toggle="dropdown">
+                  Equipaje
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-title">Horarios</p>
+                  <div class="dropdown-options">
+                    <div class="dropdown-check">
+                      <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="dropdown-check">
+                      <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#" class="btn btn-link">Borrar</a>
+                    <a href="#" class="btn btn-primary">Aplicar</a>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="dropdown col-auto">
+                <a href="#" class="filter" data-toggle="dropdown">
+                  Aerolinea
+                </a>
+                <div class="dropdown-menu">
+                  <p class="dropdown-title">Aerolineas</p>
+                  <div class="dropdown-options">
+                    <div class="dropdown-check">
+                      <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="dropdown-check">
+                      <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                      </label>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#" class="btn btn-link">Borrar</a>
+                    <a href="#" class="btn btn-primary">Aplicar</a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <p class="text-secondary mb-0 font-xs font-medium">Se encontraron 25 ofertas</p>
-
-
-            <div class="flights-results-main">
-
+            
+            <div class="flight-results-main mt-4">
+              <div class="flight-result" data-toggle="collapse" href="#results_detail_unique_id">
+                <div class="row no-gutters">
+                  <div class="col col-auto">
+                    <img src="/latam.jpg" alt="">
+                  </div>
+                  <div class="col">
+                    <p class="mb-0">23:50 — 11:55 <span class="text-top">+1</span></p>
+                    <p class="mb-0 text-secondary font-xxs">Latam</p>
+                  </div>
+                  <div class="col col-auto">
+                    <p class="mb-0">11 hr 05min</p>
+                    <p class="mb-0 text-secondary font-xxs">LIM - JFK</p>
+                  </div>
+                  <div class="col col-auto">
+                    <p class="mb-0">1 escala</p>
+                    <p class="mb-0 text-secondary font-xxs">2h 55min</p>
+                  </div>
+                  <div class="col col-auto">
+                    <p class="mb-0 text-secondary font-xxs">Total desde</p>
+                    <p class="mb-0">
+                      <strong class="text-primary">$290 USD</strong>
+                      <span class="text-secondary">USD</span>
+                    </p>
+                  </div>
+                  <div class="col col-auto">
+                    <a href="resultados-vuelos-vuelta.html" class="btn btn-primary btn-sm">Seleccionar vuelo</a>
+                  </div>
+                  <div class="col col-auto">
+                    <a class="btn btn-default btn-rounded view-more-button">
+                      <span class="view-more-text">
+                        <i class="ml-1 fas fa-angle-down"></i>
+                      </span>
+                      <span class="view-more-text d-none">
+                        <i class="ml-1 fas fa-angle-up"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>                
+                <div class="flight-result-detail collapse" id="results_detail_unique_id">
+                  hey bitches
+                </div>
+              </div>
             </div>
+
+
           </div>
         </div>
       </div>

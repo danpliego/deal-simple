@@ -142,17 +142,48 @@
 // Vuelos
 
 .flights-results {
-  background: teal;
+
+  .flights-search-container {
+    padding: 1.5rem 0;
+  }
+
+  .toggle-destination {
+    top: 14px;
+  }
 
   .form-group {
     .form-control {
       padding: 1.5rem 1rem 0.5rem;
       min-width: 110px;
       max-width: 130px;
+      font-size: 0.8rem;
     }
 
     label {
       padding: 0.5rem 1rem;
     }
   }
+
+  .flight-result {
+    border: 1px solid var(--gray-l-color);
+    transition: all 0.15s ease-in;
+    
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0,0,0,.05);
+      cursor: pointer;
+    }  
+    
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    
+    .row {
+      align-items: center;
+    }
+    .col {
+      padding: 1rem 0.5rem;
+    }
+  }
+
 }
