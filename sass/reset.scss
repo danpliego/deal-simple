@@ -97,6 +97,15 @@ a {
   font-size: 0.7rem;
 }
 
+.btn-rounded {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
@@ -184,15 +193,20 @@ a {
   }
 }
 
-.search-small {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1.25rem 1rem 1rem;
+.badge {
+  padding: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
 
-  &:hover {
-    background: var(--gray-xl-color);
-    text-decoration: none;
-  }
+.badge-primary {
+  background: #E5EAF4;
+  color: var(--primary-color);
+}
+
+.badge-danger {
+  background: #FDEDF0;
+  color: var(--danger-color);
 }
 
 /* Helpers Classes */
@@ -211,4 +225,15 @@ a {
 
 .font-medium {
   font-weight: 500;
+}
+
+.search-small {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem 1rem 1rem;
+
+  &:hover {
+    background: var(--gray-xl-color);
+    text-decoration: none;
+  }
 }

@@ -106,47 +106,57 @@ a {
 }
 
 /* line 100, ../sass/reset.scss */
+.btn-rounded {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* line 109, ../sass/reset.scss */
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
   color: #fff;
 }
-/* line 105, ../sass/reset.scss */
+/* line 114, ../sass/reset.scss */
 .btn-primary:hover, .btn-primary:focus {
   color: #fff;
   background: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
 
-/* line 112, ../sass/reset.scss */
+/* line 121, ../sass/reset.scss */
 .btn-info {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
   color: var(--primary-color) !important;
 }
-/* line 117, ../sass/reset.scss */
+/* line 126, ../sass/reset.scss */
 .btn-info:hover, .btn-info:focus {
   background: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
 }
 
-/* line 123, ../sass/reset.scss */
+/* line 132, ../sass/reset.scss */
 .btn-uppercase {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
-/* line 128, ../sass/reset.scss */
+/* line 137, ../sass/reset.scss */
 .btn-uppercase.btn-sm {
   font-size: 0.6rem;
 }
-/* line 132, ../sass/reset.scss */
+/* line 141, ../sass/reset.scss */
 .btn-uppercase.btn-lg {
   font-size: 0.9rem;
   padding: 1rem 2rem;
 }
 
-/* line 138, ../sass/reset.scss */
+/* line 147, ../sass/reset.scss */
 .btn-hero {
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -154,29 +164,29 @@ a {
   font-size: 0.8rem;
 }
 
-/* line 145, ../sass/reset.scss */
+/* line 154, ../sass/reset.scss */
 .container-fluid {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-/* line 150, ../sass/reset.scss */
+/* line 159, ../sass/reset.scss */
 .form-container {
   border-radius: 54px;
   overflow: hidden;
   border: 1px solid var(--gray-l-color);
 }
 
-/* line 156, ../sass/reset.scss */
+/* line 165, ../sass/reset.scss */
 .form-group {
   margin-bottom: 0;
   position: relative;
 }
-/* line 160, ../sass/reset.scss */
+/* line 169, ../sass/reset.scss */
 .form-group:not(:last-child) {
   border-right: 1px solid var(--gray-l-color);
 }
-/* line 164, ../sass/reset.scss */
+/* line 173, ../sass/reset.scss */
 .form-group label {
   padding: 0.5rem 2rem;
   margin-bottom: 0;
@@ -186,48 +196,67 @@ a {
   top: 0;
   pointer-events: none;
 }
-/* line 174, ../sass/reset.scss */
+/* line 183, ../sass/reset.scss */
 .form-group .form-control {
   background: #fff;
   border: 0;
   padding: 1.2rem 2rem 0.5rem;
   height: auto;
 }
-/* line 180, ../sass/reset.scss */
+/* line 189, ../sass/reset.scss */
 .form-group .form-control:focus {
   box-shadow: none;
   background: var(--gray-xl-color);
 }
 
-/* line 187, ../sass/reset.scss */
+/* line 196, ../sass/reset.scss */
+.badge {
+  padding: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* line 202, ../sass/reset.scss */
+.badge-primary {
+  background: #E5EAF4;
+  color: var(--primary-color);
+}
+
+/* line 207, ../sass/reset.scss */
+.badge-danger {
+  background: #FDEDF0;
+  color: var(--danger-color);
+}
+
+/* Helpers Classes */
+/* line 214, ../sass/reset.scss */
+.font-sm {
+  font-size: 0.9rem;
+}
+
+/* line 218, ../sass/reset.scss */
+.font-xs {
+  font-size: 0.8rem;
+}
+
+/* line 222, ../sass/reset.scss */
+.font-xxs {
+  font-size: 0.7rem;
+}
+
+/* line 226, ../sass/reset.scss */
+.font-medium {
+  font-weight: 500;
+}
+
+/* line 230, ../sass/reset.scss */
 .search-small {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 1rem 1rem;
 }
-/* line 192, ../sass/reset.scss */
+/* line 235, ../sass/reset.scss */
 .search-small:hover {
   background: var(--gray-xl-color);
   text-decoration: none;
-}
-
-/* Helpers Classes */
-/* line 200, ../sass/reset.scss */
-.font-sm {
-  font-size: 0.9rem;
-}
-
-/* line 204, ../sass/reset.scss */
-.font-xs {
-  font-size: 0.8rem;
-}
-
-/* line 208, ../sass/reset.scss */
-.font-xxs {
-  font-size: 0.7rem;
-}
-
-/* line 212, ../sass/reset.scss */
-.font-medium {
-  font-weight: 500;
 }

@@ -41,6 +41,17 @@
   }
 }
 
+.result-amenities li {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+
+  i {
+    width: 1rem;
+    text-align: center;
+  }
+}
+
 // Result Card
 
 .result-card {
@@ -60,11 +71,6 @@
     @media (min-width: 768px) {
       margin-right: 1rem;
     }
-  }
-  
-  .result-amenities li {
-    font-size: 0.7rem;
-    font-weight: 500;
   }
   
   .results-price-currency {
@@ -142,6 +148,7 @@
 // Vuelos
 
 .flights-results {
+  margin-bottom: 4rem;
 
   .flights-search-container {
     padding: 1.5rem 0;
@@ -166,6 +173,7 @@
 
   .flight-result {
     border: 1px solid var(--gray-l-color);
+    border-bottom: 0;
     transition: all 0.15s ease-in;
     
     &:hover {
@@ -177,13 +185,126 @@
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
     }
+
+    &:last-child {
+      border-bottom: 1px solid var(--gray-l-color);
+    }
+
+    .arrow-open {
+      display: none;
+    }
+
+    &.flight-result-open {
+      margin-bottom: 1rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,.05);
+      border-bottom: 1px solid var(--gray-l-color);
+
+      .arrow-open {
+        display: block;
+      }
+
+      .arrow-closed {
+        display: none;
+      }
+    }
     
-    .row {
+    .view-more-flight-button > .row {
       align-items: center;
+      padding: 0 0.5rem;
+
+      > .col {
+        padding: 1rem 0.5rem;
+      }
     }
-    .col {
-      padding: 1rem 0.5rem;
+
+    .flight-result-logo img {
+      width: 35px;
+      height: auto;
     }
+
+    .btn-rounded {
+      pointer-events: none;
+    }
+
+    .flight-result-detail {
+      border-top: 1px solid var(--gray-l-color);
+      padding: 1.25rem 1.5rem 1.5rem;
+    }
+  }
+
+  .flight-segment {
+    &:not(:first-child) {
+      padding-top: 1rem;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 1rem;
+    }
+
+    .flight-segment-item {
+      position: relative;
+      padding-left: 1rem;
+
+      .flight-segment-item-detail {
+        padding: 0.75rem 0 1.25rem;
+      }
+
+      img {
+        width: 20px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      &:before, &:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 7px;
+      }
+      
+      &:before {
+        background: var(--secondary-color);
+        border-radius: 6px;
+        width: 6px;
+        height: 6px;
+        left: 0;
+      }
+      
+      &:after {
+        background: var(--gray-color);
+        width: 1px;
+        left: 3px;
+        top: 1.5rem;
+        bottom: 0.5rem;
+      }
+    }
+
+    .flight-segment-info {
+      padding: 0.5rem 0 0;
+      
+      .flight-segment-info-item {
+        padding: 0.25rem;
+        font-size: 0.8rem;
+        
+        &:not(:last-child):after {
+          margin-left: 0.5rem;
+          content: '·';
+        }
+      }
+    }
+  }
+
+  .flight-scale {
+    border-top: 1px solid var(--gray-l-color);
+    border-bottom: 1px solid var(--gray-l-color);
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .result-amenities li {
+    color: var(--body-l-color);
   }
 
 }
