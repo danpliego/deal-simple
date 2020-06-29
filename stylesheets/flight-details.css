@@ -15,3 +15,28 @@
   bottom: 0;
   right: 0;
 }
+
+/* line 21, ../sass/flight-details.scss */
+.payment-success-message {
+  display: flex;
+  align-items: center;
+  background: #E5EAF4;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+/* line 31, ../sass/flight-details.scss */
+.payment-success-message .payment-success-icon i {
+  background: var(--secondary-color);
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #fff;
+  margin-right: 1rem;
+}

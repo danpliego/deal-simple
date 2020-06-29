@@ -133,7 +133,10 @@
 }
 
 .reserve-card {
-  border-bottom: 1px solid var(--gray-l-color);
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--gray-l-color);
+  }
+  
   padding: 0.75rem 0;
 
   .reserve-card-title {
