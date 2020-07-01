@@ -1,0 +1,4 @@
+/* line 2, ../sass/admin.scss */
+.reservas-page .form-small .form-group .form-control {
+  max-width: none !important;
+}
