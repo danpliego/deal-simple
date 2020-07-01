@@ -176,91 +176,52 @@ a {
 }
 
 /* line 163, ../sass/reset.scss */
-.form-container {
-  border-radius: 54px;
-  overflow: hidden;
-  border: 1px solid var(--gray-l-color);
-}
-
-/* line 169, ../sass/reset.scss */
-.form-group {
-  margin-bottom: 0;
-  position: relative;
-}
-/* line 173, ../sass/reset.scss */
-.form-group:not(:last-child) {
-  border-right: 1px solid var(--gray-l-color);
-}
-/* line 177, ../sass/reset.scss */
-.form-group label {
-  padding: 0.5rem 2rem;
-  margin-bottom: 0;
-  font-size: 0.7rem;
-  color: var(--body-l-color);
-  position: absolute;
-  top: 0;
-  pointer-events: none;
-}
-/* line 187, ../sass/reset.scss */
-.form-group .form-control {
-  background: #fff;
-  border: 0;
-  padding: 1.2rem 2rem 0.5rem;
-  height: auto;
-}
-/* line 193, ../sass/reset.scss */
-.form-group .form-control:focus {
-  box-shadow: none;
-  background: var(--gray-xl-color);
-}
-
-/* line 200, ../sass/reset.scss */
 .badge {
   padding: 4px;
   font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* line 206, ../sass/reset.scss */
+/* line 169, ../sass/reset.scss */
 .badge-primary {
   background: #E5EAF4;
   color: var(--primary-color);
 }
 
-/* line 211, ../sass/reset.scss */
+/* line 174, ../sass/reset.scss */
 .badge-danger {
   background: #FDEDF0;
   color: var(--danger-color);
 }
 
 /* Helpers Classes */
-/* line 218, ../sass/reset.scss */
+/* line 181, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 222, ../sass/reset.scss */
+/* line 185, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 226, ../sass/reset.scss */
+/* line 189, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 230, ../sass/reset.scss */
+/* line 193, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
 }
 
-/* line 234, ../sass/reset.scss */
+/* line 197, ../sass/reset.scss */
 .search-small {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 1rem 1rem;
 }
-/* line 239, ../sass/reset.scss */
+/* line 202, ../sass/reset.scss */
 .search-small:hover {
   background: var(--gray-xl-color);
   text-decoration: none;

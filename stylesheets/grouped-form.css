@@ -1,0 +1,72 @@
+/* line 1, ../sass/grouped-form.scss */
+.form-container {
+  border-radius: 54px;
+  overflow: hidden;
+  border: 1px solid var(--gray-l-color);
+}
+
+/* line 7, ../sass/grouped-form.scss */
+.form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 11, ../sass/grouped-form.scss */
+.form-group:not(:last-child) {
+  border-right: 1px solid var(--gray-l-color);
+}
+/* line 15, ../sass/grouped-form.scss */
+.form-group label {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+/* line 25, ../sass/grouped-form.scss */
+.form-group .form-control {
+  background: #fff;
+  border: 0;
+  padding: 1.2rem 2rem 0.5rem;
+  height: auto;
+}
+/* line 31, ../sass/grouped-form.scss */
+.form-group .form-control:focus {
+  box-shadow: none;
+  background: var(--gray-xl-color);
+}
+
+/* line 39, ../sass/grouped-form.scss */
+.form-inline.form-container {
+  display: inline-flex;
+  border-radius: 56px;
+}
+/* line 44, ../sass/grouped-form.scss */
+.form-inline .form-group {
+  position: relative;
+}
+/* line 47, ../sass/grouped-form.scss */
+.form-inline .form-group .form-control {
+  padding: 1.75rem 1.5rem 0.75rem;
+  border-radius: 0;
+  border-bottom: 0;
+  min-width: 140px;
+  max-width: 160px;
+}
+/* line 55, ../sass/grouped-form.scss */
+.form-inline .form-group:not(:last-child) .form-control {
+  border-bottom: 0;
+}
+
+/* line 63, ../sass/grouped-form.scss */
+.form-small .form-group .form-control {
+  padding: 1.5rem 1rem 0.5rem;
+  min-width: 110px;
+  max-width: 130px;
+  font-size: 0.8rem;
+}
+/* line 70, ../sass/grouped-form.scss */
+.form-small .form-group label {
+  padding: 0.5rem 1rem;
+}

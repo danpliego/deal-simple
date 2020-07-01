@@ -160,43 +160,6 @@ a {
   padding-right: 2rem;
 }
 
-.form-container {
-  border-radius: 54px;
-  overflow: hidden;
-  border: 1px solid var(--gray-l-color);
-}
-
-.form-group {
-  margin-bottom: 0;
-  position: relative;
-  
-  &:not(:last-child) {
-    border-right: 1px solid var(--gray-l-color);
-  }
-
-  label {
-    padding: 0.5rem 2rem;
-    margin-bottom: 0;
-    font-size: 0.7rem;
-    color: var(--body-l-color);
-    position: absolute;
-    top: 0;
-    pointer-events: none;
-  }
-
-  .form-control {
-    background: #fff;
-    border: 0;
-    padding: 1.2rem 2rem 0.5rem;
-    height: auto;
-
-    &:focus {
-      box-shadow: none;
-      background: var(--gray-xl-color);
-    }
-  }
-}
-
 .badge {
   padding: 4px;
   font-size: 0.7rem;

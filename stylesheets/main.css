@@ -191,91 +191,52 @@ a {
 }
 
 /* line 163, ../sass/reset.scss */
-.form-container {
-  border-radius: 54px;
-  overflow: hidden;
-  border: 1px solid var(--gray-l-color);
-}
-
-/* line 169, ../sass/reset.scss */
-.form-group {
-  margin-bottom: 0;
-  position: relative;
-}
-/* line 173, ../sass/reset.scss */
-.form-group:not(:last-child) {
-  border-right: 1px solid var(--gray-l-color);
-}
-/* line 177, ../sass/reset.scss */
-.form-group label {
-  padding: 0.5rem 2rem;
-  margin-bottom: 0;
-  font-size: 0.7rem;
-  color: var(--body-l-color);
-  position: absolute;
-  top: 0;
-  pointer-events: none;
-}
-/* line 187, ../sass/reset.scss */
-.form-group .form-control {
-  background: #fff;
-  border: 0;
-  padding: 1.2rem 2rem 0.5rem;
-  height: auto;
-}
-/* line 193, ../sass/reset.scss */
-.form-group .form-control:focus {
-  box-shadow: none;
-  background: var(--gray-xl-color);
-}
-
-/* line 200, ../sass/reset.scss */
 .badge {
   padding: 4px;
   font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* line 206, ../sass/reset.scss */
+/* line 169, ../sass/reset.scss */
 .badge-primary {
   background: #E5EAF4;
   color: var(--primary-color);
 }
 
-/* line 211, ../sass/reset.scss */
+/* line 174, ../sass/reset.scss */
 .badge-danger {
   background: #FDEDF0;
   color: var(--danger-color);
 }
 
 /* Helpers Classes */
-/* line 218, ../sass/reset.scss */
+/* line 181, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 222, ../sass/reset.scss */
+/* line 185, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 226, ../sass/reset.scss */
+/* line 189, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 230, ../sass/reset.scss */
+/* line 193, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
 }
 
-/* line 234, ../sass/reset.scss */
+/* line 197, ../sass/reset.scss */
 .search-small {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 1rem 1rem;
 }
-/* line 239, ../sass/reset.scss */
+/* line 202, ../sass/reset.scss */
 .search-small:hover {
   background: var(--gray-xl-color);
   text-decoration: none;
@@ -329,6 +290,79 @@ body {
   font-weight: bold;
 }
 
+/* line 1, ../sass/grouped-form.scss */
+.form-container {
+  border-radius: 54px;
+  overflow: hidden;
+  border: 1px solid var(--gray-l-color);
+}
+
+/* line 7, ../sass/grouped-form.scss */
+.form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 11, ../sass/grouped-form.scss */
+.form-group:not(:last-child) {
+  border-right: 1px solid var(--gray-l-color);
+}
+/* line 15, ../sass/grouped-form.scss */
+.form-group label {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+/* line 25, ../sass/grouped-form.scss */
+.form-group .form-control {
+  background: #fff;
+  border: 0;
+  padding: 1.2rem 2rem 0.5rem;
+  height: auto;
+}
+/* line 31, ../sass/grouped-form.scss */
+.form-group .form-control:focus {
+  box-shadow: none;
+  background: var(--gray-xl-color);
+}
+
+/* line 39, ../sass/grouped-form.scss */
+.form-inline.form-container {
+  display: inline-flex;
+  border-radius: 56px;
+}
+/* line 44, ../sass/grouped-form.scss */
+.form-inline .form-group {
+  position: relative;
+}
+/* line 47, ../sass/grouped-form.scss */
+.form-inline .form-group .form-control {
+  padding: 1.75rem 1.5rem 0.75rem;
+  border-radius: 0;
+  border-bottom: 0;
+  min-width: 140px;
+  max-width: 160px;
+}
+/* line 55, ../sass/grouped-form.scss */
+.form-inline .form-group:not(:last-child) .form-control {
+  border-bottom: 0;
+}
+
+/* line 63, ../sass/grouped-form.scss */
+.form-small .form-group .form-control {
+  padding: 1.5rem 1rem 0.5rem;
+  min-width: 110px;
+  max-width: 130px;
+  font-size: 0.8rem;
+}
+/* line 70, ../sass/grouped-form.scss */
+.form-small .form-group label {
+  padding: 0.5rem 1rem;
+}
+
 /* line 3, ../sass/home.scss */
 .home-container .home-content {
   display: flex;
@@ -373,34 +407,14 @@ body {
   height: calc(100% - 88px);
 }
 
-/* line 51, ../sass/home.scss */
-.flights-search-container .form-container {
-  display: inline-flex;
-  border-radius: 56px;
-}
-/* line 56, ../sass/home.scss */
-.flights-search-container .form-group {
-  position: relative;
-}
-/* line 59, ../sass/home.scss */
-.flights-search-container .form-group .form-control {
-  padding: 1.75rem 1.5rem 0.75rem;
-  border-radius: 0;
-  border-bottom: 0;
-  min-width: 140px;
-  max-width: 160px;
-}
-/* line 67, ../sass/home.scss */
-.flights-search-container .form-group:not(:last-child) .form-control {
-  border-bottom: 0;
-}
-/* line 72, ../sass/home.scss */
-.flights-search-container .home-image {
+/* line 50, ../sass/home.scss */
+.home-flights-image {
   background: url("../images/home-vuelos-pic.jpg");
   background-size: cover;
 }
-/* line 77, ../sass/home.scss */
-.flights-search-container .toggle-destination {
+
+/* line 55, ../sass/home.scss */
+.toggle-destination {
   position: absolute;
   top: 20px;
   right: -14px;
@@ -418,10 +432,11 @@ body {
   text-decoration: none;
   transition: all 0.15s ease-in;
 }
-/* line 95, ../sass/home.scss */
-.flights-search-container .toggle-destination:hover {
+/* line 73, ../sass/home.scss */
+.toggle-destination:hover {
   background: var(--gray-l-color);
   transform: translate(0, -1px);
+  text-decoration: none;
 }
 
 /* line 1, ../sass/filters.scss */
@@ -725,113 +740,102 @@ body {
   right: -12px;
   top: 12px;
 }
-/* line 185, ../sass/results.scss */
-.flights-results .form-group .form-control {
-  padding: 1.5rem 1rem 0.5rem;
-  min-width: 110px;
-  max-width: 130px;
-  font-size: 0.8rem;
-}
-/* line 192, ../sass/results.scss */
-.flights-results .form-group label {
-  padding: 0.5rem 1rem;
-}
 
-/* line 198, ../sass/results.scss */
+/* line 185, ../sass/results.scss */
 .flight-result {
   border: 1px solid var(--gray-l-color);
   border-bottom: 0;
   transition: all 0.15s ease-in;
 }
-/* line 205, ../sass/results.scss */
+/* line 192, ../sass/results.scss */
 .flight-result:not(.flight-result-expanded):hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
-/* line 211, ../sass/results.scss */
+/* line 198, ../sass/results.scss */
 .flight-result:first-child {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 216, ../sass/results.scss */
+/* line 203, ../sass/results.scss */
 .flight-result:last-child {
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 220, ../sass/results.scss */
+/* line 207, ../sass/results.scss */
 .flight-result .arrow-open {
   display: none;
 }
-/* line 224, ../sass/results.scss */
+/* line 211, ../sass/results.scss */
 .flight-result.flight-result-open {
   margin-bottom: 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 229, ../sass/results.scss */
+/* line 216, ../sass/results.scss */
 .flight-result.flight-result-open .arrow-open {
   display: block;
 }
-/* line 233, ../sass/results.scss */
+/* line 220, ../sass/results.scss */
 .flight-result.flight-result-open .arrow-closed {
   display: none;
 }
-/* line 238, ../sass/results.scss */
+/* line 225, ../sass/results.scss */
 .flight-result .view-more-flight-button > .row {
   align-items: center;
   padding: 0 0.5rem;
 }
-/* line 242, ../sass/results.scss */
+/* line 229, ../sass/results.scss */
 .flight-result .view-more-flight-button > .row > .col {
   padding: 1rem 0.5rem;
 }
-/* line 247, ../sass/results.scss */
+/* line 234, ../sass/results.scss */
 .flight-result .flight-result-logo img {
   width: 35px;
   height: auto;
 }
-/* line 252, ../sass/results.scss */
+/* line 239, ../sass/results.scss */
 .flight-result .btn-rounded {
   pointer-events: none;
 }
-/* line 256, ../sass/results.scss */
+/* line 243, ../sass/results.scss */
 .flight-result .flight-result-detail {
   border-top: 1px solid var(--gray-l-color);
   padding: 1rem 1.5rem 1rem;
 }
 
-/* line 263, ../sass/results.scss */
+/* line 250, ../sass/results.scss */
 .flight-segment:not(:first-child) {
   padding-top: 1rem;
 }
-/* line 267, ../sass/results.scss */
+/* line 254, ../sass/results.scss */
 .flight-segment:not(:last-child) {
   padding-bottom: 1rem;
 }
-/* line 271, ../sass/results.scss */
+/* line 258, ../sass/results.scss */
 .flight-segment .flight-segment-item {
   position: relative;
   padding-left: 1rem;
 }
-/* line 275, ../sass/results.scss */
+/* line 262, ../sass/results.scss */
 .flight-segment .flight-segment-item .flight-segment-item-detail {
   padding: 0.75rem 0 1.25rem;
 }
-/* line 279, ../sass/results.scss */
+/* line 266, ../sass/results.scss */
 .flight-segment .flight-segment-item img {
   width: 20px;
 }
-/* line 283, ../sass/results.scss */
+/* line 270, ../sass/results.scss */
 .flight-segment .flight-segment-item p {
   margin-bottom: 0;
 }
-/* line 287, ../sass/results.scss */
+/* line 274, ../sass/results.scss */
 .flight-segment .flight-segment-item:before, .flight-segment .flight-segment-item:after {
   content: ' ';
   display: block;
   position: absolute;
   top: 7px;
 }
-/* line 294, ../sass/results.scss */
+/* line 281, ../sass/results.scss */
 .flight-segment .flight-segment-item:before {
   background: var(--secondary-color);
   border-radius: 6px;
@@ -839,7 +843,7 @@ body {
   height: 6px;
   left: 0;
 }
-/* line 302, ../sass/results.scss */
+/* line 289, ../sass/results.scss */
 .flight-segment .flight-segment-item:after {
   background: var(--gray-color);
   width: 1px;
@@ -847,22 +851,22 @@ body {
   top: 1.5rem;
   bottom: 0.5rem;
 }
-/* line 311, ../sass/results.scss */
+/* line 298, ../sass/results.scss */
 .flight-segment .flight-segment-info {
   padding: 0.5rem 0 0;
 }
-/* line 314, ../sass/results.scss */
+/* line 301, ../sass/results.scss */
 .flight-segment .flight-segment-info .flight-segment-info-item {
   padding: 0.25rem;
   font-size: 0.8rem;
 }
-/* line 318, ../sass/results.scss */
+/* line 305, ../sass/results.scss */
 .flight-segment .flight-segment-info .flight-segment-info-item:not(:last-child):after {
   margin-left: 0.5rem;
   content: '·';
 }
 
-/* line 326, ../sass/results.scss */
+/* line 313, ../sass/results.scss */
 .flight-scale {
   border-top: 1px solid var(--gray-l-color);
   border-bottom: 1px solid var(--gray-l-color);
@@ -870,12 +874,12 @@ body {
   font-size: 0.8rem;
 }
 
-/* line 333, ../sass/results.scss */
+/* line 320, ../sass/results.scss */
 .result-amenities li {
   color: var(--body-l-color);
 }
 
-/* line 337, ../sass/results.scss */
+/* line 324, ../sass/results.scss */
 .flight-result-expanded {
   border-radius: 8px;
   border-bottom: 1px solid var(--gray-l-color);
@@ -917,4 +921,9 @@ body {
   font-size: 0.8rem;
   color: #fff;
   margin-right: 1rem;
+}
+
+/* line 2, ../sass/admin.scss */
+.reservas-page .form-small .form-group .form-control {
+  max-width: none !important;
 }
