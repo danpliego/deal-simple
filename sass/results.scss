@@ -200,10 +200,13 @@
   border-bottom: 0;
   transition: all 0.15s ease-in;
   
-  &:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,.05);
-    cursor: pointer;
-  }  
+  &:not(.flight-result-expanded) {
+
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0,0,0,.05);
+      cursor: pointer;
+    }  
+  }
   
   &:first-child {
     border-top-left-radius: 8px;
@@ -329,4 +332,9 @@
 
 .result-amenities li {
   color: var(--body-l-color);
+}
+
+.flight-result-expanded {
+  border-radius: 8px;
+  border-bottom: 1px solid var(--gray-l-color);
 }

@@ -2,12 +2,7 @@
 .flight-details .flight-details-main {
   padding: 1.5rem;
 }
-/* line 6, ../sass/flight-details.scss */
-.flight-details .flight-details-main .flight-result {
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-/* line 12, ../sass/flight-details.scss */
+/* line 7, ../sass/flight-details.scss */
 .flight-details .flight-reserve {
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   position: fixed;
@@ -16,7 +11,7 @@
   right: 0;
 }
 
-/* line 21, ../sass/flight-details.scss */
+/* line 16, ../sass/flight-details.scss */
 .payment-success-message {
   display: flex;
   align-items: center;
@@ -27,7 +22,7 @@
   font-weight: 500;
   color: var(--primary-color);
 }
-/* line 31, ../sass/flight-details.scss */
+/* line 26, ../sass/flight-details.scss */
 .payment-success-message .payment-success-icon i {
   background: var(--secondary-color);
   display: flex;
