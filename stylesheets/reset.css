@@ -48,150 +48,110 @@ body {
 
 /* Bootstrap reset */
 /* line 51, ../sass/reset.scss */
-hr {
-  border-color: var(--gray-xl-color);
-}
-
-/* line 55, ../sass/reset.scss */
 .dropdown-toggle::after {
   display: none;
 }
 
-/* line 59, ../sass/reset.scss */
+/* line 55, ../sass/reset.scss */
 a {
   color: var(--primary-color);
 }
 
-/* line 63, ../sass/reset.scss */
+/* line 59, ../sass/reset.scss */
 .text-uppercase {
   letter-spacing: 2px;
 }
 
-/* line 67, ../sass/reset.scss */
+/* line 63, ../sass/reset.scss */
 .text-primary {
   color: var(--primary-color) !important;
 }
 
-/* line 71, ../sass/reset.scss */
-.text-info {
-  color: var(--secondary-color) !important;
-}
-
-/* line 75, ../sass/reset.scss */
+/* line 67, ../sass/reset.scss */
 .btn {
   border-radius: 50px;
   font-weight: 500;
   transition: all ease-out 0.15s;
+  font-weight: bold;
   padding: 10px 20px;
   border-color: var(--gray-l-color);
-  box-shadow: 0 1px 0 var(--gray-l-color) !important;
-  font-size: 0.9rem;
-  color: var(--primary-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
 }
-/* line 85, ../sass/reset.scss */
+/* line 76, ../sass/reset.scss */
 .btn:hover {
   transform: translate(0, -2px);
 }
 
-/* line 90, ../sass/reset.scss */
-.btn-default {
-  background: #fff;
-}
-
-/* line 94, ../sass/reset.scss */
-.btn-lg,
-.btn-hero {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* line 99, ../sass/reset.scss */
-.btn-sm {
-  padding: 0.5rem 1rem;
-  font-size: 0.7rem;
-}
-
-/* line 104, ../sass/reset.scss */
-.btn-rounded {
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-/* line 113, ../sass/reset.scss */
+/* line 81, ../sass/reset.scss */
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
-  color: #fff;
 }
-/* line 118, ../sass/reset.scss */
+/* line 85, ../sass/reset.scss */
 .btn-primary:hover, .btn-primary:focus {
-  color: #fff;
   background: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
 
-/* line 125, ../sass/reset.scss */
+/* line 91, ../sass/reset.scss */
 .btn-info {
   background: var(--secondary-color);
   border-color: var(--secondary-color);
   color: var(--primary-color) !important;
 }
-/* line 130, ../sass/reset.scss */
+/* line 96, ../sass/reset.scss */
 .btn-info:hover, .btn-info:focus {
   background: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
 }
 
-/* line 136, ../sass/reset.scss */
+/* line 102, ../sass/reset.scss */
 .btn-uppercase {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
-/* line 141, ../sass/reset.scss */
+/* line 107, ../sass/reset.scss */
 .btn-uppercase.btn-sm {
   font-size: 0.6rem;
 }
-/* line 145, ../sass/reset.scss */
+/* line 111, ../sass/reset.scss */
 .btn-uppercase.btn-lg {
   font-size: 0.9rem;
   padding: 1rem 2rem;
 }
 
-/* line 151, ../sass/reset.scss */
+/* line 117, ../sass/reset.scss */
 .btn-hero {
   font-weight: bold;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem;
   box-shadow: 0 10px 30px rba(0, 0, 0, 0.15);
-  font-size: 0.8rem;
 }
 
-/* line 158, ../sass/reset.scss */
+/* line 123, ../sass/reset.scss */
 .container-fluid {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-/* line 163, ../sass/reset.scss */
+/* line 128, ../sass/reset.scss */
 .form-container {
   border-radius: 54px;
   overflow: hidden;
-  border: 1px solid var(--gray-l-color);
+  border: 1px solid var(--gray-color);
 }
 
-/* line 169, ../sass/reset.scss */
+/* line 134, ../sass/reset.scss */
 .form-group {
+  overflow: hidden;
   margin-bottom: 0;
   position: relative;
 }
-/* line 173, ../sass/reset.scss */
+/* line 139, ../sass/reset.scss */
 .form-group:not(:last-child) {
   border-right: 1px solid var(--gray-l-color);
 }
-/* line 177, ../sass/reset.scss */
+/* line 143, ../sass/reset.scss */
 .form-group label {
   padding: 0.5rem 2rem;
   margin-bottom: 0;
@@ -201,67 +161,36 @@ a {
   top: 0;
   pointer-events: none;
 }
-/* line 187, ../sass/reset.scss */
+/* line 153, ../sass/reset.scss */
 .form-group .form-control {
   background: #fff;
   border: 0;
   padding: 1.2rem 2rem 0.5rem;
   height: auto;
 }
-/* line 193, ../sass/reset.scss */
+/* line 159, ../sass/reset.scss */
 .form-group .form-control:focus {
   box-shadow: none;
   background: var(--gray-xl-color);
 }
 
-/* line 200, ../sass/reset.scss */
-.badge {
-  padding: 4px;
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-
-/* line 206, ../sass/reset.scss */
-.badge-primary {
-  background: #E5EAF4;
-  color: var(--primary-color);
-}
-
-/* line 211, ../sass/reset.scss */
-.badge-danger {
-  background: #FDEDF0;
-  color: var(--danger-color);
-}
-
 /* Helpers Classes */
-/* line 218, ../sass/reset.scss */
+/* line 168, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 222, ../sass/reset.scss */
+/* line 172, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 226, ../sass/reset.scss */
+/* line 176, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 230, ../sass/reset.scss */
+/* line 180, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
-}
-
-/* line 234, ../sass/reset.scss */
-.search-small {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1.25rem 1rem 1rem;
-}
-/* line 239, ../sass/reset.scss */
-.search-small:hover {
-  background: var(--gray-xl-color);
-  text-decoration: none;
 }
