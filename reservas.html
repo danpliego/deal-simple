@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>One Point</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+
+    <div class="page reservas-page">  
+      <nav class="navbar navbar-light navbar-expand-md">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hoteles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vuelos.html">Vuelos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="reservas.html">Mis Reservas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Victor Borja
+                <i class="fas fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="usuarios.html">Administración de usuarios</a>
+                <a class="dropdown-item" href="reportes.html">Reporte de gastos</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container pt-4">
+        <div class="row align-items-center">
+          <div class="col col-auto">
+            <h6 class="text-primary mb-0">Busca tu reserva</h6>
+          </div>
+          <div class="col col-auto">
+            <div class="form-container form-inline form-small">
+              <div class="form-group">
+                <label>Código de reserva</label>
+                <input type="text" class="form-control" value="MXU-3497">
+              </div>
+              <a href="#" class="return-action"><i class="fas"></i></a>
+              <div class="form-group">
+                <label>Nombre del pasajero</label>
+                <input type="text" class="form-control" value="Victor Borja">
+              </div>
+              <a href="#" class="search-small">
+                <i class="fas fa-search text-primary"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <h4 class="text-primary">Todas mis reservas</h4>
+        <div class="reservas-grid">
+          <div class="reservas-grid-header">
+            <div class="reservas-grid-item">Viajero</div>
+            <div class="reservas-grid-item">Tipo de reserva</div>
+            <div class="reservas-grid-item">Clave de reserva</div>
+            <div class="reservas-grid-item">Lugar</div>
+            <div class="reservas-grid-item">Fecha de compra</div>
+            <div class="reservas-grid-item">Fecha de viaje</div>
+            <div class="reservas-grid-item">Status de viaje</div>
+          </div>
+          <div class="reservas-grid-row">
+            <div class="reservas-grid-item">Victor Borja</div>
+            <div class="reservas-grid-item">icono vuelo logo luego</div>
+            <div class="reservas-grid-item">SCXLB</div>
+            <div class="reservas-grid-item">SLC -ANF</div>
+            <div class="reservas-grid-item">01-jun-20</div>
+            <div class="reservas-grid-item">20-ago-20</div>
+            <div class="reservas-grid-item">Próximo</div>
+            <div class="reservas-grid-item">
+              <a href="#" class="btn btn-primary btn-uppercase">
+                Ver más
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
