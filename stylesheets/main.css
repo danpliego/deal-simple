@@ -357,6 +357,20 @@ body {
   font-weight: bold;
 }
 
+/* line 1, ../sass/account.scss */
+.account-card {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/account.scss */
+  .account-card {
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 4.5rem;
+    margin-top: 10vh;
+  }
+}
+
 /* line 3, ../sass/home.scss */
 .home-container .home-content {
   display: flex;
