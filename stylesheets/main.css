@@ -1190,3 +1190,10 @@ body {
     display: none;
   }
 }
+
+/* line 2, ../sass/form-page.scss */
+.form-page .form-page-title {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 3rem;
+}
