@@ -43,7 +43,7 @@
                 <a class="dropdown-item" href="usuarios.html">Administración de usuarios</a>
                 <a class="dropdown-item" href="reportes.html">Reporte de gastos</a>
                 <a href="politicas.html" class="dropdown-item">Políticas de viaje</a>
-                <a href="autorizaciones.html" class="dropdown-item">Autorizadores</a>
+                <a href="autorizaciones.html" class="dropdown-item">Autorizaciones</a>
                 <a href="landing.html" class="dropdown-item">Cerrar sesión</a>
               </div>
             </li>
@@ -58,13 +58,12 @@
           <div class="col col-auto">
             <div class="grouped-form-container form-inline form-small">
               <div class="form-group">
-                <label>Código de reserva</label>
-                <input type="text" class="form-control" value="MXU-3497">
-              </div>
-              <a href="#" class="return-action"><i class="fas"></i></a>
-              <div class="form-group">
                 <label>Nombre del pasajero</label>
                 <input type="text" class="form-control" value="Victor Borja">
+              </div>
+              <div class="form-group">
+                <label>Código de reserva</label>
+                <input type="text" class="form-control" value="MXU-3497">
               </div>
               <a href="#" class="search-small">
                 <i class="fas fa-search text-primary"></i>
@@ -74,7 +73,7 @@
         </div>
         <hr class="my-4" />
         <div class="admin-page-header">
-          <h3 class="admin-page-title">Todas mis reservas</h3>
+          <h3 class="admin-page-title">Autorizaciones</h3>
         </div>
         <div class="admin-grid admin-grid-header">
           <div class="admin-grid-item">Viajero</div>
@@ -83,7 +82,9 @@
           <div class="admin-grid-item">Lugar</div>
           <div class="admin-grid-item">Fecha de compra</div>
           <div class="admin-grid-item">Fecha de viaje</div>
-          <div class="admin-grid-item">Status de viaje</div>
+          <div class="admin-grid-item">Monto</div>
+          <div class="admin-grid-item">Status</div>
+          <div class="admin-grid-item"></div>
         </div>
 
         <div class="admin-grid-row">
@@ -98,80 +99,55 @@
             <div class="admin-grid-item">SLC -ANF</div>
             <div class="admin-grid-item">01-jun-20</div>
             <div class="admin-grid-item">20-ago-20</div>
-            <div class="admin-grid-item">Próximo</div>
+            <div class="admin-grid-item">$430 USD</div>
             <div class="admin-grid-item">
-              <a class="btn btn-primary btn-uppercase view-more-button" data-toggle="collapse" href="#item_1">
+              <div class="level-badge level-3">
+                Pendiente
+              </div>
+            </div>
+            <div class="admin-grid-item action-grid-item">
+              <a href="#" class="btn btn-circle btn-info mr-2">
+                <i class="fas fa-check text-white"></i>
+              </a>
+              <a href="#" class="btn btn-circle btn-danger mr-2">
+                <i class="fas fa-times text-white"></i>
+              </a>
+              <a class="btn btn-default btn-circle view-more-button" data-toggle="collapse" href="#item_1">
                 <span class="view-more-text">
-                  Ver más<i class="ml-1 fas fa-angle-down"></i>
+                  <i class="fas fa-angle-down"></i>
                 </span>
                 <span class="view-more-text d-none">
-                  Ver menos<i class="ml-1 fas fa-angle-up"></i>
+                  <i class="fas fa-angle-up"></i>
                 </span>
               </a>
             </div>
           </div>
-          <div id="item_1" class="collapse reserve-detail">
+          <div id="item_1" class="collapse reserve-detail py-4">
             <div class="row">
-              <div class="col-lg-9">                
-                <div class="admin-grid admin-grid-header">
-                  <div class="admin-grid-item">Trayecto</div>
-                  <div class="admin-grid-item">Vuelo</div>
-                  <div class="admin-grid-item">Salida</div>
-                  <div class="admin-grid-item">Bolsa de mano</div>
-                  <div class="admin-grid-item">Carry on</div>
-                  <div class="admin-grid-item">Maleta</div>
-                  <div class="admin-grid-item">Permite reembolso</div>
-                  <div class="admin-grid-item">Permite cambio</div>
-                </div>
-                <div class="admin-grid">
-                  <div class="admin-grid-item">SLC - ANF</div>
-                  <div class="admin-grid-item">LA201</div>
-                  <div class="admin-grid-item">15-jul-20</div>
-                  <div class="admin-grid-item justify-content-center">
-                    <i class="fas fa-check circle-icon circle-icon-success"></i>
-                  </div>
-                  <div class="admin-grid-item justify-content-center">
-                    <i class="fas fa-check circle-icon circle-icon-success"></i>
-                  </div>
-                  <div class="admin-grid-item justify-content-center">
-                    <i class="fas fa-times circle-icon circle-icon-danger"></i>
-                  </div>
-                  <div class="admin-grid-item justify-content-center">
-                    <i class="fas fa-check circle-icon circle-icon-success mr-1"></i>
-                    30% de la tarifa
-                  </div>
-                  <div class="admin-grid-item justify-content-center">
-                    <i class="fas fa-check circle-icon circle-icon-success mr-1"></i>
-                    +20 USD
-                  </div>
-                </div>
-              </div>
               <div class="col-lg-3">
-                <a href="cotizar-reembolso.html" class="btn btn-primary btn-block mb-2">
-                  Cootizar reembolso
-                </a>
-                <a href="#" class="btn btn-primary btn-block mb-2">
-                  <i class="fas fa-sync-alt text-info mr-1"></i>
-                  Cotizar cambio
-                </a>
-                <a href="#" class="btn btn-primary btn-block mb-2">
-                  <i class="fas fa-luggage-cart text-info mr-1"></i>
-                  Agregar maleta
-                </a>
-                <a href="#" class="btn btn-info btn-block mb-2">
-                  <i class="fas fa-bed mr-1"></i>
-                  Agregar hotel
-                </a>
-                <div class="dropdown">
-                  <a href="#" class="btn btn-default btn-block mb-2" data-toggle="dropdown">
-                    <i class="fas fa-plus text-info mr-1"></i>
-                    Más servicios...
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Agregar seguro de viaje</a>
-                    <a class="dropdown-item" href="#">Seleccionar asiento</a>
-                  </div>
-                </div>
+                <p class="text-primary font-sm text-right font-weight-bold">Motivo de la solicitud:</p>
+              </div>
+              <div class="col-lg-9">
+                <p class="font-sm">Ticket fuera de política de límite de gasto</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <p class="text-primary font-sm text-right font-weight-bold">Notas del solicitante:</p>
+              </div>
+              <div class="col-lg-9">
+                <p class="font-sm">Ayuda, no había otra opción de vuelo, se que está cara....</p>
+              </div>
+            </div>
+            <div class="row styled-form mb-3">
+              <div class="col-lg-3 offset-lg-3">
+                <input type="text" placeholder="Agregar notas..." class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 offset-lg-3">
+                <a href="#" class="btn btn-info btn-uppercase mr-1">Autorizar</a>
+                <a href="#" class="btn btn-danger btn-uppercase">Rechazar</a>
               </div>
             </div>
           </div>

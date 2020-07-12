@@ -65,41 +65,45 @@
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 63, ../sass/admin.scss */
+
+/* line 66, ../sass/admin.scss */
 .form-section .form-control,
-.form-section .custom-select {
+.form-section .custom-select, .styled-form .form-control,
+.styled-form .custom-select {
   border-radius: 1rem;
   border-color: var(--gray-l-color);
   padding-left: 1rem;
   padding-right: 1rem;
 }
-/* line 70, ../sass/admin.scss */
+/* line 73, ../sass/admin.scss */
 .form-section .form-control:disabled, .form-section .form-control[readonly],
 .form-section .custom-select:disabled,
-.form-section .custom-select[readonly] {
+.form-section .custom-select[readonly], .styled-form .form-control:disabled, .styled-form .form-control[readonly],
+.styled-form .custom-select:disabled,
+.styled-form .custom-select[readonly] {
   background: var(--gray-xl-color);
 }
-/* line 75, ../sass/admin.scss */
-.form-section > div > .form-group {
+/* line 78, ../sass/admin.scss */
+.form-section > div > .form-group, .styled-form > div > .form-group {
   margin-left: -8px;
   margin-right: -8px;
 }
-/* line 79, ../sass/admin.scss */
-.form-section > div > .form-group > div {
+/* line 82, ../sass/admin.scss */
+.form-section > div > .form-group > div, .styled-form > div > .form-group > div {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-/* line 86, ../sass/admin.scss */
+/* line 89, ../sass/admin.scss */
 .form-section-footer {
   padding-bottom: 5rem;
 }
 
-/* line 92, ../sass/admin.scss */
+/* line 95, ../sass/admin.scss */
 .nav-tabs {
   border-bottom-color: var(--gray-l-color);
 }
-/* line 95, ../sass/admin.scss */
+/* line 98, ../sass/admin.scss */
 .nav-tabs .nav-link {
   border-bottom: 3px solid transparent;
   color: var(--body-l-color);
@@ -108,47 +112,47 @@
   border-right: 0;
   padding: 1rem 1.5rem;
 }
-/* line 103, ../sass/admin.scss */
+/* line 106, ../sass/admin.scss */
 .nav-tabs .nav-link.active {
   border-bottom-color: var(--secondary-color);
   color: var(--primary-color);
   font-weight: 500;
 }
 
-/* line 113, ../sass/admin.scss */
+/* line 116, ../sass/admin.scss */
 .level-badge {
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
 }
-/* line 119, ../sass/admin.scss */
+/* line 122, ../sass/admin.scss */
 .level-badge.level-1 {
   background: #9DEAE5;
 }
-/* line 123, ../sass/admin.scss */
+/* line 126, ../sass/admin.scss */
 .level-badge.level-2 {
   background: #B7F0EC;
 }
-/* line 127, ../sass/admin.scss */
+/* line 130, ../sass/admin.scss */
 .level-badge.level-3 {
   background: #D2F6F3;
 }
-/* line 131, ../sass/admin.scss */
+/* line 134, ../sass/admin.scss */
 .level-badge.level-invitado {
   background: #EDFBFA;
 }
 
-/* line 139, ../sass/admin.scss */
+/* line 142, ../sass/admin.scss */
 .reservas-page .form-small .form-group .form-control {
   max-width: none !important;
 }
-/* line 143, ../sass/admin.scss */
+/* line 146, ../sass/admin.scss */
 .reservas-page .reserve-detail {
   padding: 1rem;
   border-top: 1px solid var(--gray-l-color);
 }
-/* line 148, ../sass/admin.scss */
-.reservas-page .admin-grid-header {
+/* line 150, ../sass/admin.scss */
+.reservas-page .reserve-detail .admin-grid-header {
   border-bottom: 1px solid var(--gray-xl-color);
 }
