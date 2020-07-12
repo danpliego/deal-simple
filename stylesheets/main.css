@@ -1,0 +1,1198 @@
+@charset "UTF-8";
+/* line 1, ../sass/variables.scss */
+:root {
+  --primary-color: #003293;
+  --secondary-color: #4CD9CF;
+  --body-color: #202541;
+  --body-l-color: #627178;
+  --body-xl-color: #7F8D93;
+  --danger-color: #EC4C69;
+  --warning-color: #ECBF4C;
+  --gray-color: #D6DCDF;
+  --gray-l-color: #E7EBEF;
+  --gray-xl-color: #F4F7FB;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gilroy-Regular.otf");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: url("../fonts//Gilroy-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  src: url("../fonts//Gilroy-Bold.ttf");
+}
+/* line 21, ../sass/reset.scss */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+/* line 25, ../sass/reset.scss */
+html {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 31, ../sass/reset.scss */
+html, body {
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 37, ../sass/reset.scss */
+body {
+  margin: 0;
+  font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--body-color);
+  text-align: left;
+  width: 100%;
+  overscroll-behavior-y: none;
+  box-sizing: border-box;
+}
+
+/* Bootstrap reset */
+/* line 51, ../sass/reset.scss */
+hr {
+  border-color: var(--gray-xl-color);
+}
+
+/* line 55, ../sass/reset.scss */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* line 59, ../sass/reset.scss */
+a {
+  color: var(--primary-color);
+}
+
+/* line 63, ../sass/reset.scss */
+.text-uppercase {
+  letter-spacing: 2px;
+}
+
+/* line 67, ../sass/reset.scss */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* line 71, ../sass/reset.scss */
+.text-info {
+  color: var(--secondary-color) !important;
+}
+
+/* line 75, ../sass/reset.scss */
+.btn {
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all ease-out 0.15s;
+  padding: 10px 20px;
+  border-color: var(--gray-l-color);
+  box-shadow: 0 1px 0 var(--gray-l-color) !important;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+/* line 85, ../sass/reset.scss */
+.btn:hover {
+  transform: translate(0, -2px);
+}
+
+/* line 90, ../sass/reset.scss */
+.btn-default {
+  background: #fff;
+}
+
+/* line 94, ../sass/reset.scss */
+.btn-lg,
+.btn-hero {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* line 99, ../sass/reset.scss */
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+
+/* line 104, ../sass/reset.scss */
+.btn-rounded {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* line 113, ../sass/reset.scss */
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+/* line 118, ../sass/reset.scss */
+.btn-primary:hover, .btn-primary:focus {
+  color: #fff;
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* line 125, ../sass/reset.scss */
+.btn-info {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color) !important;
+}
+/* line 130, ../sass/reset.scss */
+.btn-info:hover, .btn-info:focus {
+  background: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+/* line 136, ../sass/reset.scss */
+.btn-uppercase {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+/* line 141, ../sass/reset.scss */
+.btn-uppercase.btn-sm {
+  font-size: 0.6rem;
+}
+/* line 145, ../sass/reset.scss */
+.btn-uppercase.btn-lg {
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+}
+
+/* line 151, ../sass/reset.scss */
+.btn-hero {
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 10px 30px rba(0, 0, 0, 0.15);
+  font-size: 0.8rem;
+}
+
+/* line 158, ../sass/reset.scss */
+.container-fluid {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* line 163, ../sass/reset.scss */
+.badge {
+  padding: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* line 169, ../sass/reset.scss */
+.badge-primary {
+  background: #E5EAF4;
+  color: var(--primary-color);
+}
+
+/* line 174, ../sass/reset.scss */
+.badge-danger {
+  background: #FDEDF0;
+  color: var(--danger-color);
+}
+
+/* line 179, ../sass/reset.scss */
+.modal-backdrop {
+  background-color: #fff;
+}
+
+/* line 184, ../sass/reset.scss */
+.modal .modal-content {
+  border: 1px solid var(--gray-l-color);
+  padding: 3rem;
+  box-shadow: 0 5px 60px rgba(0, 0, 0, 0.05);
+}
+/* line 190, ../sass/reset.scss */
+.modal .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+/* Helpers Classes */
+/* line 200, ../sass/reset.scss */
+.font-sm {
+  font-size: 0.9rem;
+}
+
+/* line 204, ../sass/reset.scss */
+.font-xs {
+  font-size: 0.8rem;
+}
+
+/* line 208, ../sass/reset.scss */
+.font-xxs {
+  font-size: 0.7rem;
+}
+
+/* line 212, ../sass/reset.scss */
+.font-medium {
+  font-weight: 500;
+}
+
+/* line 216, ../sass/reset.scss */
+.search-small {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem 1rem 1rem;
+}
+/* line 221, ../sass/reset.scss */
+.search-small:hover {
+  background: var(--gray-xl-color);
+  text-decoration: none;
+}
+
+/* line 1, ../sass/layout.scss */
+.page .navbar {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1005;
+  width: 100%;
+}
+
+/* line 9, ../sass/layout.scss */
+body {
+  padding-top: 88px;
+}
+
+/* line 1, ../sass/menu.scss */
+.navbar {
+  min-height: 88px;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 5, ../sass/menu.scss */
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+/* line 10, ../sass/menu.scss */
+.navbar .navbar-toggler {
+  border: 0;
+}
+/* line 14, ../sass/menu.scss */
+.navbar .nav-item {
+  font-size: 0.9rem;
+}
+@media (min-width: 992px) {
+  /* line 14, ../sass/menu.scss */
+  .navbar .nav-item {
+    padding: 0.75rem;
+  }
+}
+/* line 21, ../sass/menu.scss */
+.navbar .nav-item .nav-link {
+  color: var(--body-l-color);
+}
+/* line 26, ../sass/menu.scss */
+.navbar .nav-item.active .nav-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* line 1, ../sass/account.scss */
+.account-card {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/account.scss */
+  .account-card {
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 4.5rem;
+    margin-top: 10vh;
+  }
+}
+
+/* line 1, ../sass/grouped-form.scss */
+.form-container {
+  border-radius: 54px;
+  overflow: hidden;
+  border: 1px solid var(--gray-l-color);
+}
+
+/* line 7, ../sass/grouped-form.scss */
+.form-group {
+  margin-bottom: 0;
+  position: relative;
+}
+/* line 11, ../sass/grouped-form.scss */
+.form-group:not(:last-child) {
+  border-right: 1px solid var(--gray-l-color);
+}
+/* line 15, ../sass/grouped-form.scss */
+.form-group label {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+/* line 25, ../sass/grouped-form.scss */
+.form-group .form-control {
+  background: #fff;
+  border: 0;
+  padding: 1.2rem 2rem 0.5rem;
+  height: auto;
+}
+/* line 31, ../sass/grouped-form.scss */
+.form-group .form-control:focus {
+  box-shadow: none;
+  background: var(--gray-xl-color);
+}
+
+/* line 39, ../sass/grouped-form.scss */
+.form-inline.form-container {
+  display: inline-flex;
+  border-radius: 56px;
+}
+/* line 44, ../sass/grouped-form.scss */
+.form-inline .form-group {
+  position: relative;
+}
+/* line 47, ../sass/grouped-form.scss */
+.form-inline .form-group .form-control {
+  padding: 1.75rem 1.5rem 0.75rem;
+  border-radius: 0;
+  border-bottom: 0;
+  min-width: 140px;
+  max-width: 160px;
+}
+/* line 55, ../sass/grouped-form.scss */
+.form-inline .form-group:not(:last-child) .form-control {
+  border-bottom: 0;
+}
+
+/* line 63, ../sass/grouped-form.scss */
+.form-small .form-group .form-control {
+  padding: 1.5rem 1rem 0.5rem;
+  min-width: 110px;
+  max-width: 130px;
+  font-size: 0.8rem;
+}
+/* line 70, ../sass/grouped-form.scss */
+.form-small .form-group label {
+  padding: 0.5rem 1rem;
+}
+
+/* line 3, ../sass/home.scss */
+.home-container .home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.5rem 5% 10%;
+}
+/* line 9, ../sass/home.scss */
+.home-container .home-content h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+/* line 18, ../sass/home.scss */
+.home-container .form-container {
+  border: 1px solid var(--gray-l-color);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+/* line 25, ../sass/home.scss */
+.home-container .form-group label, .home-container .form-group .form-group-label {
+  padding: 0.75rem 1.5rem;
+}
+/* line 29, ../sass/home.scss */
+.home-container .form-group .form-control {
+  padding: 1.75rem 1.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+/* line 34, ../sass/home.scss */
+.home-container .form-group:not(:last-child) .form-control {
+  border-right: 0;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 40, ../sass/home.scss */
+.home-container .home-image {
+  background: url("../images/home-pic.jpg");
+  background-size: cover;
+  position: fixed;
+  right: 0;
+  height: calc(100% - 88px);
+}
+
+/* line 50, ../sass/home.scss */
+.home-flights-image {
+  background: url("../images/home-vuelos-pic.jpg");
+  background-size: cover;
+}
+
+/* line 55, ../sass/home.scss */
+.toggle-destination {
+  position: absolute;
+  top: 20px;
+  right: -14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid var(--gray-l-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  transition: all 0.15s ease-in;
+}
+/* line 73, ../sass/home.scss */
+.toggle-destination:hover {
+  background: var(--gray-l-color);
+  transform: translate(0, -1px);
+  text-decoration: none;
+}
+
+/* line 1, ../sass/filters.scss */
+.results-filters {
+  margin-bottom: 1rem;
+}
+
+/* line 5, ../sass/filters.scss */
+.filter {
+  border-radius: 38px;
+  height: 38px;
+  border: 1px solid var(--gray-color);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--body-color);
+  transition: all 0.15s ease-in;
+  margin-right: 0.5rem;
+}
+/* line 17, ../sass/filters.scss */
+.filter:hover {
+  text-decoration: none;
+  background: var(--gray-xl-color);
+  color: inherit;
+}
+/* line 23, ../sass/filters.scss */
+.filter.filter-active {
+  font-weight: 500;
+  border-color: var(--secondary-color);
+}
+/* line 28, ../sass/filters.scss */
+.filter::after {
+  margin-left: 0.33rem;
+  margin-top: 2px;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+}
+
+/* line 45, ../sass/filters.scss */
+.dropdown-title {
+  padding: 0.33rem 1rem 0.33rem;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  margin-bottom: 0;
+}
+
+/* line 52, ../sass/filters.scss */
+.dropdown-menu.show {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--gray-color);
+  min-width: 250px;
+}
+
+/* line 58, ../sass/filters.scss */
+.dropdown-check {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+/* line 66, ../sass/filters.scss */
+.dropdown-check:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 70, ../sass/filters.scss */
+.dropdown-check:hover {
+  background: var(--gray-xl-color);
+}
+/* line 74, ../sass/filters.scss */
+.dropdown-check label {
+  padding-left: 0.33rem;
+}
+/* line 78, ../sass/filters.scss */
+.dropdown-check .form-check-label {
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+/* line 84, ../sass/filters.scss */
+.dropdown-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.33rem 1rem;
+}
+/* line 90, ../sass/filters.scss */
+.dropdown-footer .btn {
+  font-size: 0.8rem;
+}
+/* line 94, ../sass/filters.scss */
+.dropdown-footer .btn-link {
+  color: var(--body-l-color);
+  text-decoration: underline;
+  border: 0;
+  box-shadow: none !important;
+  padding: 0;
+}
+/* line 102, ../sass/filters.scss */
+.dropdown-footer .btn-primary {
+  padding: 8px 17px;
+}
+
+/* line 3, ../sass/results.scss */
+.results-header {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  /* line 3, ../sass/results.scss */
+  .results-header {
+    position: sticky;
+    top: 88px;
+    background: #fff;
+    z-index: 1000;
+  }
+}
+/* line 14, ../sass/results.scss */
+.results-header .form-control {
+  max-width: 250px;
+  font-size: 0.8rem;
+}
+
+/* line 19, ../sass/results.scss */
+.results-main {
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  /* line 19, ../sass/results.scss */
+  .results-main {
+    width: calc(70% - 3rem);
+    padding-left: 2rem;
+  }
+}
+
+/* line 28, ../sass/results.scss */
+.results-map {
+  width: 30%;
+  position: fixed;
+  right: 1rem;
+  top: calc(1rem + 88px + 73px);
+  bottom: 1rem;
+  height: calc(100% - 2srem - 88px);
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* line 38, ../sass/results.scss */
+.results-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 44, ../sass/results.scss */
+.result-amenities li {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+/* line 49, ../sass/results.scss */
+.result-amenities li i {
+  width: 1rem;
+  text-align: center;
+}
+
+/* line 57, ../sass/results.scss */
+.result-card {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 62, ../sass/results.scss */
+.result-card .result-name {
+  font-size: 1.1rem;
+}
+/* line 66, ../sass/results.scss */
+.result-card .result-image-link {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  /* line 66, ../sass/results.scss */
+  .result-card .result-image-link {
+    margin-right: 1rem;
+  }
+}
+/* line 76, ../sass/results.scss */
+.result-card .results-price-currency {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+/* line 81, ../sass/results.scss */
+.result-card .results-details {
+  border-top: 1px solid var(--gray-l-color);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+/* line 87, ../sass/results.scss */
+.result-card .room-card {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 91, ../sass/results.scss */
+.result-card .room-card:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+
+/* line 97, ../sass/results.scss */
+.reserve-modal {
+  position: fixed;
+  z-index: 1010;
+  top: 88px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 105, ../sass/results.scss */
+.reserve-modal .reserve-modal-backdrop {
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 113, ../sass/results.scss */
+.reserve-modal .reserve-modal-content {
+  background: #fff;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  width: 420px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* line 124, ../sass/results.scss */
+.reserve-modal-image {
+  height: 16.666%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 129, ../sass/results.scss */
+.reserve-modal-image img {
+  position: absolute;
+  bottom: -32%;
+}
+
+/* line 135, ../sass/results.scss */
+.reserve-card {
+  padding: 0.75rem 0;
+}
+/* line 136, ../sass/results.scss */
+.reserve-card:not(:last-child) {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 142, ../sass/results.scss */
+.reserve-card .reserve-card-title {
+  font-size: 0.6rem;
+  margin-bottom: 0.25rem;
+}
+/* line 147, ../sass/results.scss */
+.reserve-card p {
+  margin-bottom: 0;
+}
+
+/* line 154, ../sass/results.scss */
+.flights-results {
+  margin-bottom: 4rem;
+}
+/* line 157, ../sass/results.scss */
+.flights-results .flights-search-container {
+  padding: 1.5rem 0;
+}
+/* line 161, ../sass/results.scss */
+.flights-results .toggle-destination {
+  top: 14px;
+}
+/* line 165, ../sass/results.scss */
+.flights-results .selected-flight {
+  background: #CAF4F1;
+  display: inline-block;
+  padding: 12px 24px;
+  position: relative;
+  border-radius: 54px;
+  margin-bottom: 1rem;
+}
+/* line 173, ../sass/results.scss */
+.flights-results .selected-flight:hover {
+  text-decoration: none;
+}
+/* line 177, ../sass/results.scss */
+.flights-results .selected-flight .edit-flight {
+  position: absolute;
+  right: -12px;
+  top: 12px;
+}
+
+/* line 185, ../sass/results.scss */
+.flight-result {
+  border: 1px solid var(--gray-l-color);
+  border-bottom: 0;
+  transition: all 0.15s ease-in;
+}
+/* line 192, ../sass/results.scss */
+.flight-result:not(.flight-result-expanded):hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+/* line 198, ../sass/results.scss */
+.flight-result:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* line 203, ../sass/results.scss */
+.flight-result:last-child {
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 207, ../sass/results.scss */
+.flight-result .arrow-open {
+  display: none;
+}
+/* line 211, ../sass/results.scss */
+.flight-result.flight-result-open {
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 216, ../sass/results.scss */
+.flight-result.flight-result-open .arrow-open {
+  display: block;
+}
+/* line 220, ../sass/results.scss */
+.flight-result.flight-result-open .arrow-closed {
+  display: none;
+}
+/* line 225, ../sass/results.scss */
+.flight-result .view-more-flight-button > .row {
+  align-items: center;
+  padding: 0 0.5rem;
+}
+/* line 229, ../sass/results.scss */
+.flight-result .view-more-flight-button > .row > .col {
+  padding: 1rem 0.5rem;
+}
+/* line 234, ../sass/results.scss */
+.flight-result .flight-result-logo img {
+  width: 35px;
+  height: auto;
+}
+/* line 239, ../sass/results.scss */
+.flight-result .btn-rounded {
+  pointer-events: none;
+}
+/* line 243, ../sass/results.scss */
+.flight-result .flight-result-detail {
+  border-top: 1px solid var(--gray-l-color);
+  padding: 1rem 1.5rem 1rem;
+}
+
+/* line 250, ../sass/results.scss */
+.flight-segment:not(:first-child) {
+  padding-top: 1rem;
+}
+/* line 254, ../sass/results.scss */
+.flight-segment:not(:last-child) {
+  padding-bottom: 1rem;
+}
+/* line 258, ../sass/results.scss */
+.flight-segment .flight-segment-item {
+  position: relative;
+  padding-left: 1rem;
+}
+/* line 262, ../sass/results.scss */
+.flight-segment .flight-segment-item .flight-segment-item-detail {
+  padding: 0.75rem 0 1.25rem;
+}
+/* line 266, ../sass/results.scss */
+.flight-segment .flight-segment-item img {
+  width: 20px;
+}
+/* line 270, ../sass/results.scss */
+.flight-segment .flight-segment-item p {
+  margin-bottom: 0;
+}
+/* line 274, ../sass/results.scss */
+.flight-segment .flight-segment-item:before, .flight-segment .flight-segment-item:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 7px;
+}
+/* line 281, ../sass/results.scss */
+.flight-segment .flight-segment-item:before {
+  background: var(--secondary-color);
+  border-radius: 6px;
+  width: 6px;
+  height: 6px;
+  left: 0;
+}
+/* line 289, ../sass/results.scss */
+.flight-segment .flight-segment-item:after {
+  background: var(--gray-color);
+  width: 1px;
+  left: 3px;
+  top: 1.5rem;
+  bottom: 0.5rem;
+}
+/* line 298, ../sass/results.scss */
+.flight-segment .flight-segment-info {
+  padding: 0.5rem 0 0;
+}
+/* line 301, ../sass/results.scss */
+.flight-segment .flight-segment-info .flight-segment-info-item {
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+/* line 305, ../sass/results.scss */
+.flight-segment .flight-segment-info .flight-segment-info-item:not(:last-child):after {
+  margin-left: 0.5rem;
+  content: '·';
+}
+
+/* line 313, ../sass/results.scss */
+.flight-scale {
+  border-top: 1px solid var(--gray-l-color);
+  border-bottom: 1px solid var(--gray-l-color);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* line 320, ../sass/results.scss */
+.result-amenities li {
+  color: var(--body-l-color);
+}
+
+/* line 324, ../sass/results.scss */
+.flight-result-expanded {
+  border-radius: 8px;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+
+/* line 3, ../sass/flight-details.scss */
+.flight-details .flight-details-main {
+  padding: 1.5rem;
+}
+/* line 7, ../sass/flight-details.scss */
+.flight-details .flight-reserve {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 88px;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 16, ../sass/flight-details.scss */
+.payment-success-message {
+  display: flex;
+  align-items: center;
+  background: #E5EAF4;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+/* line 26, ../sass/flight-details.scss */
+.payment-success-message .payment-success-icon i {
+  background: var(--secondary-color);
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* line 5, ../sass/landing.scss */
+  .landing-page .navbar .btn-primary, .landing-page .navbar .btn-info {
+    background: none;
+    color: var(--primary-color);
+    border: 0;
+    border-radius: 0;
+  }
+  /* line 11, ../sass/landing.scss */
+  .landing-page .navbar .btn-primary:hover, .landing-page .navbar .btn-primary:focus, .landing-page .navbar .btn-info:hover, .landing-page .navbar .btn-info:focus {
+    background: none !important;
+  }
+}
+/* line 18, ../sass/landing.scss */
+.landing-page .hero {
+  padding: 6rem 0 12rem;
+  color: #fff;
+  background: url("../images/landing/hero-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+/* line 25, ../sass/landing.scss */
+.landing-page .hero:before {
+  content: ' ';
+  opacity: 0.4;
+  background: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../sass/landing.scss */
+.landing-page .hero:after {
+  content: ' ';
+  background: url("../images/landing/hero-line.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 127px;
+}
+@media (min-width: 1400px) {
+  /* line 36, ../sass/landing.scss */
+  .landing-page .hero:after {
+    height: 10vw;
+  }
+}
+/* line 50, ../sass/landing.scss */
+.landing-page .hero .hero-content {
+  z-index: 1;
+  position: relative;
+}
+/* line 54, ../sass/landing.scss */
+.landing-page .hero .hero-content h1 {
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+@media (min-width: 769px) {
+  /* line 54, ../sass/landing.scss */
+  .landing-page .hero .hero-content h1 {
+    font-size: 3.5rem;
+  }
+}
+/* line 66, ../sass/landing.scss */
+.landing-page .hero .hero-content p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+/* line 73, ../sass/landing.scss */
+.landing-page .feature-container {
+  background: url("../images/landing/content-bg.jpg");
+  background-size: cover;
+}
+/* line 77, ../sass/landing.scss */
+.landing-page .feature-container .feature-section {
+  align-items: center;
+  padding: 2rem;
+}
+/* line 81, ../sass/landing.scss */
+.landing-page .feature-container .feature-section p {
+  font-size: 21px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  /* line 87, ../sass/landing.scss */
+  .landing-page .feature-container .feature-section .swap-mobile {
+    order: 2;
+  }
+}
+/* line 95, ../sass/landing.scss */
+.landing-page .carousel-item {
+  text-align: center;
+  padding: 6rem 15% 12rem;
+}
+/* line 99, ../sass/landing.scss */
+.landing-page .carousel-item p {
+  font-size: 28px;
+  line-height: 1.5;
+}
+/* line 104, ../sass/landing.scss */
+.landing-page .carousel-item .testimonial-name {
+  font-size: .9rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 3rem 0 2rem;
+  position: relative;
+}
+/* line 112, ../sass/landing.scss */
+.landing-page .carousel-item .testimonial-name:after {
+  content: ' ';
+  width: 1rem;
+  height: 2px;
+  background: var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 1rem);
+}
+/* line 124, ../sass/landing.scss */
+.landing-page .carousel-control-prev,
+.landing-page .carousel-control-next {
+  opacity: 1;
+  transition: all 0.15s ease-in;
+}
+/* line 129, ../sass/landing.scss */
+.landing-page .carousel-control-prev:hover i,
+.landing-page .carousel-control-next:hover i {
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.25);
+}
+/* line 133, ../sass/landing.scss */
+.landing-page .carousel-control-prev i,
+.landing-page .carousel-control-next i {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #fff;
+  border-radius: 3.5rem;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 145, ../sass/landing.scss */
+.landing-page .footer-container {
+  background: var(--primary-color);
+  position: relative;
+}
+/* line 149, ../sass/landing.scss */
+.landing-page .footer-container:after {
+  content: ' ';
+  background: url("../images/landing/footer-top.svg");
+  background-size: cover;
+  position: absolute;
+  top: -96px;
+  width: 100%;
+  height: 96px;
+}
+@media (min-width: 1400px) {
+  /* line 149, ../sass/landing.scss */
+  .landing-page .footer-container:after {
+    height: 8.7vw;
+    top: -8.5vw;
+  }
+}
+/* line 164, ../sass/landing.scss */
+.landing-page .footer-container .footer-content {
+  padding: 5rem 2rem 12rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* line 164, ../sass/landing.scss */
+  .landing-page .footer-container .footer-content {
+    padding: 5rem 2rem;
+  }
+}
+/* line 172, ../sass/landing.scss */
+.landing-page .footer-container .footer-content h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+}
+/* line 178, ../sass/landing.scss */
+.landing-page .footer-container .footer-content form {
+  margin-top: 2rem;
+  border-radius: 60px;
+  overflow: hidden;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/* line 186, ../sass/landing.scss */
+.landing-page .footer-container .footer-content form .form-control, .landing-page .footer-container .footer-content form .btn {
+  height: 60px;
+  width: 50%;
+  flex: 1;
+  border-radius: 0;
+}
+/* line 193, ../sass/landing.scss */
+.landing-page .footer-container .footer-content form .btn:hover {
+  transform: none;
+}
+/* line 199, ../sass/landing.scss */
+.landing-page .footer-container .footer-links p,
+.landing-page .footer-container .footer-links a {
+  font-size: 0.8rem;
+  padding: 1rem;
+  display: block;
+}
+@media (max-width: 768px) {
+  /* line 199, ../sass/landing.scss */
+  .landing-page .footer-container .footer-links p,
+  .landing-page .footer-container .footer-links a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+}
+/* line 211, ../sass/landing.scss */
+.landing-page .footer-container .footer-icon {
+  position: absolute;
+  bottom: 0rem;
+  left: 18%;
+}
+@media (max-width: 768px) {
+  /* line 211, ../sass/landing.scss */
+  .landing-page .footer-container .footer-icon {
+    display: none;
+  }
+}
+
+/* line 2, ../sass/form-page.scss */
+.form-page .form-page-title {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 3rem;
+}
+
+/* line 2, ../sass/admin.scss */
+.reservas-page .form-small .form-group .form-control {
+  max-width: none !important;
+}
