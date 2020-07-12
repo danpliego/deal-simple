@@ -427,23 +427,35 @@ body {
   padding: 1.75rem 1.5rem 0.75rem;
   border-radius: 0;
   border-bottom: 0;
+}
+/* line 49, ../sass/grouped-form.scss */
+.grouped-form-container.form-inline .form-group .form-control:not(.form-control-auto) {
   min-width: 140px;
   max-width: 160px;
 }
-/* line 52, ../sass/grouped-form.scss */
+/* line 55, ../sass/grouped-form.scss */
 .grouped-form-container.form-inline .form-group:not(:last-child) .form-control {
   border-bottom: 0;
 }
-/* line 60, ../sass/grouped-form.scss */
+/* line 63, ../sass/grouped-form.scss */
 .grouped-form-container.form-small .form-group .form-control {
   padding: 1.5rem 1rem 0.5rem;
-  min-width: 110px;
-  max-width: 130px;
   font-size: 0.8rem;
 }
-/* line 67, ../sass/grouped-form.scss */
+/* line 66, ../sass/grouped-form.scss */
+.grouped-form-container.form-small .form-group .form-control:not(.form-control-auto) {
+  min-width: 110px;
+  max-width: 130px;
+}
+/* line 72, ../sass/grouped-form.scss */
 .grouped-form-container.form-small .form-group label {
   padding: 0.5rem 1rem;
+}
+/* line 76, ../sass/grouped-form.scss */
+.grouped-form-container.form-small .form-group select {
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* line 3, ../sass/home.scss */
@@ -1297,27 +1309,13 @@ body {
   text-decoration: none;
 }
 
-/* line 59, ../sass/admin.scss */
-.reservas-page .form-small .form-group .form-control {
-  max-width: none !important;
-}
-/* line 63, ../sass/admin.scss */
-.reservas-page .reserve-detail {
-  padding: 1rem;
-  border-top: 1px solid var(--gray-l-color);
-}
-/* line 68, ../sass/admin.scss */
-.reservas-page .admin-grid-header {
-  border-bottom: 1px solid var(--gray-xl-color);
-}
-
-/* line 73, ../sass/admin.scss */
+/* line 58, ../sass/admin.scss */
 .form-section {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 78, ../sass/admin.scss */
+/* line 63, ../sass/admin.scss */
 .form-section .form-control,
 .form-section .custom-select {
   border-radius: 1rem;
@@ -1325,33 +1323,33 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-/* line 85, ../sass/admin.scss */
+/* line 70, ../sass/admin.scss */
 .form-section .form-control:disabled, .form-section .form-control[readonly],
 .form-section .custom-select:disabled,
 .form-section .custom-select[readonly] {
   background: var(--gray-xl-color);
 }
-/* line 90, ../sass/admin.scss */
-.form-section .form-group {
+/* line 75, ../sass/admin.scss */
+.form-section > div > .form-group {
   margin-left: -8px;
   margin-right: -8px;
 }
-/* line 94, ../sass/admin.scss */
-.form-section .form-group > div {
+/* line 79, ../sass/admin.scss */
+.form-section > div > .form-group > div {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-/* line 101, ../sass/admin.scss */
+/* line 86, ../sass/admin.scss */
 .form-section-footer {
   padding-bottom: 5rem;
 }
 
-/* line 105, ../sass/admin.scss */
+/* line 92, ../sass/admin.scss */
 .nav-tabs {
   border-bottom-color: var(--gray-l-color);
 }
-/* line 108, ../sass/admin.scss */
+/* line 95, ../sass/admin.scss */
 .nav-tabs .nav-link {
   border-bottom: 3px solid transparent;
   color: var(--body-l-color);
@@ -1360,9 +1358,47 @@ body {
   border-right: 0;
   padding: 1rem 1.5rem;
 }
-/* line 116, ../sass/admin.scss */
+/* line 103, ../sass/admin.scss */
 .nav-tabs .nav-link.active {
   border-bottom-color: var(--secondary-color);
   color: var(--primary-color);
   font-weight: 500;
+}
+
+/* line 113, ../sass/admin.scss */
+.level-badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+/* line 119, ../sass/admin.scss */
+.level-badge.level-1 {
+  background: #9DEAE5;
+}
+/* line 123, ../sass/admin.scss */
+.level-badge.level-2 {
+  background: #B7F0EC;
+}
+/* line 127, ../sass/admin.scss */
+.level-badge.level-3 {
+  background: #D2F6F3;
+}
+/* line 131, ../sass/admin.scss */
+.level-badge.level-invitado {
+  background: #EDFBFA;
+}
+
+/* line 139, ../sass/admin.scss */
+.reservas-page .form-small .form-group .form-control {
+  max-width: none !important;
+}
+/* line 143, ../sass/admin.scss */
+.reservas-page .reserve-detail {
+  padding: 1rem;
+  border-top: 1px solid var(--gray-l-color);
+}
+/* line 148, ../sass/admin.scss */
+.reservas-page .admin-grid-header {
+  border-bottom: 1px solid var(--gray-xl-color);
 }
