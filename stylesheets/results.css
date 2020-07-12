@@ -71,39 +71,60 @@
   font-size: 1.1rem;
 }
 /* line 66, ../sass/results.scss */
+.result-card .result-stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/* line 71, ../sass/results.scss */
+.result-card .result-stars i {
+  color: var(--secondary-color);
+  font-size: 8.5px;
+  margin-right: 0.1rem;
+}
+/* line 77, ../sass/results.scss */
+.result-card .result-stars p {
+  margin-bottom: -1px;
+  margin-top: 1px;
+  font-size: 0.7rem;
+  color: var(--body-l-color);
+  margin-left: 0.25rem;
+  font-weight: 500;
+}
+/* line 87, ../sass/results.scss */
 .result-card .result-image-link {
   display: block;
   border-radius: 8px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  /* line 66, ../sass/results.scss */
+  /* line 87, ../sass/results.scss */
   .result-card .result-image-link {
     margin-right: 1rem;
   }
 }
-/* line 76, ../sass/results.scss */
+/* line 97, ../sass/results.scss */
 .result-card .results-price-currency {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
-/* line 81, ../sass/results.scss */
+/* line 102, ../sass/results.scss */
 .result-card .results-details {
   border-top: 1px solid var(--gray-l-color);
   margin-top: 1.5rem;
   padding-top: 1.5rem;
 }
-/* line 87, ../sass/results.scss */
+/* line 108, ../sass/results.scss */
 .result-card .room-card {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-/* line 91, ../sass/results.scss */
+/* line 112, ../sass/results.scss */
 .result-card .room-card:not(:last-child) {
   border-bottom: 1px solid var(--gray-l-color);
 }
 
-/* line 97, ../sass/results.scss */
+/* line 118, ../sass/results.scss */
 .reserve-modal {
   position: fixed;
   z-index: 1010;
@@ -112,7 +133,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 105, ../sass/results.scss */
+/* line 126, ../sass/results.scss */
 .reserve-modal .reserve-modal-backdrop {
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -120,7 +141,7 @@
   width: 100%;
   height: 100%;
 }
-/* line 113, ../sass/results.scss */
+/* line 134, ../sass/results.scss */
 .reserve-modal .reserve-modal-content {
   background: #fff;
   right: 0;
@@ -130,49 +151,49 @@
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* line 124, ../sass/results.scss */
+/* line 145, ../sass/results.scss */
 .reserve-modal-image {
   height: 16.666%;
   overflow: hidden;
   position: relative;
 }
-/* line 129, ../sass/results.scss */
+/* line 150, ../sass/results.scss */
 .reserve-modal-image img {
   position: absolute;
   bottom: -32%;
 }
 
-/* line 135, ../sass/results.scss */
+/* line 156, ../sass/results.scss */
 .reserve-card {
   padding: 0.75rem 0;
 }
-/* line 136, ../sass/results.scss */
+/* line 157, ../sass/results.scss */
 .reserve-card:not(:last-child) {
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 142, ../sass/results.scss */
+/* line 163, ../sass/results.scss */
 .reserve-card .reserve-card-title {
   font-size: 0.6rem;
   margin-bottom: 0.25rem;
 }
-/* line 147, ../sass/results.scss */
+/* line 168, ../sass/results.scss */
 .reserve-card p {
   margin-bottom: 0;
 }
 
-/* line 154, ../sass/results.scss */
+/* line 175, ../sass/results.scss */
 .flights-results {
   margin-bottom: 4rem;
 }
-/* line 157, ../sass/results.scss */
+/* line 178, ../sass/results.scss */
 .flights-results .flights-search-container {
   padding: 1.5rem 0;
 }
-/* line 161, ../sass/results.scss */
+/* line 182, ../sass/results.scss */
 .flights-results .toggle-destination {
   top: 14px;
 }
-/* line 165, ../sass/results.scss */
+/* line 186, ../sass/results.scss */
 .flights-results .selected-flight {
   background: #CAF4F1;
   display: inline-block;
@@ -181,112 +202,112 @@
   border-radius: 54px;
   margin-bottom: 1rem;
 }
-/* line 173, ../sass/results.scss */
+/* line 194, ../sass/results.scss */
 .flights-results .selected-flight:hover {
   text-decoration: none;
 }
-/* line 177, ../sass/results.scss */
+/* line 198, ../sass/results.scss */
 .flights-results .selected-flight .edit-flight {
   position: absolute;
   right: -12px;
   top: 12px;
 }
 
-/* line 185, ../sass/results.scss */
+/* line 206, ../sass/results.scss */
 .flight-result {
   border: 1px solid var(--gray-l-color);
   border-bottom: 0;
   transition: all 0.15s ease-in;
 }
-/* line 192, ../sass/results.scss */
+/* line 213, ../sass/results.scss */
 .flight-result:not(.flight-result-expanded):hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
-/* line 198, ../sass/results.scss */
+/* line 219, ../sass/results.scss */
 .flight-result:first-child {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-/* line 203, ../sass/results.scss */
+/* line 224, ../sass/results.scss */
 .flight-result:last-child {
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 207, ../sass/results.scss */
+/* line 228, ../sass/results.scss */
 .flight-result .arrow-open {
   display: none;
 }
-/* line 211, ../sass/results.scss */
+/* line 232, ../sass/results.scss */
 .flight-result.flight-result-open {
   margin-bottom: 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid var(--gray-l-color);
 }
-/* line 216, ../sass/results.scss */
+/* line 237, ../sass/results.scss */
 .flight-result.flight-result-open .arrow-open {
   display: block;
 }
-/* line 220, ../sass/results.scss */
+/* line 241, ../sass/results.scss */
 .flight-result.flight-result-open .arrow-closed {
   display: none;
 }
-/* line 225, ../sass/results.scss */
+/* line 246, ../sass/results.scss */
 .flight-result .view-more-flight-button > .row {
   align-items: center;
   padding: 0 0.5rem;
 }
-/* line 229, ../sass/results.scss */
+/* line 250, ../sass/results.scss */
 .flight-result .view-more-flight-button > .row > .col {
   padding: 1rem 0.5rem;
 }
-/* line 234, ../sass/results.scss */
+/* line 255, ../sass/results.scss */
 .flight-result .flight-result-logo img {
   width: 35px;
   height: auto;
 }
-/* line 239, ../sass/results.scss */
+/* line 260, ../sass/results.scss */
 .flight-result .btn-rounded {
   pointer-events: none;
 }
-/* line 243, ../sass/results.scss */
+/* line 264, ../sass/results.scss */
 .flight-result .flight-result-detail {
   border-top: 1px solid var(--gray-l-color);
   padding: 1rem 1.5rem 1rem;
 }
 
-/* line 250, ../sass/results.scss */
+/* line 271, ../sass/results.scss */
 .flight-segment:not(:first-child) {
   padding-top: 1rem;
 }
-/* line 254, ../sass/results.scss */
+/* line 275, ../sass/results.scss */
 .flight-segment:not(:last-child) {
   padding-bottom: 1rem;
 }
-/* line 258, ../sass/results.scss */
+/* line 279, ../sass/results.scss */
 .flight-segment .flight-segment-item {
   position: relative;
   padding-left: 1rem;
 }
-/* line 262, ../sass/results.scss */
+/* line 283, ../sass/results.scss */
 .flight-segment .flight-segment-item .flight-segment-item-detail {
   padding: 0.75rem 0 1.25rem;
 }
-/* line 266, ../sass/results.scss */
+/* line 287, ../sass/results.scss */
 .flight-segment .flight-segment-item img {
   width: 20px;
 }
-/* line 270, ../sass/results.scss */
+/* line 291, ../sass/results.scss */
 .flight-segment .flight-segment-item p {
   margin-bottom: 0;
 }
-/* line 274, ../sass/results.scss */
+/* line 295, ../sass/results.scss */
 .flight-segment .flight-segment-item:before, .flight-segment .flight-segment-item:after {
   content: ' ';
   display: block;
   position: absolute;
   top: 7px;
 }
-/* line 281, ../sass/results.scss */
+/* line 302, ../sass/results.scss */
 .flight-segment .flight-segment-item:before {
   background: var(--secondary-color);
   border-radius: 6px;
@@ -294,7 +315,7 @@
   height: 6px;
   left: 0;
 }
-/* line 289, ../sass/results.scss */
+/* line 310, ../sass/results.scss */
 .flight-segment .flight-segment-item:after {
   background: var(--gray-color);
   width: 1px;
@@ -302,22 +323,22 @@
   top: 1.5rem;
   bottom: 0.5rem;
 }
-/* line 298, ../sass/results.scss */
+/* line 319, ../sass/results.scss */
 .flight-segment .flight-segment-info {
   padding: 0.5rem 0 0;
 }
-/* line 301, ../sass/results.scss */
+/* line 322, ../sass/results.scss */
 .flight-segment .flight-segment-info .flight-segment-info-item {
   padding: 0.25rem;
   font-size: 0.8rem;
 }
-/* line 305, ../sass/results.scss */
+/* line 326, ../sass/results.scss */
 .flight-segment .flight-segment-info .flight-segment-info-item:not(:last-child):after {
   margin-left: 0.5rem;
   content: '·';
 }
 
-/* line 313, ../sass/results.scss */
+/* line 334, ../sass/results.scss */
 .flight-scale {
   border-top: 1px solid var(--gray-l-color);
   border-bottom: 1px solid var(--gray-l-color);
@@ -325,12 +346,12 @@
   font-size: 0.8rem;
 }
 
-/* line 320, ../sass/results.scss */
+/* line 341, ../sass/results.scss */
 .result-amenities li {
   color: var(--body-l-color);
 }
 
-/* line 324, ../sass/results.scss */
+/* line 345, ../sass/results.scss */
 .flight-result-expanded {
   border-radius: 8px;
   border-bottom: 1px solid var(--gray-l-color);
