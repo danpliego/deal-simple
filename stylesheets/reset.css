@@ -260,33 +260,40 @@ a {
 }
 
 /* line 240, ../sass/reset.scss */
+.circle-icon-lg {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+/* line 246, ../sass/reset.scss */
 .circle-icon {
   background: var(--gray-l-color);
 }
 
-/* line 244, ../sass/reset.scss */
+/* line 250, ../sass/reset.scss */
 .circle-icon-success {
   background: var(--secondary-color);
   color: #fff;
 }
 
-/* line 249, ../sass/reset.scss */
+/* line 255, ../sass/reset.scss */
 .circle-icon-danger {
   background: var(--danger-color);
   color: #fff;
 }
 
-/* line 254, ../sass/reset.scss */
+/* line 260, ../sass/reset.scss */
 .list-dropdown {
   border: 1px solid var(--gray-l-color);
   padding: 0.5rem 1rem;
   border-radius: 34px;
 }
-/* line 259, ../sass/reset.scss */
+/* line 265, ../sass/reset.scss */
 .list-dropdown a {
   color: var(--body-color);
 }
-/* line 263, ../sass/reset.scss */
+/* line 269, ../sass/reset.scss */
 .list-dropdown a:hover {
   text-decoration: none;
   white-space: nowrap;

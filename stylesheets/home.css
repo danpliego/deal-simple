@@ -14,7 +14,7 @@
   margin-bottom: 3rem;
 }
 /* line 18, ../sass/home.scss */
-.home-container .form-container {
+.home-container .grouped-form-container {
   border: 1px solid var(--gray-l-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;

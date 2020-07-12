@@ -69,3 +69,35 @@
     border-bottom: 1px solid var(--gray-xl-color);
   }
 }
+
+.form-section {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-l-color);
+
+  .form-control,
+  .custom-select {
+    border-radius: 1rem;
+    border-color: var(--gray-l-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &:disabled, &[readonly] {
+      background: var(--gray-xl-color);
+    }
+  }
+
+  .form-group {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    > div {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+
+.form-section-footer {
+  padding-bottom: 5rem;
+}

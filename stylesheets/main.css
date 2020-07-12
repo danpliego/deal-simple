@@ -275,33 +275,40 @@ a {
 }
 
 /* line 240, ../sass/reset.scss */
+.circle-icon-lg {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+/* line 246, ../sass/reset.scss */
 .circle-icon {
   background: var(--gray-l-color);
 }
 
-/* line 244, ../sass/reset.scss */
+/* line 250, ../sass/reset.scss */
 .circle-icon-success {
   background: var(--secondary-color);
   color: #fff;
 }
 
-/* line 249, ../sass/reset.scss */
+/* line 255, ../sass/reset.scss */
 .circle-icon-danger {
   background: var(--danger-color);
   color: #fff;
 }
 
-/* line 254, ../sass/reset.scss */
+/* line 260, ../sass/reset.scss */
 .list-dropdown {
   border: 1px solid var(--gray-l-color);
   padding: 0.5rem 1rem;
   border-radius: 34px;
 }
-/* line 259, ../sass/reset.scss */
+/* line 265, ../sass/reset.scss */
 .list-dropdown a {
   color: var(--body-color);
 }
-/* line 263, ../sass/reset.scss */
+/* line 269, ../sass/reset.scss */
 .list-dropdown a:hover {
   text-decoration: none;
   white-space: nowrap;
@@ -370,23 +377,22 @@ body {
 }
 
 /* line 1, ../sass/grouped-form.scss */
-.form-container {
+.grouped-form-container {
   border-radius: 54px;
   overflow: hidden;
   border: 1px solid var(--gray-l-color);
 }
-
-/* line 7, ../sass/grouped-form.scss */
-.form-group {
+/* line 6, ../sass/grouped-form.scss */
+.grouped-form-container .form-group {
   margin-bottom: 0;
   position: relative;
 }
-/* line 11, ../sass/grouped-form.scss */
-.form-group:not(:last-child) {
+/* line 10, ../sass/grouped-form.scss */
+.grouped-form-container .form-group:not(:last-child) {
   border-right: 1px solid var(--gray-l-color);
 }
-/* line 15, ../sass/grouped-form.scss */
-.form-group label {
+/* line 14, ../sass/grouped-form.scss */
+.grouped-form-container .form-group label {
   padding: 0.5rem 2rem;
   margin-bottom: 0;
   font-size: 0.7rem;
@@ -395,50 +401,48 @@ body {
   top: 0;
   pointer-events: none;
 }
-/* line 25, ../sass/grouped-form.scss */
-.form-group .form-control {
+/* line 24, ../sass/grouped-form.scss */
+.grouped-form-container .form-group .form-control {
   background: #fff;
   border: 0;
   padding: 1.2rem 2rem 0.5rem;
   height: auto;
 }
-/* line 31, ../sass/grouped-form.scss */
-.form-group .form-control:focus {
+/* line 30, ../sass/grouped-form.scss */
+.grouped-form-container .form-group .form-control:focus {
   box-shadow: none;
   background: var(--gray-xl-color);
 }
-
-/* line 39, ../sass/grouped-form.scss */
-.form-inline.form-container {
+/* line 37, ../sass/grouped-form.scss */
+.grouped-form-container.form-inline {
   display: inline-flex;
   border-radius: 56px;
 }
-/* line 44, ../sass/grouped-form.scss */
-.form-inline .form-group {
+/* line 41, ../sass/grouped-form.scss */
+.grouped-form-container.form-inline .form-group {
   position: relative;
 }
-/* line 47, ../sass/grouped-form.scss */
-.form-inline .form-group .form-control {
+/* line 44, ../sass/grouped-form.scss */
+.grouped-form-container.form-inline .form-group .form-control {
   padding: 1.75rem 1.5rem 0.75rem;
   border-radius: 0;
   border-bottom: 0;
   min-width: 140px;
   max-width: 160px;
 }
-/* line 55, ../sass/grouped-form.scss */
-.form-inline .form-group:not(:last-child) .form-control {
+/* line 52, ../sass/grouped-form.scss */
+.grouped-form-container.form-inline .form-group:not(:last-child) .form-control {
   border-bottom: 0;
 }
-
-/* line 63, ../sass/grouped-form.scss */
-.form-small .form-group .form-control {
+/* line 60, ../sass/grouped-form.scss */
+.grouped-form-container.form-small .form-group .form-control {
   padding: 1.5rem 1rem 0.5rem;
   min-width: 110px;
   max-width: 130px;
   font-size: 0.8rem;
 }
-/* line 70, ../sass/grouped-form.scss */
-.form-small .form-group label {
+/* line 67, ../sass/grouped-form.scss */
+.grouped-form-container.form-small .form-group label {
   padding: 0.5rem 1rem;
 }
 
@@ -458,7 +462,7 @@ body {
   margin-bottom: 3rem;
 }
 /* line 18, ../sass/home.scss */
-.home-container .form-container {
+.home-container .grouped-form-container {
   border: 1px solid var(--gray-l-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
@@ -1232,13 +1236,6 @@ body {
   }
 }
 
-/* line 2, ../sass/form-page.scss */
-.form-page .form-page-title {
-  font-weight: bold;
-  color: var(--primary-color);
-  margin-top: 3rem;
-}
-
 /* line 1, ../sass/admin.scss */
 .admin-page-header {
   margin: 2rem 0 1.5rem;
@@ -1312,4 +1309,40 @@ body {
 /* line 68, ../sass/admin.scss */
 .reservas-page .admin-grid-header {
   border-bottom: 1px solid var(--gray-xl-color);
+}
+
+/* line 73, ../sass/admin.scss */
+.form-section {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 78, ../sass/admin.scss */
+.form-section .form-control,
+.form-section .custom-select {
+  border-radius: 1rem;
+  border-color: var(--gray-l-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* line 85, ../sass/admin.scss */
+.form-section .form-control:disabled, .form-section .form-control[readonly],
+.form-section .custom-select:disabled,
+.form-section .custom-select[readonly] {
+  background: var(--gray-xl-color);
+}
+/* line 90, ../sass/admin.scss */
+.form-section .form-group {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+/* line 94, ../sass/admin.scss */
+.form-section .form-group > div {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* line 101, ../sass/admin.scss */
+.form-section-footer {
+  padding-bottom: 5rem;
 }

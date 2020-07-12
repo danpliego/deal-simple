@@ -1,75 +1,74 @@
-.form-container {
+.grouped-form-container {
   border-radius: 54px;
   overflow: hidden;
   border: 1px solid var(--gray-l-color);
-}
 
-.form-group {
-  margin-bottom: 0;
-  position: relative;
-  
-  &:not(:last-child) {
-    border-right: 1px solid var(--gray-l-color);
-  }
-
-  label {
-    padding: 0.5rem 2rem;
+  .form-group {
     margin-bottom: 0;
-    font-size: 0.7rem;
-    color: var(--body-l-color);
-    position: absolute;
-    top: 0;
-    pointer-events: none;
-  }
-
-  .form-control {
-    background: #fff;
-    border: 0;
-    padding: 1.2rem 2rem 0.5rem;
-    height: auto;
-
-    &:focus {
-      box-shadow: none;
-      background: var(--gray-xl-color);
+    position: relative;
+    
+    &:not(:last-child) {
+      border-right: 1px solid var(--gray-l-color);
+    }
+  
+    label {
+      padding: 0.5rem 2rem;
+      margin-bottom: 0;
+      font-size: 0.7rem;
+      color: var(--body-l-color);
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+    }
+  
+    .form-control {
+      background: #fff;
+      border: 0;
+      padding: 1.2rem 2rem 0.5rem;
+      height: auto;
+  
+      &:focus {
+        box-shadow: none;
+        background: var(--gray-xl-color);
+      }
     }
   }
-}
-
-.form-inline {
-  &.form-container {
+  
+  &.form-inline {
     display: inline-flex;
     border-radius: 56px;
-  }
-
-  .form-group {
-    position: relative;
-
-    .form-control {
-      padding: 1.75rem 1.5rem 0.75rem;
-      border-radius: 0;
-      border-bottom: 0;
-      min-width: 140px;
-      max-width: 160px;
+  
+    .form-group {
+      position: relative;
+  
+      .form-control {
+        padding: 1.75rem 1.5rem 0.75rem;
+        border-radius: 0;
+        border-bottom: 0;
+        min-width: 140px;
+        max-width: 160px;
+      }
+      
+      &:not(:last-child) .form-control {        
+        border-bottom: 0;
+      }
     }
-    
-    &:not(:last-child) .form-control {        
-      border-bottom: 0;
+  }
+  
+  &.form-small {
+    .form-group {
+      .form-control {
+        padding: 1.5rem 1rem 0.5rem;
+        min-width: 110px;
+        max-width: 130px;
+        font-size: 0.8rem;
+      }
+  
+      label {
+        padding: 0.5rem 1rem;
+      }
     }
   }
 }
 
-.form-small {
-  .form-group {
-    .form-control {
-      padding: 1.5rem 1rem 0.5rem;
-      min-width: 110px;
-      max-width: 130px;
-      font-size: 0.8rem;
-    }
-
-    label {
-      padding: 0.5rem 1rem;
-    }
-  }
-}
 

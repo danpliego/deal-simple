@@ -237,6 +237,12 @@ a {
   color: var(--body-l-color);
 }
 
+.circle-icon-lg {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
 .circle-icon {
   background: var(--gray-l-color);
 }

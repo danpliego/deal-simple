@@ -72,3 +72,39 @@
 .reservas-page .admin-grid-header {
   border-bottom: 1px solid var(--gray-xl-color);
 }
+
+/* line 73, ../sass/admin.scss */
+.form-section {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+/* line 78, ../sass/admin.scss */
+.form-section .form-control,
+.form-section .custom-select {
+  border-radius: 1rem;
+  border-color: var(--gray-l-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* line 85, ../sass/admin.scss */
+.form-section .form-control:disabled, .form-section .form-control[readonly],
+.form-section .custom-select:disabled,
+.form-section .custom-select[readonly] {
+  background: var(--gray-xl-color);
+}
+/* line 90, ../sass/admin.scss */
+.form-section .form-group {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+/* line 94, ../sass/admin.scss */
+.form-section .form-group > div {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* line 101, ../sass/admin.scss */
+.form-section-footer {
+  padding-bottom: 5rem;
+}
