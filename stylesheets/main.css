@@ -261,6 +261,7 @@ a {
 }
 
 /* line 227, ../sass/reset.scss */
+.btn-circle,
 .circle-icon {
   display: flex;
   justify-self: center;
@@ -269,18 +270,41 @@ a {
   border-radius: 2rem;
   align-items: center;
   justify-content: center;
-  background: var(--gry-l-color);
+  padding: 0;
+  color: var(--body-l-color);
+}
+
+/* line 240, ../sass/reset.scss */
+.circle-icon {
+  background: var(--gray-l-color);
+}
+
+/* line 244, ../sass/reset.scss */
+.circle-icon-success {
+  background: var(--secondary-color);
   color: #fff;
 }
 
-/* line 239, ../sass/reset.scss */
-.circle-icon-success {
-  background: var(--secondary-color);
-}
-
-/* line 243, ../sass/reset.scss */
+/* line 249, ../sass/reset.scss */
 .circle-icon-danger {
   background: var(--danger-color);
+  color: #fff;
+}
+
+/* line 254, ../sass/reset.scss */
+.list-dropdown {
+  border: 1px solid var(--gray-l-color);
+  padding: 0.5rem 1rem;
+  border-radius: 34px;
+}
+/* line 259, ../sass/reset.scss */
+.list-dropdown a {
+  color: var(--body-color);
+}
+/* line 263, ../sass/reset.scss */
+.list-dropdown a:hover {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* line 1, ../sass/layout.scss */
@@ -1216,65 +1240,76 @@ body {
 }
 
 /* line 1, ../sass/admin.scss */
+.admin-page-header {
+  margin: 2rem 0 1.5rem;
+}
+
+/* line 5, ../sass/admin.scss */
+.admin-page-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* line 10, ../sass/admin.scss */
 .admin-grid-row {
   border: 1px solid var(--gray-l-color);
 }
-/* line 4, ../sass/admin.scss */
+/* line 13, ../sass/admin.scss */
 .admin-grid-row:not(:last-child) {
   border-bottom: 0;
 }
 
-/* line 9, ../sass/admin.scss */
+/* line 18, ../sass/admin.scss */
 .admin-grid {
   padding: 0.25rem 0.5rem;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
 }
-/* line 15, ../sass/admin.scss */
+/* line 24, ../sass/admin.scss */
 .admin-grid.admin-grid-header {
   align-items: flex-start;
 }
-/* line 18, ../sass/admin.scss */
+/* line 27, ../sass/admin.scss */
 .admin-grid.admin-grid-header .admin-grid-item {
   font-size: .8rem;
   color: var(--body-l-color);
   font-weight: 500;
 }
-/* line 25, ../sass/admin.scss */
+/* line 34, ../sass/admin.scss */
 .admin-grid .admin-grid-item {
   padding: 8px 4px;
   font-size: 0.9rem;
   justify-content: center;
   text-align: center;
 }
-/* line 31, ../sass/admin.scss */
+/* line 40, ../sass/admin.scss */
 .admin-grid .admin-grid-item:not(.has-ellipsis) {
   display: flex;
   align-items: center;
 }
-/* line 36, ../sass/admin.scss */
+/* line 45, ../sass/admin.scss */
 .admin-grid .admin-grid-item.has-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   min-width: 0;
 }
-/* line 43, ../sass/admin.scss */
+/* line 52, ../sass/admin.scss */
 .admin-grid .admin-grid-item:hover {
   text-decoration: none;
 }
 
-/* line 50, ../sass/admin.scss */
+/* line 59, ../sass/admin.scss */
 .reservas-page .form-small .form-group .form-control {
   max-width: none !important;
 }
-/* line 54, ../sass/admin.scss */
+/* line 63, ../sass/admin.scss */
 .reservas-page .reserve-detail {
   padding: 1rem;
   border-top: 1px solid var(--gray-l-color);
 }
-/* line 59, ../sass/admin.scss */
+/* line 68, ../sass/admin.scss */
 .reservas-page .admin-grid-header {
   border-bottom: 1px solid var(--gray-xl-color);
 }

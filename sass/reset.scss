@@ -224,6 +224,7 @@ a {
   }
 }
 
+.btn-circle, 
 .circle-icon {
   display: flex;
   justify-self: center;
@@ -232,14 +233,36 @@ a {
   border-radius: 2rem;
   align-items: center;
   justify-content: center;
-  background: var(--gry-l-color);
-  color: #fff;
+  padding: 0;
+  color: var(--body-l-color);
+}
+
+.circle-icon {
+  background: var(--gray-l-color);
 }
 
 .circle-icon-success {
   background: var(--secondary-color);
+  color: #fff;
 }
 
 .circle-icon-danger {
   background: var(--danger-color);
+  color: #fff;
+}
+
+.list-dropdown {
+  border: 1px solid var(--gray-l-color);
+  padding: 0.5rem 1rem;
+  border-radius: 34px;
+
+  a {
+    color: var(--body-color);
+  }
+
+  a:hover {
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
 }
