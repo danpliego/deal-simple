@@ -1346,3 +1346,23 @@ body {
 .form-section-footer {
   padding-bottom: 5rem;
 }
+
+/* line 105, ../sass/admin.scss */
+.nav-tabs {
+  border-bottom-color: var(--gray-l-color);
+}
+/* line 108, ../sass/admin.scss */
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+  color: var(--body-l-color);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 1rem 1.5rem;
+}
+/* line 116, ../sass/admin.scss */
+.nav-tabs .nav-link.active {
+  border-bottom-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 500;
+}
