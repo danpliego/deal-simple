@@ -47,7 +47,7 @@
           </ul>
         </div>
       </nav>
-      <div class="container pt-4">
+      <div class="container-fluid pt-4">
         <div class="row align-items-center">
           <div class="col col-auto">
             <h6 class="text-primary mb-0">Busca tu reserva</h6>
@@ -71,32 +71,107 @@
         </div>
         <hr class="my-4" />
         <h4 class="text-primary">Todas mis reservas</h4>
-        <div class="reservas-grid">
-          <div class="reservas-grid-header">
-            <div class="reservas-grid-item">Viajero</div>
-            <div class="reservas-grid-item">Tipo de reserva</div>
-            <div class="reservas-grid-item">Clave de reserva</div>
-            <div class="reservas-grid-item">Lugar</div>
-            <div class="reservas-grid-item">Fecha de compra</div>
-            <div class="reservas-grid-item">Fecha de viaje</div>
-            <div class="reservas-grid-item">Status de viaje</div>
-          </div>
-          <div class="reservas-grid-row">
-            <div class="reservas-grid-item">Victor Borja</div>
-            <div class="reservas-grid-item">icono vuelo logo luego</div>
-            <div class="reservas-grid-item">SCXLB</div>
-            <div class="reservas-grid-item">SLC -ANF</div>
-            <div class="reservas-grid-item">01-jun-20</div>
-            <div class="reservas-grid-item">20-ago-20</div>
-            <div class="reservas-grid-item">Próximo</div>
-            <div class="reservas-grid-item">
-              <a href="#" class="btn btn-primary btn-uppercase">
-                Ver más
-                <i class="fas fa-angle-down"></i>
+        <div class="admin-grid admin-grid-header">
+          <div class="admin-grid-item">Viajero</div>
+          <div class="admin-grid-item">Tipo de reserva</div>
+          <div class="admin-grid-item">Clave de reserva</div>
+          <div class="admin-grid-item">Lugar</div>
+          <div class="admin-grid-item">Fecha de compra</div>
+          <div class="admin-grid-item">Fecha de viaje</div>
+          <div class="admin-grid-item">Status de viaje</div>
+        </div>
+
+        <div class="admin-grid-row">
+          <div class="admin-grid">
+            <div class="admin-grid-item has-ellipsis">Victor Hermenejildo Borja</div>
+            <div class="admin-grid-item">
+              <i class="fas fa-plane text-primary mr-1"></i>
+              <img src="http://onepoint.danielpliego.com/images/airlines-full/latam.png" width="73px" alt="">
+  
+            </div>
+            <div class="admin-grid-item">SCXLB</div>
+            <div class="admin-grid-item">SLC -ANF</div>
+            <div class="admin-grid-item">01-jun-20</div>
+            <div class="admin-grid-item">20-ago-20</div>
+            <div class="admin-grid-item">Próximo</div>
+            <div class="admin-grid-item">
+              <a class="btn btn-primary btn-uppercase view-more-button" data-toggle="collapse" href="#item_1">
+                <span class="view-more-text">
+                  Ver más<i class="ml-1 fas fa-angle-down"></i>
+                </span>
+                <span class="view-more-text d-none">
+                  Ver menos<i class="ml-1 fas fa-angle-up"></i>
+                </span>
               </a>
             </div>
           </div>
+          <div id="item_1" class="collapse reserve-detail">
+            <div class="row">
+              <div class="col-lg-9">                
+                <div class="admin-grid admin-grid-header">
+                  <div class="admin-grid-item">Trayecto</div>
+                  <div class="admin-grid-item">Vuelo</div>
+                  <div class="admin-grid-item">Salida</div>
+                  <div class="admin-grid-item">Bolsa de mano</div>
+                  <div class="admin-grid-item">Carry on</div>
+                  <div class="admin-grid-item">Maleta</div>
+                  <div class="admin-grid-item">Permite reembolso</div>
+                  <div class="admin-grid-item">Permite cambio</div>
+                </div>
+                <div class="admin-grid">
+                  <div class="admin-grid-item">SLC - ANF</div>
+                  <div class="admin-grid-item">LA201</div>
+                  <div class="admin-grid-item">15-jul-20</div>
+                  <div class="admin-grid-item justify-content-center">
+                    <i class="fas fa-check circle-icon circle-icon-success"></i>
+                  </div>
+                  <div class="admin-grid-item justify-content-center">
+                    <i class="fas fa-check circle-icon circle-icon-success"></i>
+                  </div>
+                  <div class="admin-grid-item justify-content-center">
+                    <i class="fas fa-times circle-icon circle-icon-danger"></i>
+                  </div>
+                  <div class="admin-grid-item justify-content-center">
+                    <i class="fas fa-check circle-icon circle-icon-success mr-1"></i>
+                    30% de la tarifa
+                  </div>
+                  <div class="admin-grid-item justify-content-center">
+                    <i class="fas fa-check circle-icon circle-icon-success mr-1"></i>
+                    +20 USD
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <a href="cotizar-reembolso.html" class="btn btn-primary btn-block mb-2">
+                  Cootizar reembolso
+                </a>
+                <a href="#" class="btn btn-primary btn-block mb-2">
+                  <i class="fas fa-sync-alt text-info mr-1"></i>
+                  Cotizar cambio
+                </a>
+                <a href="#" class="btn btn-primary btn-block mb-2">
+                  <i class="fas fa-luggage-cart text-info mr-1"></i>
+                  Agregar maleta
+                </a>
+                <a href="#" class="btn btn-info btn-block mb-2">
+                  <i class="fas fa-bed mr-1"></i>
+                  Agregar hotel
+                </a>
+                <div class="dropdown">
+                  <a href="#" class="btn btn-default btn-block mb-2" data-toggle="dropdown">
+                    <i class="fas fa-plus text-info mr-1"></i>
+                    Más servicios...
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Agregar seguro de viaje</a>
+                    <a class="dropdown-item" href="#">Seleccionar asiento</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </body>

@@ -1,4 +1,63 @@
-/* line 2, ../sass/admin.scss */
+/* line 1, ../sass/admin.scss */
+.admin-grid-row {
+  border: 1px solid var(--gray-l-color);
+}
+/* line 4, ../sass/admin.scss */
+.admin-grid-row:not(:last-child) {
+  border-bottom: 0;
+}
+
+/* line 9, ../sass/admin.scss */
+.admin-grid {
+  padding: 0.25rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+/* line 15, ../sass/admin.scss */
+.admin-grid.admin-grid-header {
+  align-items: flex-start;
+}
+/* line 18, ../sass/admin.scss */
+.admin-grid.admin-grid-header .admin-grid-item {
+  font-size: .8rem;
+  color: var(--body-l-color);
+  font-weight: 500;
+}
+/* line 25, ../sass/admin.scss */
+.admin-grid .admin-grid-item {
+  padding: 8px 4px;
+  font-size: 0.9rem;
+  justify-content: center;
+  text-align: center;
+}
+/* line 31, ../sass/admin.scss */
+.admin-grid .admin-grid-item:not(.has-ellipsis) {
+  display: flex;
+  align-items: center;
+}
+/* line 36, ../sass/admin.scss */
+.admin-grid .admin-grid-item.has-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+}
+/* line 43, ../sass/admin.scss */
+.admin-grid .admin-grid-item:hover {
+  text-decoration: none;
+}
+
+/* line 50, ../sass/admin.scss */
 .reservas-page .form-small .form-group .form-control {
   max-width: none !important;
+}
+/* line 54, ../sass/admin.scss */
+.reservas-page .reserve-detail {
+  padding: 1rem;
+  border-top: 1px solid var(--gray-l-color);
+}
+/* line 59, ../sass/admin.scss */
+.reservas-page .admin-grid-header {
+  border-bottom: 1px solid var(--gray-xl-color);
 }

@@ -1,5 +1,62 @@
+.admin-grid-row {
+  border: 1px solid var(--gray-l-color);
+
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+}
+
+.admin-grid {
+  padding: 0.25rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+
+  &.admin-grid-header {
+    align-items: flex-start;
+
+    .admin-grid-item {
+      font-size: .8rem;
+      color: var(--body-l-color);
+      font-weight: 500;
+    }
+  }
+
+  .admin-grid-item {
+    padding: 8px 4px;
+    font-size: 0.9rem;
+    justify-content: center;
+    text-align: center;
+    
+    &:not(.has-ellipsis) {
+      display: flex;
+      align-items: center;
+    }
+    
+    &.has-ellipsis {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .reservas-page {
   .form-small .form-group .form-control {
     max-width: none !important;
+  }
+
+  .reserve-detail {
+    padding: 1rem;
+    border-top: 1px solid var(--gray-l-color);
+  }
+  
+  .admin-grid-header {
+    border-bottom: 1px solid var(--gray-xl-color);
   }
 }

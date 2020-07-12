@@ -223,3 +223,23 @@ a {
     text-decoration: none;
   }
 }
+
+.circle-icon {
+  display: flex;
+  justify-self: center;
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--gry-l-color);
+  color: #fff;
+}
+
+.circle-icon-success {
+  background: var(--secondary-color);
+}
+
+.circle-icon-danger {
+  background: var(--danger-color);
+}
