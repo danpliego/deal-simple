@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <div class="page">  
+    <div class="page reservas-page">  
       <nav class="navbar navbar-light navbar-expand-md">
         <a class="navbar-brand" href="index.html"><img src="images/logo.svg" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="reservas.html">Mis Reservas</a>
             </li>
             <li class="nav-item dropdown">
@@ -50,9 +50,204 @@
           </ul>
         </div>
       </nav>
-      <div class="container-fluid">
+      <div class="container">
         <div class="admin-page-header">
-          <h3 class="admin-page-title">Cotizar reembolso</h3>
+          <h3 class="admin-page-title">Cootizar reembolso</h3>
+        </div>
+        <div class="admin-grid admin-grid-header">
+          <div class="admin-grid-item">Aerolinea</div>
+          <div class="admin-grid-item">Ticket</div>
+          <div class="admin-grid-item">Pasajero</div>
+          <div class="admin-grid-item">Fecha de emisión</div>
+          <div class="admin-grid-item">Forma de pago</div>
+          <div class="admin-grid-item">Monto pagado</div>
+        </div>
+
+        <div class="admin-grid">
+          <div class="admin-grid-item">
+            <img src="http://onepoint.danielpliego.com/images/airlines-full/latam.png" width="73px" alt="">
+          </div>
+          <div class="admin-grid-item">54404045950404</div>
+          <div class="admin-grid-item">Victor Borja</div>
+          <div class="admin-grid-item">20-ago-20</div>
+          <div class="admin-grid-item">Efectivo</div>
+          <div class="admin-grid-item">$420 USD</div>
+        </div>
+
+        <hr />
+
+        <div class="row py-3">
+          <div class="col-lg-3">
+            <h6 class="text-primary font-weight-bold">Tarifa</h6>
+          </div>
+          <div class="col-lg-5">
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Tarifa pagada
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $154 USD
+              </div>
+            </div>
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Tarifa usada
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $0 USD
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0 text-primary font-weight-bold">
+                  Total restante
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                <h6 class="mb-0 font-weight-bold text-primary">$154 USD</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col-lg-3">
+            <h6 class="text-primary font-weight-bold">Impuestos</h6>
+          </div>
+          <div class="col-lg-5">
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Tasas pagadas
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $154 USD
+              </div>
+            </div>
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Tasas usadas
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $0 USD
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0 text-primary font-weight-bold">
+                  Tasas restantes
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                <h6 class="mb-0 font-weight-bold text-primary">$154 USD</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row py-3">
+          <div class="col-lg-3">
+            <h6 class="text-primary font-weight-bold">Penalidades aerolinea</h6>
+          </div>
+          <div class="col-lg-5">
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Penalidades
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $154 USD
+              </div>
+            </div>
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0">
+                  Cargos adicionales
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                $0 USD
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row align-items-center mb-3">
+              <div class="col-lg-7">
+                <p class="font-xs text-secondary mb-0 text-primary font-weight-bold">
+                  Costo de reembolso
+                </p>
+              </div>
+              <div class="text-right col-lg-5">
+                <h6 class="mb-0 font-weight-bold text-primary">$154 USD</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row py-2">
+          <div class="col-lg-3">
+            <h5 class="text-primary font-weight-bold mb-0">
+              Monto a reembolsar
+            </h5>
+          </div>
+          <div class="col-lg-5 text-right">
+            <h4 class="text-primary font-weight-bold mb-0">$78 USD</h4>
+          </div>
+        </div>
+
+        <hr />
+
+
+        <div class="row py-3 mb-5">
+          <div class="col-lg-9 offset-lg-3">
+            <a href="#" data-toggle="modal" data-target="#successModal" class="btn btn-primary mr-2">Reembolsar</a>
+            <a href="reservas.html" class="btn btn-default mr-2">Cancelar</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body text-center">
+            <h5 class="text-primary text-center mb-4">¡La solicitud de reembolso fue procesada con éxito!</h5>
+            <p class="font-xs">Una vez la aerolinea autorice la solicitud, el monto a reembolsar será abonado a la forma de pago original.</p>
+            <p class="font-xs">
+              Para ver el estatus de tu reembolso ingresa a <a href="reservas.html">Mis Reservas</a>.
+            </p>
+            <a href="#" data-dismiss="modal" class="btn btn-primary btn-block mt-4">Listo!</a>
+          </div>
         </div>
       </div>
     </div>
