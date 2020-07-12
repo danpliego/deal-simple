@@ -11,6 +11,10 @@
     border: 0;
   }
 
+  .navbar-nav {
+    align-items: center;
+  }
+
   .nav-item {
     font-size: 0.9rem;
 
@@ -27,6 +31,23 @@
         color: var(--primary-color);
         font-weight: bold;
       }
+    }
+  }
+
+  .user-profile-badge {
+    position: relative;
+    margin-right: 0.33rem;
+
+    .fa-star {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #ECBF4C;
+      background: #fff;
+      border-radius: 17px; 
+      padding: 0.2rem;
+      font-size: 9px;
+      box-shadow: 0 3px 6px rgba(0,0,0,.05);
     }
   }
 
