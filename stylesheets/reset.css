@@ -49,7 +49,7 @@ body {
 /* Bootstrap reset */
 /* line 51, ../sass/reset.scss */
 hr {
-  border-color: var(--gray-xl-color);
+  border-color: var(--gray-l-color);
 }
 
 /* line 55, ../sass/reset.scss */
@@ -146,22 +146,27 @@ a {
 }
 
 /* line 136, ../sass/reset.scss */
+.btn-danger {
+  color: #fff !important;
+}
+
+/* line 140, ../sass/reset.scss */
 .btn-uppercase {
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 1px;
 }
-/* line 141, ../sass/reset.scss */
+/* line 145, ../sass/reset.scss */
 .btn-uppercase.btn-sm {
   font-size: 0.6rem;
 }
-/* line 145, ../sass/reset.scss */
+/* line 149, ../sass/reset.scss */
 .btn-uppercase.btn-lg {
   font-size: 0.9rem;
   padding: 1rem 2rem;
 }
 
-/* line 151, ../sass/reset.scss */
+/* line 155, ../sass/reset.scss */
 .btn-hero {
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -169,92 +174,43 @@ a {
   font-size: 0.8rem;
 }
 
-/* line 158, ../sass/reset.scss */
+/* line 162, ../sass/reset.scss */
 .container-fluid {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-/* line 163, ../sass/reset.scss */
-.form-control {
-  border-color: var(--gray-l-color);
-  border-radius: 50px;
-  padding: 1rem;
-  font-size: 0.9rem;
-  min-height: 50px;
-}
-/* line 170, ../sass/reset.scss */
-.form-control:focus {
-  box-shadow: none;
-  background: var(--gray-xl-color);
-}
-
-/* line 176, ../sass/reset.scss */
-.form-container {
-  border-radius: 54px;
-  overflow: hidden;
-  border: 1px solid var(--gray-l-color);
-}
-
-/* line 182, ../sass/reset.scss */
-.form-group {
-  margin-bottom: 0;
-  position: relative;
-}
-/* line 186, ../sass/reset.scss */
-.form-group:not(:last-child) {
-  border-right: 1px solid var(--gray-l-color);
-}
-/* line 190, ../sass/reset.scss */
-.form-group label {
-  padding: 0.5rem 2rem;
-  margin-bottom: 0;
-  font-size: 0.7rem;
-  color: var(--body-l-color);
-  position: absolute;
-  top: 0;
-  pointer-events: none;
-}
-/* line 200, ../sass/reset.scss */
-.form-group .form-control {
-  background: #fff;
-  border: 0;
-  padding: 1.2rem 2rem 0.5rem;
-  height: auto;
-  border-radius: 0;
-}
-
-/* line 209, ../sass/reset.scss */
+/* line 167, ../sass/reset.scss */
 .badge {
   padding: 4px;
   font-size: 0.7rem;
   font-weight: 500;
 }
 
-/* line 215, ../sass/reset.scss */
+/* line 173, ../sass/reset.scss */
 .badge-primary {
   background: #E5EAF4;
   color: var(--primary-color);
 }
 
-/* line 220, ../sass/reset.scss */
+/* line 178, ../sass/reset.scss */
 .badge-danger {
   background: #FDEDF0;
   color: var(--danger-color);
 }
 
-/* line 225, ../sass/reset.scss */
+/* line 183, ../sass/reset.scss */
 .modal-backdrop {
   background-color: #fff;
 }
 
-/* line 230, ../sass/reset.scss */
+/* line 188, ../sass/reset.scss */
 .modal .modal-content {
   border: 1px solid var(--gray-l-color);
   padding: 3rem;
   box-shadow: 0 5px 60px rgba(0, 0, 0, 0.05);
 }
-/* line 236, ../sass/reset.scss */
+/* line 194, ../sass/reset.scss */
 .modal .close {
   position: absolute;
   right: 1rem;
@@ -262,34 +218,88 @@ a {
 }
 
 /* Helpers Classes */
-/* line 246, ../sass/reset.scss */
+/* line 204, ../sass/reset.scss */
 .font-sm {
   font-size: 0.9rem;
 }
 
-/* line 250, ../sass/reset.scss */
+/* line 208, ../sass/reset.scss */
 .font-xs {
   font-size: 0.8rem;
 }
 
-/* line 254, ../sass/reset.scss */
+/* line 212, ../sass/reset.scss */
 .font-xxs {
   font-size: 0.7rem;
 }
 
-/* line 258, ../sass/reset.scss */
+/* line 216, ../sass/reset.scss */
 .font-medium {
   font-weight: 500;
 }
 
-/* line 262, ../sass/reset.scss */
+/* line 220, ../sass/reset.scss */
 .search-small {
   display: flex;
   align-items: center;
   padding: 1rem 1.25rem 1rem 1rem;
 }
-/* line 267, ../sass/reset.scss */
+/* line 225, ../sass/reset.scss */
 .search-small:hover {
   background: var(--gray-xl-color);
   text-decoration: none;
+}
+
+/* line 231, ../sass/reset.scss */
+.btn-circle,
+.circle-icon {
+  display: flex;
+  justify-self: center;
+  min-width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--body-l-color);
+}
+
+/* line 244, ../sass/reset.scss */
+.circle-icon-lg {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+/* line 250, ../sass/reset.scss */
+.circle-icon {
+  background: var(--gray-l-color);
+}
+
+/* line 254, ../sass/reset.scss */
+.circle-icon-success {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+/* line 259, ../sass/reset.scss */
+.circle-icon-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+/* line 264, ../sass/reset.scss */
+.list-dropdown {
+  border: 1px solid var(--gray-l-color);
+  padding: 0.5rem 1rem;
+  border-radius: 34px;
+}
+/* line 269, ../sass/reset.scss */
+.list-dropdown a {
+  color: var(--body-color);
+}
+/* line 273, ../sass/reset.scss */
+.list-dropdown a:hover {
+  text-decoration: none;
+  white-space: nowrap;
 }

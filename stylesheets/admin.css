@@ -1,0 +1,158 @@
+/* line 1, ../sass/admin.scss */
+.admin-page-header {
+  margin: 2rem 0 1.5rem;
+}
+
+/* line 5, ../sass/admin.scss */
+.admin-page-title {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* line 10, ../sass/admin.scss */
+.admin-grid-row {
+  border: 1px solid var(--gray-l-color);
+}
+/* line 13, ../sass/admin.scss */
+.admin-grid-row:not(:last-child) {
+  border-bottom: 0;
+}
+
+/* line 18, ../sass/admin.scss */
+.admin-grid {
+  padding: 0.25rem 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+}
+/* line 24, ../sass/admin.scss */
+.admin-grid.admin-grid-header {
+  align-items: flex-start;
+}
+/* line 27, ../sass/admin.scss */
+.admin-grid.admin-grid-header .admin-grid-item {
+  font-size: .8rem;
+  color: var(--body-l-color);
+  font-weight: 500;
+}
+/* line 34, ../sass/admin.scss */
+.admin-grid .admin-grid-item {
+  padding: 8px 4px;
+  font-size: 0.9rem;
+  justify-content: center;
+  text-align: center;
+}
+/* line 40, ../sass/admin.scss */
+.admin-grid .admin-grid-item:not(.has-ellipsis) {
+  display: flex;
+  align-items: center;
+}
+/* line 45, ../sass/admin.scss */
+.admin-grid .admin-grid-item.has-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 0;
+}
+/* line 52, ../sass/admin.scss */
+.admin-grid .admin-grid-item:hover {
+  text-decoration: none;
+}
+
+/* line 58, ../sass/admin.scss */
+.form-section {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-l-color);
+}
+
+/* line 66, ../sass/admin.scss */
+.form-section .form-control,
+.form-section .custom-select, .styled-form .form-control,
+.styled-form .custom-select {
+  border-radius: 1rem;
+  border-color: var(--gray-l-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* line 73, ../sass/admin.scss */
+.form-section .form-control:disabled, .form-section .form-control[readonly],
+.form-section .custom-select:disabled,
+.form-section .custom-select[readonly], .styled-form .form-control:disabled, .styled-form .form-control[readonly],
+.styled-form .custom-select:disabled,
+.styled-form .custom-select[readonly] {
+  background: var(--gray-xl-color);
+}
+/* line 78, ../sass/admin.scss */
+.form-section > div > .form-group, .styled-form > div > .form-group {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+/* line 82, ../sass/admin.scss */
+.form-section > div > .form-group > div, .styled-form > div > .form-group > div {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* line 89, ../sass/admin.scss */
+.form-section-footer {
+  padding-bottom: 5rem;
+}
+
+/* line 95, ../sass/admin.scss */
+.nav-tabs {
+  border-bottom-color: var(--gray-l-color);
+}
+/* line 98, ../sass/admin.scss */
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+  color: var(--body-l-color);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 1rem 1.5rem;
+}
+/* line 106, ../sass/admin.scss */
+.nav-tabs .nav-link.active {
+  border-bottom-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* line 116, ../sass/admin.scss */
+.level-badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+}
+/* line 122, ../sass/admin.scss */
+.level-badge.level-1 {
+  background: #9DEAE5;
+}
+/* line 126, ../sass/admin.scss */
+.level-badge.level-2 {
+  background: #B7F0EC;
+}
+/* line 130, ../sass/admin.scss */
+.level-badge.level-3 {
+  background: #D2F6F3;
+}
+/* line 134, ../sass/admin.scss */
+.level-badge.level-invitado {
+  background: #EDFBFA;
+}
+
+/* line 142, ../sass/admin.scss */
+.reservas-page .form-small .form-group .form-control {
+  max-width: none !important;
+}
+/* line 146, ../sass/admin.scss */
+.reservas-page .reserve-detail {
+  padding: 1rem;
+  border-top: 1px solid var(--gray-l-color);
+}
+/* line 150, ../sass/admin.scss */
+.reservas-page .reserve-detail .admin-grid-header {
+  border-bottom: 1px solid var(--gray-xl-color);
+}

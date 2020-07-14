@@ -12,7 +12,6 @@
     <script src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="shortcut icon" href="favicon.ico"/>
-    
   </head>
   <body>
 
@@ -28,7 +27,7 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Hoteles</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="vuelos.html">Vuelos</a>
             </li>
           </ul>
@@ -56,62 +55,93 @@
           </ul>
         </div>
       </nav>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="usuarios.html">Administración de usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reportes.html">Reportes de gasto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politicas.html">Políticas de viaje</a>
+        </li>
+      </ul>
 
-
-      <div class="home-container flights-search-container row no-gutters">
-        <div class="home-content col col-sm-8 col-lg-7">
-          <h1>
-            Encuentra el vuelo perfecto para tu próximo viaje
-          </h1>
-
-          <form action="#">
-            <div>
-              <div class="grouped-form-container mb-3">
-                <div class="form-group dropdown">
-                  <label for="#">Tipo de viaje</label>
-                  <a href="#" class="form-control dropdown-toggle">
-                    <strong class="text-primary">Sencillo</strong>
-                    <i class="fas fa-angle-down"></i></a>
-                  <div class="dropdown-menu">
-                    <li>
-                      <a href="#"></a>
-                    </li>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Viajero</label>
-                  <input type="text" class="form-control" value="Victor Borja">
-                </div>
-              </div>
+      <div class="container-fluid">
+        <div class="admin-page-header">
+          <div class="row">
+            <div class="col-lg">
+              <h3 class="admin-page-title">Administración de usuarios</h3>
             </div>
-
-            <div class="div">
-              <div class="grouped-form-container mb-4">
-                <div class="form-group">
-                  <label>Origen</label>
-                  <input type="text" class="form-control" value="Lima">
-                </div>
-                <a href="#" class="return-action"><i class="fas"></i></a>
-                <div class="form-group">
-                  <label>Destino</label>
-                  <input type="text" class="form-control" value="Nueva York">
-                </div>
-                <div class="form-group">
-                  <label>Salida</label>
-                  <input type="text" class="form-control" value="Sáb 25 Julio">
-                </div>
-              </div>
+            <div class="col col-auto">
+              <a href="crear-usuario.html" class="btn btn-default">
+                <i class="fas fa-plus mr-2 text-info"></i>
+                Crear usuario
+              </a>
             </div>
-
-            <a href="resultados-vuelos.html" class="btn btn-primary btn-hero text-uppercase">
-              Buscar Vuelos <i class="fas fa-arrow-right text-info"></i>
-            </a>
-
-
-          </form>
+          </div>
+        </div>
+        <div class="admin-grid admin-grid-header">
+          <div class="admin-grid-item">Usuario</div>
+          <div class="admin-grid-item">Nombre</div>
+          <div class="admin-grid-item">Perfil de viajero</div>
+          <div class="admin-grid-item">Nivel de empleado</div>
+          <div class="admin-grid-item">Requiere autorizador</div>
+          <div class="admin-grid-item">Rol de usuario</div>
+          <div class="admin-grid-item"></div>
         </div>
 
-        <div class="home-image d-none d-sm-block col-sm-4 col-lg-5"></div>
+        <div class="admin-grid-row">
+          <div class="admin-grid">
+            <div class="admin-grid-item has-ellipsis">victorborja@gmail.com</div>
+            <div class="admin-grid-item">
+              Victor Borja
+            </div>
+            <div class="admin-grid-item">
+              Si 
+              <a href="editar-usuario.html" class="btn btn-circle btn-default ml-2">
+                <i class="fas fa-pencil-alt"></i>
+              </a>
+            </div>
+            <div class="admin-grid-item">
+              <div class="dropdown list-dropdown">
+                <a href="#" data-toggle="dropdown">
+                  Nivel 1
+                  <i class="fas fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Nivel 1</a>
+                  <a href="#" class="dropdown-item">Nivel 2</a>
+                  <a href="#" class="dropdown-item">Nivel 3</a>
+                  <a href="#" class="dropdown-item">Nivel 4</a>
+                </div>
+              </div>
+            </div>
+            <div class="admin-grid-item">
+              Si 
+              <a href="editar-usuario-autorizadores.html" class="btn btn-circle btn-default ml-2">
+                <i class="fas fa-pencil-alt"></i>
+              </a>
+            </div>
+            <div class="admin-grid-item">
+              <div class="dropdown list-dropdown">
+                <a href="#" data-toggle="dropdown">
+                  Autoservicio
+                  <i class="fas fa-angle-down"></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Autoservicio</a>
+                </div>
+              </div>
+            </div>
+            <div class="admin-grid-item">
+              <a href="#" class="btn btn-default btn-circle">
+                <i class="fas fa-trash-alt text-danger"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </body>

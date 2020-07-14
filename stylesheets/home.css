@@ -14,7 +14,7 @@
   margin-bottom: 3rem;
 }
 /* line 18, ../sass/home.scss */
-.home-container .form-container {
+.home-container .grouped-form-container {
   border: 1px solid var(--gray-l-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   border-radius: 1rem;
@@ -42,34 +42,14 @@
   height: calc(100% - 88px);
 }
 
-/* line 51, ../sass/home.scss */
-.flights-search-container .form-container {
-  display: inline-flex;
-  border-radius: 56px;
-}
-/* line 56, ../sass/home.scss */
-.flights-search-container .form-group {
-  position: relative;
-}
-/* line 59, ../sass/home.scss */
-.flights-search-container .form-group .form-control {
-  padding: 1.75rem 1.5rem 0.75rem;
-  border-radius: 0;
-  border-bottom: 0;
-  min-width: 140px;
-  max-width: 160px;
-}
-/* line 67, ../sass/home.scss */
-.flights-search-container .form-group:not(:last-child) .form-control {
-  border-bottom: 0;
-}
-/* line 72, ../sass/home.scss */
-.flights-search-container .home-image {
+/* line 50, ../sass/home.scss */
+.home-flights-image {
   background: url("../images/home-vuelos-pic.jpg");
   background-size: cover;
 }
-/* line 77, ../sass/home.scss */
-.flights-search-container .toggle-destination {
+
+/* line 55, ../sass/home.scss */
+.toggle-destination {
   position: absolute;
   top: 20px;
   right: -14px;
@@ -87,8 +67,9 @@
   text-decoration: none;
   transition: all 0.15s ease-in;
 }
-/* line 95, ../sass/home.scss */
-.flights-search-container .toggle-destination:hover {
+/* line 73, ../sass/home.scss */
+.toggle-destination:hover {
   background: var(--gray-l-color);
   transform: translate(0, -1px);
+  text-decoration: none;
 }

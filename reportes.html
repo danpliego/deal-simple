@@ -12,7 +12,6 @@
     <script src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="shortcut icon" href="favicon.ico"/>
-    
   </head>
   <body>
 
@@ -28,7 +27,7 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Hoteles</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="vuelos.html">Vuelos</a>
             </li>
           </ul>
@@ -56,62 +55,21 @@
           </ul>
         </div>
       </nav>
-
-
-      <div class="home-container flights-search-container row no-gutters">
-        <div class="home-content col col-sm-8 col-lg-7">
-          <h1>
-            Encuentra el vuelo perfecto para tu próximo viaje
-          </h1>
-
-          <form action="#">
-            <div>
-              <div class="grouped-form-container mb-3">
-                <div class="form-group dropdown">
-                  <label for="#">Tipo de viaje</label>
-                  <a href="#" class="form-control dropdown-toggle">
-                    <strong class="text-primary">Sencillo</strong>
-                    <i class="fas fa-angle-down"></i></a>
-                  <div class="dropdown-menu">
-                    <li>
-                      <a href="#"></a>
-                    </li>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>Viajero</label>
-                  <input type="text" class="form-control" value="Victor Borja">
-                </div>
-              </div>
-            </div>
-
-            <div class="div">
-              <div class="grouped-form-container mb-4">
-                <div class="form-group">
-                  <label>Origen</label>
-                  <input type="text" class="form-control" value="Lima">
-                </div>
-                <a href="#" class="return-action"><i class="fas"></i></a>
-                <div class="form-group">
-                  <label>Destino</label>
-                  <input type="text" class="form-control" value="Nueva York">
-                </div>
-                <div class="form-group">
-                  <label>Salida</label>
-                  <input type="text" class="form-control" value="Sáb 25 Julio">
-                </div>
-              </div>
-            </div>
-
-            <a href="resultados-vuelos.html" class="btn btn-primary btn-hero text-uppercase">
-              Buscar Vuelos <i class="fas fa-arrow-right text-info"></i>
-            </a>
-
-
-          </form>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="usuarios.html">Administración de usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="reportes.html">Reportes de gasto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="politicas.html">Políticas de viaje</a>
+        </li>
+      </ul>
+      <div class="container-fluid">
+        <div class="admin-page-header">
+          <h3 class="admin-page-title">Reportes</h3>
         </div>
-
-        <div class="home-image d-none d-sm-block col-sm-4 col-lg-5"></div>
       </div>
     </div>
   </body>

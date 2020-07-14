@@ -62,6 +62,27 @@
   .result-name {
     font-size: 1.1rem;
   }
+
+  .result-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    i {
+      color: var(--secondary-color);
+      font-size: 8.5px;
+      margin-right: 0.1rem;
+    }
+
+    p {
+      margin-bottom: -1px;
+      margin-top: 1px;
+      font-size: 0.7rem;
+      color: var(--body-l-color);
+      margin-left: 0.25rem;
+      font-weight: 500;
+    }
+  }
   
   .result-image-link {
     display: block;
@@ -178,19 +199,6 @@
       position: absolute;
       right: -12px;
       top: 12px;
-    }
-  }
-
-  .form-group {
-    .form-control {
-      padding: 1.5rem 1rem 0.5rem;
-      min-width: 110px;
-      max-width: 130px;
-      font-size: 0.8rem;
-    }
-
-    label {
-      padding: 0.5rem 1rem;
     }
   }
 }
