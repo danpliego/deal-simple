@@ -1,14 +1,18 @@
 .grouped-form-container {
-  border-radius: 54px;
-  overflow: hidden;
   border: 1px solid var(--gray-l-color);
 
   .form-group {
     margin-bottom: 0;
     position: relative;
-    
-    &:not(:last-child) {
-      border-right: 1px solid var(--gray-l-color);
+
+    &:first-child .form-control {
+      border-top-left-radius: 1rem!important;
+      border-top-right-radius: 1rem!important;
+    }
+  
+    &:last-child .form-control {
+      border-bottom-left-radius: 1rem!important;
+      border-bottom-right-radius: 1rem!important;
     }
   
     label {
@@ -25,6 +29,7 @@
       background: #fff;
       border: 0;
       padding: 1.2rem 2rem 0.5rem;
+      border-radius: 0;
       height: auto;
   
       &:focus {
@@ -36,14 +41,14 @@
   
   &.form-inline {
     display: inline-flex;
-    border-radius: 56px;
+    border-radius: 1rem;
   
     .form-group {
       position: relative;
   
       .form-control {
         padding: 1.75rem 1.5rem 0.75rem;
-        border-radius: 0;
+        border-radius: 0!important;
         border-bottom: 0;
 
         &:not(.form-control-auto) {
@@ -51,9 +56,20 @@
         max-width: 160px;
         }
       }
+
+      &:first-child .form-control {
+        border-top-left-radius: 1rem!important;
+        border-bottom-left-radius: 1rem!important;
+      }
+  
+      &:last-child .form-control {
+        border-top-right-radius: 1rem!important;
+        border-bottom-right-radius: 1rem!important;
+      }
       
-      &:not(:last-child) .form-control {        
-        border-bottom: 0;
+      &:not(:last-child) .form-control {
+        border-bottom: 0;     
+        border-right: 1px solid var(--gray-l-color);
       }
     }
   }
@@ -79,6 +95,14 @@
         height: 100%;
       }
     }
+  }
+}
+
+#pac-container_ {
+  min-width: 450px;
+
+  @media (max-width: 768px) {
+    max-width: 300px;
   }
 }
 
