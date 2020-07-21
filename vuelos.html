@@ -9,6 +9,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/55e9d5279b.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBngbVAZjO13DzqXaiuq77LF-jToqe08g&amp;libraries=places"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tmentink/jquery.geocomplete@master/dist/jquery.geocomplete.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <link rel="stylesheet" href="stylesheets/main.css" />
     <link rel="shortcut icon" href="favicon.ico"/>
@@ -89,7 +91,7 @@
               <div class="grouped-form-container form-inline mb-4">
                 <div class="form-group">
                   <label>Origen</label>
-                  <input type="text" class="form-control" value="Lima">
+                  <input type="text" class="form-control auto-complete" value="Lima">
                   <a class="toggle-destination" href="#">
                     <i class="fas fa-exchange-alt"></i>
                   </a>
@@ -97,7 +99,7 @@
                 <a href="#" class="return-action"><i class="fas"></i></a>
                 <div class="form-group">
                   <label>Destino</label>
-                  <input type="text" class="form-control" value="Nueva York">
+                  <input type="text" class="form-control auto-complete" value="Nueva York">
                 </div>
                 <div class="form-group">
                   <label>Salida</label>

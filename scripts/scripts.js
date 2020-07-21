@@ -32,4 +32,18 @@ $( document ).ready(function() {
       $('.reserve-modal').fadeOut();
     });
 
+    // Google location autocomplete
+
+    $('input.auto-complete').each(function () {
+     console.log("Initialized auto complete on ", this)
+     $(this).geocomplete({
+       onChange: function(addr, suggested) {
+         console.log("Location auto complete: ", addr, suggested)
+       },
+       onNoResult: function(addr) {
+         console.log("Location no completion: ", addr)
+       }
+     })
+    });
+
 });
