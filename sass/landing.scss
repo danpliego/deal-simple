@@ -18,9 +18,22 @@
   .hero {
     padding: 6rem 0 12rem;
     color: #fff;
-    background: url('../images/landing/hero-bg.jpg');
     background-size: cover;
     position: relative;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      top: 0;
+      @media (max-width: 768px) {
+        left: -50%;
+      }
+    }
+
 
     &:before {
       content: ' ';
