@@ -1109,10 +1109,10 @@ body {
 .landing-page .hero {
   padding: 6rem 0 12rem;
   color: #fff;
+  background: url("../images/landing/hero-bg.jpg");
   background-size: cover;
   position: relative;
   overflow: hidden;
-  background: url("../images/landing/hero-bg.jpg");
 }
 /* line 26, ../sass/landing.scss */
 .landing-page .hero video {
